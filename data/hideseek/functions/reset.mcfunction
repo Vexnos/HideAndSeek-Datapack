@@ -11,6 +11,7 @@ schedule clear hideseek:timer
 schedule clear hideseek:reset
 schedule clear hideseek:border1
 schedule clear hideseek:border2
+schedule clear hideseek:seek
 scoreboard players set Timer time 0
 scoreboard players reset @a deaths
 scoreboard players reset out out
