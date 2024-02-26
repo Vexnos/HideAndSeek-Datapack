@@ -6,4 +6,4 @@ playsound minecraft:entity.ender_dragon.growl ambient @a ~ ~ ~ 100 1
 title @a[team=1] title {"text":"The seeker is released!","color":"blue"}
 schedule function hideseek:timer 1s
 schedule function hideseek:reset 600s
-schedule function hideseek:border1 300s
+execute unless score nazgard Nazgard matches 1.. run execute unless score kaelos Kaelos matches 1.. run schedule function hideseek:border1 300s
