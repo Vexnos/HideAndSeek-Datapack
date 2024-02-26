@@ -18,5 +18,6 @@ scoreboard objectives add out dummy "out"
 scoreboard objectives add hiding dummy "hiding"
 scoreboard objectives add time dummy
 scoreboard objectives add spectator killedByTeam.blue "spectator"
+scoreboard objectives add deaths deathCount
 title @a actionbar {"text":"The game is ready to go!","color":"green"}
 playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1
