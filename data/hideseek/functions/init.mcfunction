@@ -15,7 +15,7 @@ team modify 3 collisionRule always
 team modify 3 nametagVisibility always
 team modify 3 friendlyFire false
 scoreboard objectives add out dummy "out"
-scoreboard objectives add hiding dummmy "hiding"
+scoreboard objectives add hiding dummy "hiding"
 scoreboard objectives add spectator killedByTeam.blue "spectator"
 title @a actionbar {"text":"The game is ready to go!","color":"green"}
 playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1
