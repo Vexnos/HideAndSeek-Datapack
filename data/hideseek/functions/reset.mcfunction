@@ -24,3 +24,5 @@ execute if score hyperia Hyperia matches 1.. run worldborder set 370 2
 execute if score hailstone Hailstone matches 1.. run worldborder set 300 2
 execute if score meridian Meridian matches 1.. run worldborder set 300 2
 execute if score twinpass TwinPass matches 1.. run worldborder set 230 2
+execute if score kawaiinislands KawaiinIslands matches 1.. run worldborder set 540 2
+execute if score diamondheights DiamondHeights matches 1.. run worldborder set 250 2
