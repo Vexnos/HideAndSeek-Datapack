@@ -19,5 +19,20 @@ scoreboard objectives add hiding dummy "hiding"
 scoreboard objectives add time dummy
 scoreboard objectives add spectator killedByTeam.blue "spectator"
 scoreboard objectives add deaths deathCount
+scoreboard objectives add CrownPeak dummy
+scoreboard objectives add Felora dummy
+scoreboard objectives add Tartarus dummy
+scoreboard objectives add Hyperia dummy
+scoreboard objectives add Hailstone dummy
+scoreboard objectives add Nazgard dummy
+scoreboard objectives add Meridian dummy
+scoreboard objectives add Kaelos dummy
+scoreboard objectives add TwinPass dummy
+scoreboard objectives add KawaiinIslands dummy
+scoreboard objectives add DiamondHeights dummy
+scoreboard objectives add Ataraxia dummy
+scoreboard objectives add HOA dummy
+scoreboard objectives add Tempus dummy
+scoreboard objectives add End dummy
 title @a actionbar {"text":"The game is ready to go!","color":"green"}
 playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1
