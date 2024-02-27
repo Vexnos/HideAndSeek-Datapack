@@ -11,7 +11,7 @@ give @a[team=1] chorus_fruit{Enchantments:[{}],Unbreakable:1b,display:{Name:'{"t
 give @a[team=2] bow{Enchantments:[{id:punch,lvl:2}],Unbreakable:1b}
 give @a[team=2] tipped_arrow{Potion:"minecraft:slowness"} 5
 tp @a[team=1] @e[tag=start,limit=1]
-effect give @a[team=2] minecraft:resistance 999999 255 true
+effect give @a[team=2] minecraft:resistance infinite 255 true
 title @a[team=1] actionbar {"text":"You are a hider! Stay hidden from the seeker to win!","color":"red"}
 playsound minecraft:ambient.cave ambient @a[team=1] ~ ~ ~ 100 1
 title @a[team=2] actionbar {"text":"You are seeking! Find the other players to win!","color":"blue"}
