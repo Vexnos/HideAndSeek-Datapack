@@ -6,4 +6,4 @@ execute if score ataraxia Ataraxia matches 1.. run execute as @a[team=1,x=44,y=5
 execute if score tempus Tempus matches 1.. run execute as @a[team=1,x=-3507,y=65,z=1161,dx=160,dy=50,dz=160] run damage @s 1.5 minecraft:outside_border
 execute if score end End matches 1.. run execute as @a[team=1,x=-1096,y=215,z=-575,dx=40,dy=40,dz=40] run damage @s 2 minecraft:outside_border
 execute if score out out >= hiders hiding run function hideseek:reset
-execute unless score ataraxia Ataraxia matches 1.. run item replace entity @a[team=1] hotbar.8 with firework_rocket{CanPlaceOn:["minecraft:stone","minecraft:grass_block","minecraft:dirt","minecraft:cobblestone","minecraft:stone_bricks","minecraft:coarse_dirt","minecraft:jungle_leaves","minecraft:birch_leaves","minecraft:oak_leaves"]} 1
+execute unless score ataraxia Ataraxia matches 1.. run execute unless score hoa HOA matches 1.. run item replace entity @a[team=1] hotbar.8 with firework_rocket{CanPlaceOn:["minecraft:stone","minecraft:grass_block","minecraft:dirt","minecraft:cobblestone","minecraft:stone_bricks","minecraft:coarse_dirt","minecraft:jungle_leaves","minecraft:birch_leaves","minecraft:oak_leaves"]} 1
