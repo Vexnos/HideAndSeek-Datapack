@@ -26,3 +26,4 @@ execute if score meridian Meridian matches 1.. run worldborder set 300 2
 execute if score twinpass TwinPass matches 1.. run worldborder set 230 2
 execute if score kawaiinislands KawaiinIslands matches 1.. run worldborder set 540 2
 execute if score diamondheights DiamondHeights matches 1.. run worldborder set 250 2
+execute if score end End matches 1.. run worldborder set 360 2
