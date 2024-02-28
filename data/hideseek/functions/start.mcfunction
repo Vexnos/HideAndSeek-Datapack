@@ -6,7 +6,7 @@ effect give @a[team=1] minecraft:invisibility 64 0 true
 effect give @a[team=2] minecraft:blindness 64 0 true
 give @a[team=2] stick{Enchantments:[{id:sharpness,lvl:15}],Unbreakable:1b,display:{Name:"\"Whacky Stick\"",Lore:["\"Whack them moles\""]}}
 give @a[team=1] ender_pearl{Enchantments:[{}],Unbreakable:1b,display:{Lore:['{"text":"Your get out of jail free card","italic":"false","color":"dark_purple"}']}} 1
-give @a[team=2] ender_pearl{Enchantments:[{}],Unbreakable:1b,display:{Lore:['{"text":"Go get \'em","italic":"false","color":"dark_purple"}']}} 3
+execute as @a[team=1] run give @a[team=2] ender_pearl{Enchantments:[{}],Unbreakable:1b,display:{Lore:['{"text":"Go get \'em","italic":"false","color":"dark_purple"}']}} 1
 give @a[team=1] chorus_fruit{Enchantments:[{}],Unbreakable:1b,display:{Name:'{"text":"Zoom zoom escape","italic":"false","color":"light_purple"}'}} 1
 give @a[team=2] bow{Enchantments:[{id:punch,lvl:2}],Unbreakable:1b}
 give @a[team=2] tipped_arrow{Potion:"minecraft:slowness"} 5
