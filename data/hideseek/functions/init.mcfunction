@@ -16,7 +16,7 @@ team modify 3 nametagVisibility always
 team modify 3 friendlyFire false
 scoreboard objectives add out dummy "out"
 scoreboard objectives add hiding dummy "hiding"
-scoreboard objectives add time dummy
+scoreboard objectives add time dummy {"text":"Time","color":"yellow"}
 scoreboard objectives add spectator killedByTeam.blue "spectator"
 scoreboard objectives add deaths deathCount
 scoreboard objectives add CrownPeak dummy

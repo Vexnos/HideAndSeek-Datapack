@@ -7,4 +7,4 @@ title @a[team=1] title {"text":"The seeker is released!","color":"blue"}
 schedule function hideseek:timer 1s
 execute unless score ataraxia Ataraxia matches 1.. run schedule function hideseek:reset 600s
 execute if score ataraxia Ataraxia matches 1.. run schedule function hideseek:reset 300s
-execute unless score nazgard Nazgard matches 1.. run execute unless score kaelos Kaelos matches 1.. run execute unless score ataraxia Ataraxia matches 1.. run schedule function hideseek:border1 300s
+execute unless score nazgard Nazgard matches 1.. run execute unless score kaelos Kaelos matches 1.. run execute unless score ataraxia Ataraxia matches 1.. run execute unless score tempus Tempus matches 1.. run schedule function hideseek:border1 300s
