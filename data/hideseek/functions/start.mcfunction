@@ -18,6 +18,10 @@ execute if score ataraxia Ataraxia matches 1.. run give @a elytra{Enchantments:[
 execute if score hoa HOA matches 1.. run give @a elytra{Enchantments:[{}],Unbreakable:1b}
 execute if score hoa HOA matches 1.. run give @a[team=1] trident{Damage:248,Enchantments:[{id:unbreaking,lvl:4s},{id:riptide,lvl:4s}]}
 execute if score hoa HOA matches 1.. run give @a[team=2] trident{Enchantments:[{id:riptide,lvl:4s}],Unbreakable:1b}
+execute if score end End matches 1.. run give @a[team=1] firework_rocket{Enchantments:[{}]} 20
+execute if score end End matches 1.. run give @a[team=2] crossbow{Unbreakable:1b,Enchantments:[{id:quick_charge,lvl:5},{id:piercing,lvl:5},{id:multishot,lvl:1}],display:{Name:'{"text":"SPANKR","color":"red","bold":"true","italic":"false"}'}}
+execute if score end End matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket{Fireworks:{Flight:3b,Explosions:[{Type:4,Trail:1b,Colors:[I;16772608]},{Type:4,Trail:1b,Colors:[I;16746496]},{Type:4,Trail:1b,Colors:[I;16711680]},{Type:4,Trail:1b,Colors:[I;16737894]},{Type:4,Trail:1b,Colors:[I;16772608]},{Type:4,Trail:1b,Colors:[I;16768256]},{Type:4,Trail:1b,Colors:[I;16746496]},{Type:4,Trail:1b,Colors:[I;16772608]},{Type:4,Trail:1b,Colors:[I;16740096]}]}} 96
+execute if score end End matches 1.. run give @a elytra{Enchantments:[{}],Unbreakable:1b}
 tp @a[team=1] @e[tag=start,limit=1]
 effect give @a[team=2] minecraft:resistance infinite 255 true
 title @a[team=1] actionbar {"text":"You are a hider! Stay hidden from the seeker to win!","color":"red"}
