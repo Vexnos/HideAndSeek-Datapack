@@ -1,4 +1,4 @@
 {
     "replace": false,
-    "values": ["hideseek:saturation", "hideseek:jungleleaves"]
+    "values": ["hideseek:saturation", "hideseek:jungleleaves", "hideseek:init"]
 }
