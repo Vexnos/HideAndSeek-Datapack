@@ -29,5 +29,4 @@ title @a[team=1] actionbar {"text":"You are a hider! Stay hidden from the seeker
 playsound minecraft:ambient.cave ambient @a[team=1] ~ ~ ~ 100 1
 title @a[team=2] actionbar {"text":"You are seeking! Find the other players to win!","color":"blue"}
 execute as @a[team=1] run scoreboard players add hiders hiding 1
-give @a[team=1] snowball{CustomModelData:1,display:{Name:'{"text":"Budget Ender Pearl","italic":"false","color":"red"}'}} 10
 schedule function hideseek:seek 64s

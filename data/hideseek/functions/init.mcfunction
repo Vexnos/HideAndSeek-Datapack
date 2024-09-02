@@ -17,7 +17,8 @@ team modify 3 friendlyFire false
 scoreboard objectives add out dummy "out"
 scoreboard objectives add hiding dummy "hiding"
 scoreboard objectives add time dummy {"text":"Time","color":"yellow"}
-scoreboard objectives setdisplay sidebar time
+scoreboard objectives add minutes dummy
+# scoreboard objectives setdisplay sidebar time
 scoreboard objectives add spectator killedByTeam.blue "spectator"
 scoreboard objectives add deaths deathCount
 scoreboard objectives add CrownPeak dummy
