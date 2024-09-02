@@ -13,7 +13,7 @@ scoreboard players set ataraxia Ataraxia 0
 scoreboard players set hoa HOA 0
 scoreboard players set tempus Tempus 0
 scoreboard players set end End 0
-title @a title {"text":"Back to Lobby","color":"green"}
+title @a actionbar {"text":"Back to Lobby","color":"green"}
 execute in overworld run tp @a -727 30 632
 execute in overworld run spawnpoint @a -727 30 632
 execute as @a at @s run particle portal ~ ~1 ~ 0.5 0.5 0.5 2 500 force

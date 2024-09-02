@@ -5,7 +5,7 @@ execute in overworld run spawnpoint @a -702 195 579
 worldborder center -704 579
 worldborder set 200
 scoreboard players set crownpeak CrownPeak 1
-title @a title ["",{"text":"Crown Peak","color":"dark_purple"},{"text":" selected","color":"green"}]
+title @a actionbar ["",{"text":"Crown Peak","color":"dark_purple"},{"text":" selected","color":"green"}]
 execute as @a at @s run particle portal ~ ~1 ~ 0.5 0.5 0.5 2 500 force
 execute as @a at @s run playsound entity.allay.item_given master @s ~ ~ ~ 100 0
 execute as @a at @s run playsound minecraft:entity.allay.ambient_without_item master @s ~ ~ ~ 100 0

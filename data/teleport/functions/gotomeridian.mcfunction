@@ -5,7 +5,7 @@ execute in overworld run spawnpoint @a 61 137 4606
 worldborder center 61 4606
 worldborder set 300
 scoreboard players set meridian Meridian 1
-title @a title ["",{"text":"Meridian","color":"gold"},{"text":" selected","color":"green"}]
+title @a actionbar ["",{"text":"Meridian","color":"gold"},{"text":" selected","color":"green"}]
 execute as @a at @s run particle portal ~ ~1 ~ 0.5 0.5 0.5 2 500 force
 execute as @a at @s run playsound entity.allay.item_given master @s ~ ~ ~ 100 0
 execute as @a at @s run playsound minecraft:entity.allay.ambient_without_item master @s ~ ~ ~ 100 0
