@@ -3,7 +3,7 @@ team leave @a
 tp @a @e[tag=lobby, limit=1]
 scoreboard players reset @a spectator
 gamemode adventure @a
-execute as @a at @a run playsound minecraft:ui.toast.challenge_complete ambient @s ~ ~ ~ 100 1
+execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
 title @a title {"text":"The game is over!","color":"red"}
 clear @a
 team join 3 @a
