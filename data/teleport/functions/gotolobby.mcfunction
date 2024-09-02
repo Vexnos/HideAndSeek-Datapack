@@ -22,3 +22,4 @@ execute as @a at @s run playsound minecraft:entity.allay.ambient_without_item ma
 effect give @a blindness 1 0 true
 worldborder center 0 0
 worldborder set 6000000
+weather clear
