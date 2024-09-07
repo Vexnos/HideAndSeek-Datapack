@@ -10,7 +10,7 @@ execute as @a[team=1] run give @a[team=2] ender_pearl{Enchantments:[{}],Unbreaka
 give @a[team=1] chorus_fruit{Enchantments:[{}],Unbreakable:1b,display:{Name:'{"text":"Zoom zoom escape","italic":"false","color":"light_purple"}'}} 1
 give @a[team=2] bow{Enchantments:[{id:punch,lvl:2}],Unbreakable:1b}
 give @a[team=2] tipped_arrow{Potion:"minecraft:slowness"} 5
-give @a[team=2] egg{"text":"Budget Ender Pearl","italic":"false","color":"blue"} 3
+execute unless score end End matches 1.. run execute as @a[team=1] run give @a[team=2] egg{"text":"Budget Ender Pearl","italic":"false","color":"blue"} 4
 execute if score ataraxia Ataraxia matches 1.. run give @a[team=1] firework_rocket{Enchantments:[{}],display:{Lore:['{"text":"Use these wisely","color":"yellow","italic":"false","bold":"true"}']}} 2
 execute if score hoa HOA matches 1.. run give @a[team=1] firework_rocket{Enchantments:[{}],display:{Lore:['{"text":"Use these wisely","color":"yellow","italic":"false","bold":"true"}']}} 3
 execute if score ataraxia Ataraxia matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket{Enchantments:[{}],display:{Lore:['{"text":"Take them out","color":"yellow","italic":"false","bold":"true"}']}} 3
