@@ -9,6 +9,6 @@ execute if score kawaiinislands KawaiinIslands matches 1.. run worldborder set 4
 execute if score diamondheights DiamondHeights matches 1.. run worldborder set 150 30
 execute if score nazgard Nazgard matches 1.. run worldborder set 175 30
 execute if score end End matches 1.. run worldborder set 200 30
-title @a actionbar {"text":"The world border is shrinking!","color":"red","bold":"true"}
+title @a actionbar {"text":"The world border is shrinking!","color":"red","bold":true}
 execute as @a at @a run playsound minecraft:entity.ender_dragon.growl ambient @s ~ ~ ~ 100 1
 execute unless score diamondheights DiamondHeights matches 1.. run execute unless score end End matches 1.. run schedule function hideseek:border2 150s
