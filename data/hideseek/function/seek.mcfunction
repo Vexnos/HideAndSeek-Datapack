@@ -11,3 +11,4 @@ execute unless score ataraxia Ataraxia matches 1.. run execute unless score hoa 
 execute if score ataraxia Ataraxia matches 1.. run schedule function hideseek:reset 300s
 execute if score hoa HOA matches 1.. run schedule function hideseek:reset 450s
 execute unless score kaelos Kaelos matches 1.. run execute unless score ataraxia Ataraxia matches 1.. run execute unless score tempus Tempus matches 1.. run execute unless score hoa HOA matches 1.. run schedule function hideseek:border1 300s
+function hideseek:ping

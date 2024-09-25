@@ -38,3 +38,5 @@ scoreboard objectives add Tempus dummy
 scoreboard objectives add End dummy
 title @a actionbar {"text":"The game is ready to go!","color":"green"}
 playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1
+scoreboard objectives add pingEnabled dummy
+scoreboard objectives add glowingEnabled dummy
