@@ -36,6 +36,10 @@ scoreboard objectives add Ataraxia dummy
 scoreboard objectives add HOA dummy
 scoreboard objectives add Tempus dummy
 scoreboard objectives add End dummy
+scoreboard objectives add Oakendale dummy
+scoreboard objectives add Etherea dummy
+scoreboard objectives add Incatasia dummy
+scoreboard objectives add Amaria dummy
 title @a actionbar {"text":"The game is ready to go!","color":"green"}
 playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1
 scoreboard objectives add pingEnabled dummy

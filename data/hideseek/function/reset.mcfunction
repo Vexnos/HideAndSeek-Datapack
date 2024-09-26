@@ -29,3 +29,7 @@ execute if score kawaiinislands KawaiinIslands matches 1.. run worldborder set 5
 execute if score diamondheights DiamondHeights matches 1.. run worldborder set 250 2
 execute if score nazgard Nazgard matches 1.. run worldborder set 250 2
 execute if score end End matches 1.. run worldborder set 360 2
+execute if score oakendale Oakendale matches 1.. run worldborder set 400
+execute if score etherea Etherea matches 1.. run worldborder set 200
+execute if score incatasia Incatasia matches 1.. run worldborder set 275
+execute if score amaria Amaria matches 1.. run worldborder set 440
