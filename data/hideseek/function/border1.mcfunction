@@ -16,4 +16,4 @@ execute if score amaria Amaria matches 1.. run worldborder set 250 30
 title @a actionbar {"text":"The world border is shrinking!","color":"red","bold":true}
 execute as @a at @a run playsound minecraft:entity.ender_dragon.growl ambient @s ~ ~ ~ 100 1
 execute as @r at @s run playsound minecraft:entity.wither.spawn ambient @a ~ ~ ~ 100 1
-execute unless score diamondheights DiamondHeights matches 1.. run execute unless score end End matches 1.. run execute unless score etherea Etherea matches 1.. run schedule function hideseek:border2 150s
+execute unless score end End matches 1.. run execute unless score etherea Etherea matches 1.. run schedule function hideseek:border2 150s

@@ -1,4 +1,4 @@
 {
     "replace": false,
-    "values": ["hideseek:spectator", "hideseek:hiderdeaths", "hideseek:snowball", "hideseek:glowing"]
+    "values": ["hideseek:spectator", "hideseek:hiderdeaths", "hideseek:snowball", "lobby:teleport", "hideseek:glowing", "hideseek:killchickens"]
 }

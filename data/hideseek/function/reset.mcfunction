@@ -12,6 +12,7 @@ schedule clear hideseek:reset
 schedule clear hideseek:border1
 schedule clear hideseek:border2
 schedule clear hideseek:seek
+schedule clear hideseek:finalminute
 scoreboard players set Timer time 0
 scoreboard players set Minutes minutes 0
 scoreboard players reset @a deaths
@@ -33,3 +34,12 @@ execute if score oakendale Oakendale matches 1.. run worldborder set 400
 execute if score etherea Etherea matches 1.. run worldborder set 200
 execute if score incatasia Incatasia matches 1.. run worldborder set 275
 execute if score amaria Amaria matches 1.. run worldborder set 440
+kill @e[type=ravager]
+kill @e[type=pillager]
+kill @e[type=wither]
+kill @e[type=warden]
+kill @e[type=ghast]
+kill @e[type=wither_skull]
+kill @e[type=chicken]
+tag @a remove seekerWait
+time set 7000

@@ -14,6 +14,7 @@ team add 3 "Be Nice"
 team modify 3 collisionRule always
 team modify 3 nametagVisibility always
 team modify 3 friendlyFire false
+gamerule mobGriefing false
 scoreboard objectives add out dummy "out"
 scoreboard objectives add hiding dummy "hiding"
 scoreboard objectives add time dummy {"text":"Time","color":"yellow"}
@@ -40,7 +41,9 @@ scoreboard objectives add Oakendale dummy
 scoreboard objectives add Etherea dummy
 scoreboard objectives add Incatasia dummy
 scoreboard objectives add Amaria dummy
+scoreboard objectives add seekerAmount dummy
 title @a actionbar {"text":"The game is ready to go!","color":"green"}
 playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1
 scoreboard objectives add pingEnabled dummy
 scoreboard objectives add glowingEnabled dummy
+scoreboard objectives add mobsEnabled dummy
