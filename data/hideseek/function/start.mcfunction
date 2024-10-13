@@ -15,8 +15,10 @@ give @a[team=1] potion[custom_name='{"italic":false,"text":"Potion of Fire Resis
 give @a[team=2] bow[enchantments={levels:{punch:2}},unbreakable={}]
 give @a[team=2] tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 15
 give @a[team=1] wind_charge 1
+give @a[team=1] bow[max_damage=1,damage=1,custom_name='{"text":"Legolas\' Shot","italic":false,"color":"gold"}',enchantment_glint_override=true]
+give @a[team=1] spectral_arrow[enchantment_glint_override=true]
 give @a[team=2] mace[enchantments={levels:{breach:10,density:10,fire_aspect:10,wind_burst:10}},unbreakable={}] 1
-execute unless score end End matches 1.. run execute as @a[team=1] run give @a[team=2] egg[item_name='{"text":"Budget Ender Pearl","italic":false,"color":"blue"}'] 10
+# execute unless score end End matches 1.. run execute as @a[team=1] run give @a[team=2] egg[item_name='{"text":"Budget Ender Pearl","italic":false,"color":"blue"}'] 10
 execute if score ataraxia Ataraxia matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Use these wisely","color":"yellow","italic":false,"bold":true}']] 2
 execute if score hoa HOA matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Use these wisely","color":"yellow","italic":false,"bold":true}']] 3
 execute if score ataraxia Ataraxia matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Take them out","color":"yellow","italic":false,"bold":true}']] 3
