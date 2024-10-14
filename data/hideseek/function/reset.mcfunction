@@ -41,5 +41,8 @@ kill @e[type=warden]
 kill @e[type=ghast]
 kill @e[type=wither_skull]
 kill @e[type=chicken]
+kill @e[type=husk]
+kill @e[type=arrow]
+kill @e[type=stray]
 tag @a remove seekerWait
 time set 7000

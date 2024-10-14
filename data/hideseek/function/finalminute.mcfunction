@@ -60,3 +60,5 @@ execute at @a run playsound entity.wither.spawn ambient @a ~ ~ ~ 100 0
 worldborder set 50 150
 time set 18000
 # effect give @a[team=1] blindness infinite 0 true
+effect clear @a[team=2] resistance
+give @a[team=1,gamemode=adventure] stone_sword[unbreakable={},custom_name='{"text":"Seeker\'s Bane","color":"yellow","italic":false}',enchantments={levels:{fire_aspect:2,sharpness:1}}]
