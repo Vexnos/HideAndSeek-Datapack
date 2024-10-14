@@ -14,7 +14,7 @@ execute unless score end End matches 1.. run give @a[team=1] snowball[custom_mod
 give @a[team=1] potion[custom_name='{"italic":false,"text":"Potion of Fire Resistance"}',potion_contents={custom_color:16746496,custom_effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:400,show_particles:1b,show_icon:1b}]}] 1
 give @a[team=2] bow[enchantments={levels:{punch:2}},unbreakable={}]
 give @a[team=2] tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 15
-give @a[team=2] experience_bottle[custom_name='{"text":"Minions","color":"green","italic":false}'] 3
+execute if score minionsEnabled minionsEnabled matches 1.. run give @a[team=2] experience_bottle[custom_name='{"text":"Minions","color":"green","italic":false}'] 3
 give @a[team=1] wind_charge 1
 give @a[team=1] bow[max_damage=1,damage=1,custom_name='{"text":"Legolas\' Shot","italic":false,"color":"gold"}',enchantment_glint_override=true]
 give @a[team=1] spectral_arrow[enchantment_glint_override=true]

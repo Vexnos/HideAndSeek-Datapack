@@ -47,3 +47,4 @@ playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1
 scoreboard objectives add pingEnabled dummy
 scoreboard objectives add glowingEnabled dummy
 scoreboard objectives add mobsEnabled dummy
+scoreboard objectives add minionsEnabled dummy
