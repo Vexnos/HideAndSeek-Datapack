@@ -3,6 +3,7 @@ gamemode adventure @a
 execute if score seekerAmount seekerAmount matches 1 run team join 2 @a[sort=random,limit=1]
 execute if score seekerAmount seekerAmount matches 2 run team join 2 @a[sort=random,limit=2]
 execute if score seekerAmount seekerAmount matches 3 run team join 2 @a[sort=random,limit=3]
+execute if score seekerAmount seekerAmount matches 4 run team join 2 @a[sort=random,limit=4]
 team join 1 @a[sort=random,team=!2]
 effect give @a[team=1] minecraft:invisibility 64 0 true
 effect give @a[team=2] minecraft:blindness 64 0 true

@@ -11,3 +11,4 @@ item replace entity @a[team=2] hotbar.8 with chorus_fruit[enchantment_glint_over
 item replace entity @a[team=2] hotbar.7 with trident[enchantments={levels:{impaling:5,channeling:1}},unbreakable={},custom_name='{"text":"Grappling Hook","color":"aqua","italic":false}']
 clear @a[team=1] trident
 clear @a[team=2] spectral_arrow
+execute as @a[team=2] if score @s deaths matches 1.. run function hideseek:seekereffects
