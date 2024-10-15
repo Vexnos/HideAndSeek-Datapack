@@ -46,3 +46,4 @@ kill @e[type=arrow]
 kill @e[type=stray]
 tag @a remove seekerWait
 time set 7000
+scoreboard players set #game gameRunning 0

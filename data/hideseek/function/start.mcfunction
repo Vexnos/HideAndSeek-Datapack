@@ -50,3 +50,5 @@ execute as @a[name=qqqqqwwwww009,team=1] run give @s goat_horn[instrument=call_g
 execute as @a[name=mR_P0tat012,team=1] run give @s goat_horn[instrument=dream_goat_horn]
 
 give @a[name=!Vexnos,name=!Mathmagician8191,name=!Atomhix,name=!qqqqqwwwww009,name=!mR_P0tat012] goat_horn[instrument=ponder_goat_horn]
+
+scoreboard players set #game gameRunning 1

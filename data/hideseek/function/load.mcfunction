@@ -49,3 +49,7 @@ scoreboard objectives add glowingEnabled dummy
 scoreboard objectives add mobsEnabled dummy
 scoreboard objectives add minionsEnabled dummy
 scoreboard objectives add velocity dummy
+scoreboard objectives add gameRunning dummy
+function hideseek:saturation
+function hideseek:jungleleaves
+function hideseek:ping
