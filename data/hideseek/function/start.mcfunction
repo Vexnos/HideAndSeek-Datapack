@@ -42,6 +42,8 @@ execute as @a[team=1] run scoreboard players add hiders hiding 1
 schedule function hideseek:seek 64s
 tag @a[team=2] add seekerWait
 
+give @a[team=2] tripwire_hook[food={nutrition:0,saturation:0,can_always_eat:1b,eat_seconds:1000001},custom_name='{"text":"Dismount Grappling Hook","italic":false,"color":"blue"}']
+
 # Goat Horns
 execute as @a[name=Vexnos,team=1] run give @s goat_horn[instrument=ponder_goat_horn]
 execute as @a[name=Atomhix,team=1] run give @s goat_horn[instrument=sing_goat_horn]
