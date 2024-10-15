@@ -1,6 +1,10 @@
+execute at @e[tag=lobby,limit=1] run spawnpoint @a ~ ~ ~
 effect clear @a
 team leave @a
-tp @a @e[tag=lobby, limit=1]
+kill @e[type=snowball]
+kill @e[type=egg]
+kill @e[type=spectral_arrow]
+kill @e[type=trident]
 scoreboard players reset @a spectator
 gamemode adventure @a
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
@@ -46,4 +50,5 @@ kill @e[type=arrow]
 kill @e[type=stray]
 tag @a remove seekerWait
 time set 7000
+tp @a @e[tag=lobby, limit=1]
 scoreboard players set #game gameRunning 0

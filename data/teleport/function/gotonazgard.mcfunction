@@ -1,7 +1,7 @@
 execute in the_nether run tp @e[tag=lobby,limit=1] -248 93 -1089
 execute in the_nether run tp @e[tag=start,limit=1] -204 75 -1109
 execute in the_nether run tp @a -248 93 -1089
-execute in the_nether run spawnpoint @a -204 75 -1109
+execute in the_nether run spawnpoint @a -248 93 -1089
 worldborder center -1632 -8520
 worldborder set 250
 scoreboard players set nazgard Nazgard 1

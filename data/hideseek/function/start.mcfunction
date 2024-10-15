@@ -19,7 +19,7 @@ execute if score minionsEnabled minionsEnabled matches 1.. run give @a[team=2] e
 give @a[team=1] wind_charge 1
 give @a[team=1] bow[max_damage=1,damage=1,custom_name='{"text":"Legolas\' Shot","italic":false,"color":"gold"}',enchantment_glint_override=true]
 give @a[team=1] spectral_arrow[enchantment_glint_override=true]
-give @a[team=2] mace[enchantments={levels:{breach:10,density:10,fire_aspect:10,wind_burst:10}},unbreakable={}] 1
+give @a[team=2] mace[enchantments={levels:{breach:10,density:10,wind_burst:10}},unbreakable={}] 1
 # execute unless score end End matches 1.. run execute as @a[team=1] run give @a[team=2] egg[item_name='{"text":"Budget Ender Pearl","italic":false,"color":"blue"}'] 10
 execute if score ataraxia Ataraxia matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Use these wisely","color":"yellow","italic":false,"bold":true}']] 2
 execute if score hoa HOA matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Use these wisely","color":"yellow","italic":false,"bold":true}']] 3
@@ -50,6 +50,8 @@ execute as @a[name=Atomhix,team=1] run give @s goat_horn[instrument=sing_goat_ho
 execute as @a[name=Mathmagician8191,team=1] run give @s goat_horn[instrument=seek_goat_horn]
 execute as @a[name=qqqqqwwwww009,team=1] run give @s goat_horn[instrument=call_goat_horn]
 execute as @a[name=mR_P0tat012,team=1] run give @s goat_horn[instrument=dream_goat_horn]
+
+execute at @e[tag=start,limit=1] run spawnpoint @a[team=2] ~ ~ ~
 
 give @a[name=!Vexnos,name=!Mathmagician8191,name=!Atomhix,name=!qqqqqwwwww009,name=!mR_P0tat012] goat_horn[instrument=ponder_goat_horn]
 

@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] -916 227 1325
 execute in overworld run tp @e[tag=start,limit=1] -916 124 1325
 execute in overworld run tp @a -916 227 1325
-execute in overworld run spawnpoint @a -916 124 1325
+execute in overworld run spawnpoint @a -916 227 1325
 worldborder center -916 1325
 worldborder set 275
 scoreboard players set incatasia Incatasia 1
