@@ -48,6 +48,7 @@ kill @e[type=chicken]
 kill @e[type=husk]
 kill @e[type=arrow]
 kill @e[type=stray]
+kill @e[type=bogged]
 tag @a remove seekerWait
 time set 7000
 tp @a @e[tag=lobby, limit=1]

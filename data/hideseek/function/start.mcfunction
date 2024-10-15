@@ -17,7 +17,7 @@ give @a[team=2] bow[enchantments={levels:{punch:2}},unbreakable={}]
 give @a[team=2] tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 15
 execute if score minionsEnabled minionsEnabled matches 1.. run give @a[team=2] experience_bottle[custom_name='{"text":"Minions","color":"green","italic":false}'] 3
 give @a[team=1] wind_charge 1
-give @a[team=1] bow[max_damage=1,damage=1,custom_name='{"text":"Legolas\' Shot","italic":false,"color":"gold"}',enchantment_glint_override=true]
+give @a[team=1] crossbow[max_damage=1,damage=1,custom_name='{"text":"Legolas\' Shot","italic":false,"color":"gold"}',enchantments={levels:{quick_charge:5}}]
 give @a[team=1] spectral_arrow[enchantment_glint_override=true]
 give @a[team=2] mace[enchantments={levels:{breach:10,density:10,wind_burst:10}},unbreakable={}] 1
 # execute unless score end End matches 1.. run execute as @a[team=1] run give @a[team=2] egg[item_name='{"text":"Budget Ender Pearl","italic":false,"color":"blue"}'] 10
@@ -54,5 +54,7 @@ execute as @a[name=mR_P0tat012,team=1] run give @s goat_horn[instrument=dream_go
 execute at @e[tag=start,limit=1] run spawnpoint @a[team=2] ~ ~ ~
 
 give @a[name=!Vexnos,name=!Mathmagician8191,name=!Atomhix,name=!qqqqqwwwww009,name=!mR_P0tat012] goat_horn[instrument=ponder_goat_horn]
+
+execute if score #spread spreadPlayers matches 1 as @a[team=1] at @e[tag=start,limit=1] run spreadplayers ~ ~ 75 100 true @s
 
 scoreboard players set #game gameRunning 1
