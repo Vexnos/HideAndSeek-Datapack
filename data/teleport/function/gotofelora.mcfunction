@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] -3806 206 -64
 execute in overworld run tp @e[tag=start,limit=1] -3805 102 -64
 execute in overworld run tp @a -3806 206 -64
-execute in overworld run spawnpoint @a -3806 206 -64
+execute in overworld run spawnpoint @a -3805 102 -64
 worldborder center -3806 -64
 worldborder set 150
 scoreboard players set felora Felora 1

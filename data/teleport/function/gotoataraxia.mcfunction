@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] 158 274 -691
 execute in overworld run tp @e[tag=start,limit=1] 158 139 -691
 execute in overworld run tp @a 158 274 -691
-execute in overworld run spawnpoint @a 158 274 -691
+execute in overworld run spawnpoint @a 158 139 -691
 worldborder center 158 -691
 worldborder set 300
 scoreboard players set ataraxia Ataraxia 1

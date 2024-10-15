@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] 1639 238 1307
 execute in overworld run tp @e[tag=start,limit=1] 1639 164 1307
 execute in overworld run tp @a 1639 238 1307
-execute in overworld run spawnpoint @a 1639 238 1307
+execute in overworld run spawnpoint @a 1639 164 1307
 worldborder center 1639 1307
 worldborder set 440
 scoreboard players set amaria Amaria 1

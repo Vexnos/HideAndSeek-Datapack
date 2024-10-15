@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] -3429 180 1244
 execute in overworld run tp @e[tag=start,limit=1] -3429 40 1244
 execute in overworld run tp @a -3429 180 1244
-execute in overworld run spawnpoint @a -3429 180 1244
+execute in overworld run spawnpoint @a -3429 40 1244
 worldborder center -3429 1239
 worldborder set 150
 scoreboard players set tempus Tempus 1

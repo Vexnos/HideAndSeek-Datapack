@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] -4606 174 365
 execute in overworld run tp @e[tag=start,limit=1] -4606 77 365
 execute in overworld run tp @a -4606 174 365
-execute in overworld run spawnpoint @a -4606 174 365
+execute in overworld run spawnpoint @a -4606 77 365
 worldborder center -4606 365
 worldborder set 540
 scoreboard players set kawaiinislands KawaiinIslands 1

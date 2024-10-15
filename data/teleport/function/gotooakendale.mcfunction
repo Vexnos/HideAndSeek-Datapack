@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] -1291 190 -1301
 execute in overworld run tp @e[tag=start,limit=1] -1291 91 -1301
 execute in overworld run tp @a -1291 190 -1301
-execute in overworld run spawnpoint @a -1291 190 -1301
+execute in overworld run spawnpoint @a -1291 91 -1301
 worldborder center -1289 -1367
 worldborder set 400
 scoreboard players set oakendale Oakendale 1

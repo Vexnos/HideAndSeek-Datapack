@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] -55 51 2434
 execute in overworld run tp @e[tag=start,limit=1] -55 38 2435
 execute in overworld run tp @a -55 51 2434
-execute in overworld run spawnpoint @a -55 51 2434
+execute in overworld run spawnpoint @a -55 38 243
 worldborder center -55 2510
 worldborder set 175
 scoreboard players set tartarus Tartarus 1

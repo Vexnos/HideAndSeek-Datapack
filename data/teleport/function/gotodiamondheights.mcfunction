@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] 1331 177 -104
 execute in overworld run tp @e[tag=start,limit=1] 1324 94 -112
 execute in overworld run tp @a 1331 177 -104
-execute in overworld run spawnpoint @a 1331 177 -104
+execute in overworld run spawnpoint @a 1324 94 -112
 worldborder center 1331 -104
 worldborder set 250
 scoreboard players set diamondheights DiamondHeights 1

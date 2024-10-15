@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] -702 195 579
 execute in overworld run tp @e[tag=start,limit=1] -703 99 579
 execute in overworld run tp @a -702 195 579
-execute in overworld run spawnpoint @a -702 195 579
+execute in overworld run spawnpoint @a -703 99 579
 worldborder center -704 579
 worldborder set 200
 scoreboard players set crownpeak CrownPeak 1

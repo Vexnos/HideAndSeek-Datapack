@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] -1988 215 -899
 execute in overworld run tp @e[tag=start,limit=1] -1988 92 -899
 execute in overworld run tp @a -1988 215 -899
-execute in overworld run spawnpoint @a -1988 215 -899
+execute in overworld run spawnpoint @a -1988 92 -899
 worldborder center -1988 -899
 worldborder set 200
 scoreboard players set etherea Etherea 1

@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] 61 137 4606
 execute in overworld run tp @e[tag=start,limit=1] 61 85 4607
 execute in overworld run tp @a 61 137 4606
-execute in overworld run spawnpoint @a 61 137 4606
+execute in overworld run spawnpoint @a 61 85 4607
 worldborder center 61 4606
 worldborder set 300
 scoreboard players set meridian Meridian 1

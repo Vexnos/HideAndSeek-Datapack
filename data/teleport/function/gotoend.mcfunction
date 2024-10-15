@@ -1,7 +1,7 @@
 execute in the_end run tp @e[tag=lobby,limit=1] -1047 252 -607
 execute in the_end run tp @e[tag=start,limit=1] -1081 80 -633
 execute in the_end run tp @a -1047 252 -607
-execute in the_end run spawnpoint @a -1047 252 -607
+execute in the_end run spawnpoint @a -1081 80 -633
 worldborder center -1047 -607
 worldborder set 360
 scoreboard players set end End 1

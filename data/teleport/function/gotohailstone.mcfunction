@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] -768 168 -4133
 execute in overworld run tp @e[tag=start,limit=1] -734 132 -4042
 execute in overworld run tp @a -768 168 -4133
-execute in overworld run spawnpoint @a -768 168 -4133
+execute in overworld run spawnpoint @a -734 132 -4042
 worldborder center -734 -4042
 worldborder set 300
 scoreboard players set hailstone Hailstone 1

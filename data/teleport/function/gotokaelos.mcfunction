@@ -1,7 +1,7 @@
 execute in overworld run tp @e[tag=lobby,limit=1] 217 119 2812
 execute in overworld run tp @e[tag=start,limit=1] 217 61 2812
 execute in overworld run tp @a 217 119 2812
-execute in overworld run spawnpoint @a 217 119 2812
+execute in overworld run spawnpoint @a 217 61 2812
 worldborder center 217 2812
 worldborder set 200
 scoreboard players set kaelos Kaelos 1
