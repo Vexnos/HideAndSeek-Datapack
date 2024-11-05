@@ -8,10 +8,10 @@ team join 1 @a[sort=random,team=!2]
 effect give @a[team=1] minecraft:invisibility 64 0 true
 effect give @a[team=2] minecraft:blindness 64 0 true
 give @a[team=2] stick[enchantments={levels:{sharpness:15}},unbreakable={},item_name='{"text":"Whacky Stick","color":"aqua"}',lore=['{"text":"Whack them moles","color":"dark_aqua","italic":false}']]
-# give @a[team=1] ender_pearl[enchantment_glint_override=true,unbreakable={},lore=['{"text":"Your get out of jail free card","italic":false,"color":"dark_purple"}'],item_name='{"text":"Ender Pearl","color":"light_purple"}'] 1
-execute unless score end End matches 1.. run give @a[team=1] snowball[custom_model_data=1,item_name='{"text":"Budget Ender Pearl","italic":false,"color":"red"}'] 7
+give @a[team=1] ender_pearl[enchantment_glint_override=true,unbreakable={},lore=['{"text":"Your get out of jail free card","italic":false,"color":"dark_purple"}'],item_name='{"text":"Ender Pearl","color":"light_purple"}'] 1
+execute unless score end End matches 1.. run give @a[team=1] snowball[custom_model_data=1,item_name='{"text":"Budget Ender Pearl","italic":false,"color":"red"}'] 5
 # execute as @a[team=1] run give @a[team=2] ender_pearl[enchantment_glint_override=true,unbreakable={},lore=['{"text":"Go get \'em","italic":false,"color":"dark_purple"}'],item_name='{"text":"Ender Pearl","color":"light_purple"}'] 1
-# give @a[team=1] chorus_fruit[enchantment_glint_override=true,unbreakable={},item_name='{"text":"Zoom zoom escape","italic":false,"color":"light_purple"}'] 1
+give @a[team=1] chorus_fruit[enchantment_glint_override=true,unbreakable={},item_name='{"text":"Zoom zoom escape","italic":false,"color":"light_purple"}'] 1
 give @a[team=1] potion[custom_name='{"italic":false,"text":"Potion of Fire Resistance"}',potion_contents={custom_color:16746496,custom_effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:400,show_particles:1b,show_icon:1b}]}] 1
 give @a[team=2] bow[enchantments={levels:{punch:2}},unbreakable={}]
 give @a[team=2] tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 15

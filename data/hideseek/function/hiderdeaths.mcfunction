@@ -8,6 +8,7 @@ execute in the_end if score end End matches 1.. run execute as @a[team=1,x=-1228
 execute if score out out >= hiders hiding run function hideseek:reset
 # execute unless score ataraxia Ataraxia matches 1.. run execute unless score hoa HOA matches 1.. run execute unless score end End matches 1.. run item replace entity @a[team=1] hotbar.8 with firework_rocket{CanPlaceOn:["minecraft:stone","minecraft:grass_block","minecraft:dirt","minecraft:cobblestone","minecraft:stone_bricks","minecraft:coarse_dirt","minecraft:jungle_leaves","minecraft:birch_leaves","minecraft:oak_leaves"]} 1
 item replace entity @a[team=2] hotbar.8 with chorus_fruit[enchantment_glint_override=true]
+item replace entity @a[team=2] hotbar.6 with ender_pearl[enchantment_glint_override=true,rarity=epic]
 execute unless score end End matches 1.. unless score hoa HOA matches 1.. unless score ataraxia Ataraxia matches 1.. run item replace entity @a[team=2] hotbar.7 with trident[enchantments={levels:{impaling:5,channeling:1}},unbreakable={},custom_name='{"text":"Grappling Hook","color":"aqua","italic":false}']
 clear @a[team=1] trident
 clear @a[team=2] spectral_arrow
