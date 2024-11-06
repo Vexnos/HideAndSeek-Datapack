@@ -1,0 +1,5 @@
+execute at @e[tag=start,limit=1] run summon husk ~ ~ ~ {ArmorItems:[{id:chainmail_boots,count:1,components:{enchantment_glint_override:true,trim:{material:emerald,pattern:flow}}},{id:chainmail_leggings,count:1,components:{enchantment_glint_override:true,trim:{material:emerald,pattern:flow}}},{id:chainmail_chestplate,count:1,components:{enchantment_glint_override:true,trim:{material:emerald,pattern:flow}}},{id:chainmail_helmet,count:1,components:{enchantment_glint_override:true,trim:{material:emerald,pattern:flow}}}],Glowing:1b,CustomName:'{"text":"Guardian","color":"green"}',Team:"4"}
+execute at @a run playsound minecraft:entity.evoker.prepare_summon master @a
+execute at @e[tag=start,limit=1] run playsound minecraft:entity.evoker.prepare_attack master @a
+scoreboard players remove #zombieTimer zombieTimer 1
+execute unless score #zombieTimer zombieTimer matches 0 run schedule function events:zombies 1s

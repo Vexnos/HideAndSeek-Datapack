@@ -14,6 +14,8 @@ team add 3 "Be Nice"
 team modify 3 collisionRule always
 team modify 3 nametagVisibility always
 team modify 3 friendlyFire false
+team add 4 "Guardians"
+team modify 4 color green
 gamerule mobGriefing false
 scoreboard objectives add out dummy "out"
 scoreboard objectives add hiding dummy "hiding"
@@ -52,6 +54,7 @@ scoreboard objectives add velocity dummy
 scoreboard objectives add gameRunning dummy
 scoreboard objectives add spreadPlayers dummy
 scoreboard objectives add swap dummy
+scoreboard objectives add zombieTimer dummy
 function hideseek:saturation
 function hideseek:jungleleaves
 function hideseek:ping
