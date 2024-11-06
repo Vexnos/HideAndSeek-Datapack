@@ -60,7 +60,7 @@ execute as @a[name=mR_P0tat012,team=1] run give @s goat_horn[instrument=dream_go
 
 execute at @e[tag=start,limit=1] run spawnpoint @a[team=2] ~ ~ ~
 
-give @a[name=!Vexnos,name=!Mathmagician8191,name=!Atomhix,name=!qqqqqwwwww009,name=!mR_P0tat012] goat_horn[instrument=ponder_goat_horn]
+give @a[name=!Vexnos,name=!Mathmagician8191,name=!Atomhix,name=!qqqqqwwwww009,name=!mR_P0tat012] goat_horn[instrument=yearn_goat_horn]
 
 execute if score #spread spreadPlayers matches 1 as @a[team=1] at @e[tag=start,limit=1] run spreadplayers ~ ~ 75 100 true @s
 

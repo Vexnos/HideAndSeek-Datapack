@@ -6,14 +6,11 @@ effect give @s glowing 10 0 true
 effect give @s darkness 5 0 true
 
 # Silverfish
-execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:1b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}'}
-execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:1b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}'}
-execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:1b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}'}
-execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:1b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}'}
-execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:1b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}'}
-execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:1b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}'}
-execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:1b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}'}
-execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:1b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}'}
-execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:1b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}'}
-execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:1b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}'}
+execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:0b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}',attributes:[{id:"minecraft:generic.movement_speed",modifiers:[{amount:2,id:"movement_speed",operation:add_value}]}],active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:false}]}
+execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:0b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}',attributes:[{id:"minecraft:generic.movement_speed",modifiers:[{amount:2,id:"movement_speed",operation:add_value}]}],active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:false}]}
+execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:0b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}',attributes:[{id:"minecraft:generic.movement_speed",modifiers:[{amount:2,id:"movement_speed",operation:add_value}]}],active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:false}]}
+execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:0b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}',attributes:[{id:"minecraft:generic.movement_speed",modifiers:[{amount:2,id:"movement_speed",operation:add_value}]}],active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:false}]}
+execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:0b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}',attributes:[{id:"minecraft:generic.movement_speed",modifiers:[{amount:2,id:"movement_speed",operation:add_value}]}],active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:false}]}
+execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:0b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}',attributes:[{id:"minecraft:generic.movement_speed",modifiers:[{amount:2,id:"movement_speed",operation:add_value}]}],active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:false}]}
+execute at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:0b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}',attributes:[{id:"minecraft:generic.movement_speed",modifiers:[{amount:2,id:"movement_speed",operation:add_value}]}],active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:false}]}
 # execute at @s run summon warden ~ ~ ~ {Team:"1",Glowing:1b,HasVisualFire:1b,CustomName:'{"text":"Guardian","color":"red"}',PersistenceRequired:1b,Brain:{memories:{"minecraft:dig_cooldown":{value:{},ttl:1200L}}}}
