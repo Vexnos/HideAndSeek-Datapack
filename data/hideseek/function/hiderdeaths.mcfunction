@@ -13,3 +13,5 @@ execute unless score end End matches 1.. unless score hoa HOA matches 1.. unless
 clear @a[team=1] trident
 clear @a[team=2] spectral_arrow
 execute as @a[team=2] if score @s deaths matches 1.. run function hideseek:seekereffects
+execute at @a[nbt={active_effects:[{id:"minecraft:levitation"}]}] run playsound minecraft:entity.evoker.prepare_summon master @a ~ ~ ~ 100 2
+execute at @a[nbt={active_effects:[{id:"minecraft:levitation"}]}] run particle minecraft:portal ~ ~ ~ 1 1 1 0 200 normal
