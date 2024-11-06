@@ -1,0 +1,1 @@
+execute unless score swap swap matches ..1 run function events:swap

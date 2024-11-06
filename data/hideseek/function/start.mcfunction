@@ -1,13 +1,17 @@
 # Teams and Game Start
 team leave @a
+clear @a
 gamemode adventure @a
+scoreboard players set swap swap 0
 execute if score seekerAmount seekerAmount matches 1 run team join 2 @a[sort=random,limit=1]
 execute if score seekerAmount seekerAmount matches 2 run team join 2 @a[sort=random,limit=2]
 execute if score seekerAmount seekerAmount matches 3 run team join 2 @a[sort=random,limit=3]
 execute if score seekerAmount seekerAmount matches 4 run team join 2 @a[sort=random,limit=4]
 team join 1 @a[sort=random,team=!2]
 execute as @a[team=1] run scoreboard players add hiders hiding 1
+execute as @a[team=1] run scoreboard players add swap swap 1
 tag @a[team=2] add seekerWait
+tag @a remove notswap
 
 # Teleportation
 tp @a[team=1] @e[tag=start,limit=1]
@@ -40,7 +44,7 @@ give @a[team=2] stick[enchantments={levels:{sharpness:15}},unbreakable={},item_n
 # give @a[team=2] skeleton_skull[item_name='{"color":"green","italic":false,"text":"Minions Power Up"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true] 3
 give @a[team=2] bow[enchantments={levels:{punch:2}},unbreakable={}]
 item replace entity @a[team=2] inventory.1 with bell[item_name='{"color":"dark_red","italic":false,"text":"Force Taunt"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true] 3
-give @a[team=2] chain[item_name='{"color":"blue","italic":false,"text":"Grapple"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true] 3
+# give @a[team=2] chain[item_name='{"color":"blue","italic":false,"text":"Grapple"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true] 3
 item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 15
 execute if score minionsEnabled minionsEnabled matches 1.. run give @a[team=2] experience_bottle[custom_name='{"text":"Minions","color":"green","italic":false}'] 3
 give @a[team=2] mace[enchantments={levels:{breach:10,density:10,wind_burst:10}},unbreakable={}] 1

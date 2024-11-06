@@ -23,6 +23,7 @@ scoreboard players reset @a deaths
 scoreboard players reset out out
 scoreboard players reset hiders hiding
 tag @a remove out
+tag @a remove notswap
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2
 execute if score felora Felora matches 1.. run worldborder set 150 2
 execute if score tartarus Tartarus matches 1.. run worldborder set 175 2
@@ -53,4 +54,5 @@ kill @e[type=bogged]
 tag @a remove seekerWait
 time set 7000
 tp @a @e[tag=lobby, limit=1]
+scoreboard players set swap swap 0
 scoreboard players set #game gameRunning 0

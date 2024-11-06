@@ -51,6 +51,7 @@ scoreboard objectives add minionsEnabled dummy
 scoreboard objectives add velocity dummy
 scoreboard objectives add gameRunning dummy
 scoreboard objectives add spreadPlayers dummy
+scoreboard objectives add swap dummy
 function hideseek:saturation
 function hideseek:jungleleaves
 function hideseek:ping

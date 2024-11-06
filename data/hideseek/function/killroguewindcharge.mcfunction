@@ -1,0 +1,1 @@
+execute if score crownpeak CrownPeak matches 1 if score #game gameRunning matches 1 at @e[tag=start,limit=1] run kill @e[type=wind_charge,distance=141..]
