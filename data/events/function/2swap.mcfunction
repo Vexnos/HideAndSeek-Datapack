@@ -1,8 +1,8 @@
 # Pick Players
-tag @a[team=1,sort=random,limit=1] add swap1
-tag @a[team=1,sort=random,tag=!swap1,limit=1] add swap2
-execute at @a[tag=swap1,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap1"]}
-execute at @a[tag=swap2,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap2"]}
+tag @a[team=1,sort=random,limit=1,tag=!out] add swap1
+tag @a[team=1,sort=random,tag=!swap1,limit=1,tag=!out] add swap2
+execute at @a[tag=swap1,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap1"],NoGravity:1b}
+execute at @a[tag=swap2,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap2"],NoGravity:1b}
 tp @a[tag=swap1] @e[tag=aswap2,limit=1]
 tp @a[tag=swap2] @e[tag=aswap1,limit=1]
 

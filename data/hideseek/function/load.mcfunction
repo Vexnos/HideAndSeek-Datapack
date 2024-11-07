@@ -61,6 +61,7 @@ scoreboard objectives add minorEvent dummy
 scoreboard objectives add countdown dummy
 scoreboard objectives add mcountdown dummy
 scoreboard objectives add eventsEnabled dummy
+scoreboard objectives add range dummy
 function hideseek:saturation
 function hideseek:jungleleaves
 function hideseek:ping

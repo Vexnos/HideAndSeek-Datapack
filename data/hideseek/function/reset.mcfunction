@@ -24,6 +24,8 @@ schedule clear events:mcountdown
 schedule clear events:roller
 schedule clear events:majorevents
 schedule clear events:minorevents
+schedule clear events:zombies
+schedule clear events:creeper
 scoreboard players set Timer time 0
 scoreboard players set Minutes minutes 0
 scoreboard players reset @a deaths
