@@ -1,2 +1,4 @@
-execute unless score tartarus Tartarus matches 1 at @e[tag=start,limit=1] run summon wither ~ ~ ~ {PersistenceRequired:1b,CustomName:'{"text":"Guardian","color":"green"}',Team:"4",Glowing:1b}
-execute unless score tartarus Tartarus matches 1 positioned -55 23 2524 run summon wither ~ ~ ~ {PersistenceRequired:1b,CustomName:'{"text":"Guardian","color":"green"}',Team:"4",Glowing:1b}
+execute unless score tartarus Tartarus matches 1 at @e[tag=start,limit=1] run summon wither ~ ~ ~ {PersistenceRequired:1b,CustomName:'{"text":"Guardian","color":"green"}',Team:"4",Glowing:1b,attributes:[{id:"minecraft:generic.scale",modifiers:[{amount:2,id:"scale",operation:add_value}]}]}
+execute if score tartarus Tartarus matches 1 positioned -55 23 2524 run summon wither ~ ~ ~ {PersistenceRequired:1b,CustomName:'{"text":"Guardian","color":"green"}',Team:"4",Glowing:1b,attributes:[{id:"minecraft:generic.scale",modifiers:[{amount:2,id:"scale",operation:add_value}]}]}
+execute at @a run playsound minecraft:entity.wither.spawn master @a
+title @a title {"text":"Wither!","color":"dark_red","bold":true}
