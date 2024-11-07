@@ -17,6 +17,11 @@ schedule clear hideseek:border1
 schedule clear hideseek:border2
 schedule clear hideseek:seek
 schedule clear hideseek:finalminute
+schedule clear events:initmevent
+schedule clear events:countdown
+schedule clear events:roller
+schedule clear events:majorevents
+schedule clear events:minorevents
 scoreboard players set Timer time 0
 scoreboard players set Minutes minutes 0
 scoreboard players reset @a deaths

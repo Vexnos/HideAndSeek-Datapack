@@ -55,6 +55,9 @@ scoreboard objectives add gameRunning dummy
 scoreboard objectives add spreadPlayers dummy
 scoreboard objectives add swap dummy
 scoreboard objectives add zombieTimer dummy
+scoreboard objectives add randInt dummy
+scoreboard objectives add majorEvent dummy
+scoreboard objectives add countdown dummy
 function hideseek:saturation
 function hideseek:jungleleaves
 function hideseek:ping

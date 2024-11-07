@@ -1,0 +1,2 @@
+execute unless score tartarus Tartarus matches 1 at @e[tag=start,limit=1] run summon wither ~ ~ ~ {PersistenceRequired:1b,CustomName:'{"text":"Guardian","color":"green"}',Team:"4",Glowing:1b}
+execute unless score tartarus Tartarus matches 1 positioned -55 23 2524 run summon wither ~ ~ ~ {PersistenceRequired:1b,CustomName:'{"text":"Guardian","color":"green"}',Team:"4",Glowing:1b}

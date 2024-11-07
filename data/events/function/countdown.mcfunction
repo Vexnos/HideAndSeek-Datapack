@@ -1,0 +1,12 @@
+# Titles and Sound
+execute if score #countdown countdown matches 0 run title Herobrine title {"text":""}
+execute if score #countdown countdown matches 4.. run title @a title {"score":{"name":"#countdown","objective":"countdown"},"color":"dark_green"}
+execute if score #countdown countdown matches 3 run title @a title {"score":{"name":"#countdown","objective":"countdown"},"color":"green"}
+execute if score #countdown countdown matches 2 run title @a title {"score":{"name":"#countdown","objective":"countdown"},"color":"yellow"}
+execute if score #countdown countdown matches 1 run title @a title {"score":{"name":"#countdown","objective":"countdown"},"color":"red"}
+execute at @a run playsound minecraft:ui.button.click master @a
+
+# Countdown Logic
+execute if score #countdown countdown matches 2.. run schedule function events:countdown 1s
+execute if score #countdown countdown matches 1 run schedule function events:majorevents 1s
+scoreboard players remove #countdown countdown 1
