@@ -57,7 +57,9 @@ scoreboard objectives add swap dummy
 scoreboard objectives add zombieTimer dummy
 scoreboard objectives add randInt dummy
 scoreboard objectives add majorEvent dummy
+scoreboard objectives add minorEvent dummy
 scoreboard objectives add countdown dummy
+scoreboard objectives add mcountdown dummy
 scoreboard objectives add eventsEnabled dummy
 function hideseek:saturation
 function hideseek:jungleleaves

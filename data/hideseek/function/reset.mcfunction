@@ -18,7 +18,9 @@ schedule clear hideseek:border2
 schedule clear hideseek:seek
 schedule clear hideseek:finalminute
 schedule clear events:initmevent
+schedule clear events:initevent
 schedule clear events:countdown
+schedule clear events:mcountdown
 schedule clear events:roller
 schedule clear events:majorevents
 schedule clear events:minorevents
@@ -28,6 +30,7 @@ scoreboard players reset @a deaths
 scoreboard players reset out out
 scoreboard players reset hiders hiding
 scoreboard players set #majorEvent majorEvent 0
+scoreboard players set #minorEvent minorEvent 0
 tag @a remove out
 tag @a remove notswap
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2

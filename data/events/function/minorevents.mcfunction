@@ -1,1 +1,10 @@
 function events:roller
+execute if score #randInt randInt matches 1..5 run effect give @a blindness 5 0 true
+execute if score #randInt randInt matches 6..10 run effect give @a speed 5 2 true
+execute if score #randInt randInt matches 11..15 run effect give @a poison 5 2 true
+execute if score #randInt randInt matches 16..20 run effect give @a slowness 5 3 true
+execute at @a run playsound entity.zombie_villager.cure master @a
+scoreboard players add #minorEvent minorEvent 1
+execute unless score ataraxia Ataraxia matches 1 unless score hoa HOA matches 1 unless score #minorEvent minorEvent matches 9.. run schedule function events:mcountdown 60s
+# execute if score ataraxia Ataraxia matches 1 unless score #minorEvent minorEvent matches 2.. run schedule function events:initmevent 150s
+# execute if score hoa HOA matches 1 unless score #minorEvent minorEvent matches 2.. run schedule function events:initmevent 150s
