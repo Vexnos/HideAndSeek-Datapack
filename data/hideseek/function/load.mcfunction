@@ -58,6 +58,7 @@ scoreboard objectives add zombieTimer dummy
 scoreboard objectives add randInt dummy
 scoreboard objectives add majorEvent dummy
 scoreboard objectives add countdown dummy
+scoreboard objectives add eventsEnabled dummy
 function hideseek:saturation
 function hideseek:jungleleaves
 function hideseek:ping
