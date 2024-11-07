@@ -27,6 +27,7 @@ scoreboard players set Minutes minutes 0
 scoreboard players reset @a deaths
 scoreboard players reset out out
 scoreboard players reset hiders hiding
+scoreboard players set #majorEvent majorEvent 0
 tag @a remove out
 tag @a remove notswap
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2
