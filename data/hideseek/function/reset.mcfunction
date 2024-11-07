@@ -32,7 +32,7 @@ tag @a remove out
 tag @a remove notswap
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2
 execute if score felora Felora matches 1.. run worldborder set 150 2
-execute if score tartarus Tartarus matches 1.. run worldborder set 175 2
+execute if score tartarus Tartarus matches 1.. run worldborder set 205 2
 execute if score hyperia Hyperia matches 1.. run worldborder set 370 2
 execute if score hailstone Hailstone matches 1.. run worldborder set 300 2
 execute if score meridian Meridian matches 1.. run worldborder set 300 2
