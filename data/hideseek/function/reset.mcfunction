@@ -56,6 +56,7 @@ execute if score etherea Etherea matches 1.. run worldborder set 200 2
 execute if score incatasia Incatasia matches 1.. run worldborder set 275 2
 execute if score amaria Amaria matches 1.. run worldborder set 440 2
 execute if score tempus Tempus matches 1.. run worldborder set 200 2
+execute if score biggerton Biggerton matches 1.. run worldborder set 200 2
 kill @e[type=silverfish]
 kill @e[type=ravager]
 kill @e[type=pillager]
