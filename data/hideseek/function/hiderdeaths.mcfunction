@@ -1,6 +1,6 @@
 execute as @a[team=1,tag=!out] if score @s deaths matches 1.. run scoreboard players add out out 1
 execute as @a[team=1,tag=!out] if score @s deaths matches 1.. run tag @s add out
-execute if score tartarus Tartarus matches 1.. run execute as @a[team=1,x=-143,y=77,z=2432,dx=175,dy=90,dz=175] run damage @s 1.5 minecraft:outside_border
+execute if score tartarus Tartarus matches 1.. run execute as @a[team=1,x=-143,y=77,z=2432,dx=175,dy=90,dz=175] run damage @s 10 minecraft:outside_border
 execute if score ataraxia Ataraxia matches 1.. run execute as @a[team=1,x=44,y=245,z=-805,dx=300,dy=90,dz=300] run damage @s 999 minecraft:outside_border
 execute if score ataraxia Ataraxia matches 1.. run execute as @a[team=1,x=44,y=51,z=-805,dx=300,dy=50,dz=300] run damage @s 999 minecraft:outside_border
 execute if score tempus Tempus matches 1.. run execute as @a[team=1,x=-3507,y=65,z=1161,dx=160,dy=50,dz=160] run damage @s 1.5 minecraft:outside_border

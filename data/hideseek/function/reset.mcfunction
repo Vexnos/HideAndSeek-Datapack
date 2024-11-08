@@ -26,6 +26,9 @@ schedule clear events:majorevents
 schedule clear events:minorevents
 schedule clear events:zombies
 schedule clear events:creeper
+schedule clear events:trayaurus/trayaurus
+schedule clear events:trayaurus/teleportthere
+schedule clear events:trayaurus/teleportback
 scoreboard players set Timer time 0
 scoreboard players set Minutes minutes 0
 scoreboard players reset @a deaths
@@ -46,10 +49,11 @@ execute if score kawaiinislands KawaiinIslands matches 1.. run worldborder set 5
 execute if score diamondheights DiamondHeights matches 1.. run worldborder set 250 2
 execute if score nazgard Nazgard matches 1.. run worldborder set 250 2
 execute if score end End matches 1.. run worldborder set 360 2
-execute if score oakendale Oakendale matches 1.. run worldborder set 400
-execute if score etherea Etherea matches 1.. run worldborder set 200
-execute if score incatasia Incatasia matches 1.. run worldborder set 275
-execute if score amaria Amaria matches 1.. run worldborder set 440
+execute if score oakendale Oakendale matches 1.. run worldborder set 400 2
+execute if score etherea Etherea matches 1.. run worldborder set 200 2
+execute if score incatasia Incatasia matches 1.. run worldborder set 275 2
+execute if score amaria Amaria matches 1.. run worldborder set 440 2
+execute if score tempus Tempus matches 1.. run worldborder set 200 2
 kill @e[type=silverfish]
 kill @e[type=ravager]
 kill @e[type=pillager]
