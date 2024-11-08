@@ -36,6 +36,8 @@ scoreboard players reset out out
 scoreboard players reset hiders hiding
 scoreboard players set #majorEvent majorEvent 0
 scoreboard players set #minorEvent minorEvent 0
+scoreboard players set #zombieTimer zombieTimer 0
+scoreboard players set #breezeTimer breezeTimer 0
 tag @a remove out
 tag @a remove notswap
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2
@@ -66,6 +68,8 @@ kill @e[type=husk]
 kill @e[type=arrow]
 kill @e[type=stray]
 kill @e[type=bogged]
+kill @e[type=breeze]
+kill @e[type=breeze_wind_charge]
 tag @a remove seekerWait
 time set 7000
 tp @a @e[tag=lobby, limit=1]
