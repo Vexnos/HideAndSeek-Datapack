@@ -19,7 +19,7 @@ tp @a[team=1] @e[tag=start,limit=1]
 # Effects
 effect give @a[team=1] minecraft:invisibility 64 0 true
 effect give @a[team=2] minecraft:blindness 64 0 true
-effect give @a[team=1] minecraft:weakness infinite 255 true
+effect give @a[team=2] minecraft:resistance infinite 255 true
 
 # Items for Hiders
 give @a[team=1] ender_pearl[enchantment_glint_override=true,unbreakable={},lore=['{"text":"Your get out of jail free card","italic":false,"color":"dark_purple"}'],item_name='{"text":"Ender Pearl","color":"light_purple"}'] 1
