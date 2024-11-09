@@ -57,6 +57,7 @@ scoreboard objectives add spreadPlayers dummy
 scoreboard objectives add swap dummy
 scoreboard objectives add zombieTimer dummy
 scoreboard objectives add breezeTimer dummy
+scoreboard objectives add guardianTimer dummy
 scoreboard objectives add randInt dummy
 scoreboard objectives add majorEvent dummy
 scoreboard objectives add minorEvent dummy
@@ -67,3 +68,4 @@ scoreboard objectives add range dummy
 function hideseek:saturation
 function hideseek:jungleleaves
 function hideseek:ping
+function hideseek:main_10t

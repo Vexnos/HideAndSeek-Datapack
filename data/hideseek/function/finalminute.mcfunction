@@ -60,6 +60,6 @@ execute at @a run playsound entity.wither.spawn ambient @a ~ ~ ~ 100 0
 worldborder set 50 150
 time set 18000
 # effect give @a[team=1] blindness infinite 0 true
-effect clear @a[team=2] resistance
+effect clear @a[team=1] weakness
 give @a[team=1,gamemode=adventure] stone_sword[unbreakable={},custom_name='{"text":"Seeker\'s Bane","color":"yellow","italic":false}',enchantments={levels:{fire_aspect:2,sharpness:1}}]
 # give @a[team=1,gamemode=adventure] blaze_rod[custom_name='{"text":"Fire Stick","italic":false,"color":"gold"}',enchantment_glint_override=true,food={nutrition:0,saturation:0,can_always_eat:1b,eat_seconds:1000000}]
