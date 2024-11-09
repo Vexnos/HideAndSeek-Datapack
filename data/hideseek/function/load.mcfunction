@@ -51,6 +51,7 @@ scoreboard objectives add pingEnabled dummy
 scoreboard objectives add glowingEnabled dummy
 scoreboard objectives add mobsEnabled dummy
 scoreboard objectives add minionsEnabled dummy
+scoreboard objectives add raycastEnabled dummy
 scoreboard objectives add velocity dummy
 scoreboard objectives add gameRunning dummy
 scoreboard objectives add spreadPlayers dummy
