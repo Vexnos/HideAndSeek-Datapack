@@ -1,1 +1,1 @@
-execute store result score #randInt randInt run random roll 1..30
+execute store result score #randInt randInt run random value 1..30
