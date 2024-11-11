@@ -15,3 +15,4 @@ clear @a[team=2] spectral_arrow
 execute as @a[team=2] if score @s deaths matches 1.. run function hideseek:seekereffects
 execute at @a[nbt={active_effects:[{id:"minecraft:levitation"}]}] run playsound minecraft:entity.evoker.prepare_summon master @a ~ ~ ~ 100 2
 execute at @a[nbt={active_effects:[{id:"minecraft:levitation"}]}] run particle minecraft:portal ~ ~ ~ 1 1 1 0 200 normal
+execute if score biggerton Biggerton matches 1.. as @a[tag=!out,x=-496,y=63,z=-1442,dx=210,dy=-100,dz=210] run tp @s @e[tag=start,limit=1]
