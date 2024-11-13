@@ -1,6 +1,6 @@
 function hideseek:spectator
 function hideseek:hiderdeaths
-function hideseek:mounts
+execute if score #mountsEnabled mountsEnabled matches 1 run function hideseek:mounts
 function lobby:teleport
 function hideseek:glowing
 function hideseek:balancing

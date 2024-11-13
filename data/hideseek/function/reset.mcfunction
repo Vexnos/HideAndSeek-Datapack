@@ -29,6 +29,7 @@ schedule clear events:creeper
 schedule clear events:trayaurus/trayaurus
 schedule clear events:trayaurus/teleportthere
 schedule clear events:trayaurus/teleportback
+schedule clear events:disableteleports/enable
 scoreboard players set Timer time 0
 scoreboard players set Minutes minutes 0
 scoreboard players reset @a deaths

@@ -9,6 +9,7 @@ item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={po
 execute if score minionsEnabled minionsEnabled matches 1.. run give @a[team=2] experience_bottle[custom_name='{"text":"Minions","color":"green","italic":false}'] 3
 give @a[team=2] mace[enchantments={levels:{breach:10,density:10,wind_burst:10}},unbreakable={}] 1
 # execute unless score end End matches 1.. run execute as @a[team=1] run give @a[team=2] egg[item_name='{"text":"Budget Ender Pearl","italic":false,"color":"blue"}'] 10
+give @a[team=2] heavy_core[custom_name='{"text":"Destroy Eggs","color":"red","italic":false}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true]
 execute if score ataraxia Ataraxia matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Take them out","color":"yellow","italic":false,"bold":true}']] 3
 execute if score hoa HOA matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Take them out","color":"yellow","italic":false,"bold":true}']] 4
 execute if score hoa HOA matches 1.. run give @a[team=2] trident[enchantments={levels:{riptide:4}},unbreakable={}]
