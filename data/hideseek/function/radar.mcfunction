@@ -8,3 +8,4 @@ execute as @s[scores={radar=2}] run title @s actionbar {"text":"Cold","color":"b
 execute as @s[scores={radar=3}] run title @s actionbar {"text":"Temperate","color":"yellow"}
 execute as @s[scores={radar=4}] run title @s actionbar {"text":"Warm","color":"gold"}
 execute as @s[scores={radar=5}] run title @s actionbar {"text":"Hot!!!","color":"red"}
+execute at @s[scores={radar=5}] anchored eyes run particle flame ^ ^ ^1 0.3 1 0.3 0 3
