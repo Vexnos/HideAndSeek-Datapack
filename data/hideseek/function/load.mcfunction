@@ -67,6 +67,17 @@ scoreboard objectives add mcountdown dummy
 scoreboard objectives add eventsEnabled dummy
 scoreboard objectives add mountsEnabled dummy
 scoreboard objectives add range dummy
+scoreboard objectives add radar dummy
+scoreboard objectives add radarEnabled dummy
+
+# Timer Bossbar
+bossbar add timer {"text":"Time","color":"yellow"}
+bossbar set timer color yellow
+bossbar set timer max 600
+bossbar set timer value 0
+bossbar set timer players @a
+bossbar set timer style notched_10
+
 function hideseek:saturation
 function hideseek:jungleleaves
 function hideseek:ping

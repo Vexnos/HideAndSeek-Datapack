@@ -78,5 +78,7 @@ kill @e[type=guardian]
 tag @a remove seekerWait
 time set 7000
 tp @a @e[tag=lobby, limit=1]
+bossbar set timer value 0
 scoreboard players set swap swap 0
+scoreboard players reset @a radar
 scoreboard players set #game gameRunning 0
