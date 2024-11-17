@@ -20,5 +20,6 @@ execute as @e[type=trident,nbt={inGround:0b}] at @s run playsound minecraft:enti
 execute as @e[type=trident,nbt={inGround:1b}] at @s run playsound minecraft:entity.allay.ambient_without_item ambient @a ~ ~ ~ 1 2
 execute as @e[type=spectral_arrow,nbt={inGround:0b}] at @s run playsound minecraft:entity.evoker.cast_spell ambient @a ~ ~ ~ 1 1
 execute as @e[type=spectral_arrow,nbt={inGround:1b}] at @s run summon lightning_bolt ~ ~5 ~
+execute as @e[type=egg] run kill @e[type=trident]
 kill @e[type=trident,nbt={inGround:1b}]
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
