@@ -40,6 +40,7 @@ scoreboard players set #minorEvent minorEvent 0
 scoreboard players set #zombieTimer zombieTimer 0
 scoreboard players set #breezeTimer breezeTimer 0
 scoreboard players set #guardianTimer guardianTimer 0
+scoreboard players set #mountsEnabled mountsEnabled 1
 tag @a remove out
 tag @a remove notswap
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2
