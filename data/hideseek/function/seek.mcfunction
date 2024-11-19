@@ -3,14 +3,15 @@ give @a[team=2] stick[enchantments={levels:{sharpness:15}},unbreakable={},item_n
 # execute as @a[team=1] run give @a[team=2] ender_pearl[enchantment_glint_override=true,unbreakable={},lore=['{"text":"Go get \'em","italic":false,"color":"dark_purple"}'],item_name='{"text":"Ender Pearl","color":"light_purple"}'] 1
 # give @a[team=2] skeleton_skull[item_name='{"color":"green","italic":false,"text":"Minions Power Up"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true] 3
 give @a[team=2] bow[enchantments={levels:{punch:2}},unbreakable={}]
-item replace entity @a[team=2] inventory.1 with bell[item_name='{"color":"dark_red","italic":false,"text":"Force Taunt"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true] 3
+item replace entity @a[team=2] inventory.1 with bell[item_name='{"color":"dark_red","italic":false,"text":"Force Taunt"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05},enchantment_glint_override=true] 3
 # give @a[team=2] chain[item_name='{"color":"blue","italic":false,"text":"Grapple"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true] 3
 item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 15
-item replace entity @a[team=2] inventory.2 with nether_star[food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},custom_name='{"text":"Radar","color":"green","italic":false}'] 20
+item replace entity @a[team=2] inventory.2 with nether_star[food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05},custom_name='{"text":"Radar","color":"green","italic":false}'] 20
 execute if score minionsEnabled minionsEnabled matches 1.. run give @a[team=2] experience_bottle[custom_name='{"text":"Minions","color":"green","italic":false}'] 3
+execute unless score end End matches 1.. unless score hoa HOA matches 1.. unless score ataraxia Ataraxia matches 1.. run give @a[team=2] tripwire_hook[food={nutrition:0,saturation:0,can_always_eat:1b,eat_seconds:1000001},custom_name='{"text":"Dismount Grappling Hook","italic":false,"color":"blue"}']
 give @a[team=2] mace[enchantments={levels:{breach:10,density:10,wind_burst:10}},unbreakable={}] 1
 # execute unless score end End matches 1.. run execute as @a[team=1] run give @a[team=2] egg[item_name='{"text":"Budget Ender Pearl","italic":false,"color":"blue"}'] 10
-give @a[team=2] heavy_core[custom_name='{"text":"Destroy Eggs","color":"red","italic":false}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true]
+give @a[team=2] heavy_core[custom_name='{"text":"Destroy Eggs","color":"red","italic":false}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05},enchantment_glint_override=true]
 execute if score ataraxia Ataraxia matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Take them out","color":"yellow","italic":false,"bold":true}']] 3
 execute if score hoa HOA matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Take them out","color":"yellow","italic":false,"bold":true}']] 4
 execute if score hoa HOA matches 1.. run give @a[team=2] trident[enchantments={levels:{riptide:4}},unbreakable={}]
