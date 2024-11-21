@@ -11,7 +11,7 @@ execute if score minionsEnabled minionsEnabled matches 1.. run give @a[team=2] e
 execute unless score end End matches 1.. unless score hoa HOA matches 1.. unless score ataraxia Ataraxia matches 1.. run give @a[team=2] tripwire_hook[food={nutrition:0,saturation:0,can_always_eat:1b,eat_seconds:1000001},custom_name='{"text":"Dismount Grappling Hook","italic":false,"color":"blue"}']
 give @a[team=2] mace[enchantments={levels:{breach:10,density:10,wind_burst:10}},unbreakable={}] 1
 # execute unless score end End matches 1.. run execute as @a[team=1] run give @a[team=2] egg[item_name='{"text":"Budget Ender Pearl","italic":false,"color":"blue"}'] 10
-give @a[team=2] heavy_core[custom_name='{"text":"Destroy Eggs","color":"red","italic":false}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05},enchantment_glint_override=true]
+give @a[team=2] heavy_core[custom_name='{"text":"Destroy Eggs","color":"red","italic":false}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:999999},enchantment_glint_override=true]
 execute if score ataraxia Ataraxia matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Take them out","color":"yellow","italic":false,"bold":true}']] 3
 execute if score hoa HOA matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Take them out","color":"yellow","italic":false,"bold":true}']] 4
 execute if score hoa HOA matches 1.. run give @a[team=2] trident[enchantments={levels:{riptide:4}},unbreakable={}]
@@ -30,6 +30,12 @@ title @a[team=1] title {"text":"The seeker is released!","color":"blue"}
 # give @a[team=2] fishing_rod[unbreakable={},enchantment_glint_override=true,rarity=epic,custom_name='{"text":"Grappling Hook","italic":false}']
 schedule function hideseek:timer 1s
 execute unless score end End matches 1.. run give @a[team=1] egg[item_name='{"text":"Make the Seeker go away","color":"blue","italic":false}'] 1
+
+# OST
+execute if score nazgard Nazgard matches 1 as @a at @s run playsound hideseek:nether master @s
+execute if score end End matches 1 as @a at @s run playsound hideseek:theend master @s
+
+# Resets
 execute unless score ataraxia Ataraxia matches 1.. run execute unless score hoa HOA matches 1.. run schedule function hideseek:reset 600s
 execute if score ataraxia Ataraxia matches 1.. run schedule function hideseek:reset 300s
 execute if score hoa HOA matches 1.. run schedule function hideseek:reset 450s
