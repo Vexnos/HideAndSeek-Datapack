@@ -83,3 +83,7 @@ bossbar set timer value 0
 scoreboard players set swap swap 0
 scoreboard players reset @a radar
 scoreboard players set #game gameRunning 0
+
+# OST
+execute if score nazgard Nazgard matches 1 run stopsound @a ambient hideseek:nether
+execute if score nazgard Nazgard matches 1 run stopsound @a ambient hideseek:theend
