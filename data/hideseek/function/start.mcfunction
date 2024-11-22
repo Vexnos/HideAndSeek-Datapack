@@ -62,11 +62,15 @@ give @a[name=!Vexnos,name=!Mathmagician8191,name=!Atomhix,name=!qqqqqwwwww009,na
 execute at @e[tag=start,limit=1] run spawnpoint @a[team=2] ~ ~ ~
 
 # Bossbar
-bossbar set timer players @a
+bossbar set hidingtimer players @a
+bossbar set hidingtimer visible true
+bossbar set timer visible false
+bossbar set hidingtimer value 64
 
 # Spread Players
 execute if score #spread spreadPlayers matches 1 as @a[team=1] at @e[tag=start,limit=1] run spreadplayers ~ ~ 75 100 true @s
 
 # Set the game as running
 scoreboard players set #game gameRunning 1
+function hideseek:hidingtimer
 schedule function hideseek:seek 64s

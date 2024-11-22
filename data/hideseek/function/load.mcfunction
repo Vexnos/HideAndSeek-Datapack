@@ -69,6 +69,7 @@ scoreboard objectives add mountsEnabled dummy
 scoreboard objectives add range dummy
 scoreboard objectives add radar dummy
 scoreboard objectives add radarEnabled dummy
+scoreboard objectives add hidingTime dummy
 scoreboard players set out out 0
 
 # Timer Bossbar
@@ -78,6 +79,11 @@ bossbar set timer max 600
 bossbar set timer value 0
 bossbar set timer players @a
 bossbar set timer style notched_10
+bossbar add hidingtimer {"text":"Time to Hide","color":"red"}
+bossbar set hidingtimer color red
+bossbar set hidingtimer max 64
+bossbar set hidingtimer value 64
+bossbar set hidingtimer players @a
 
 function hideseek:saturation
 function hideseek:jungleleaves

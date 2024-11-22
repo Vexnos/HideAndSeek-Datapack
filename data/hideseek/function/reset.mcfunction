@@ -16,6 +16,7 @@ gamemode adventure @a
 clear @a
 team join 3 @a
 schedule clear hideseek:timer
+schedule clear hideseek:hidingtimer
 schedule clear hideseek:reset
 schedule clear hideseek:border1
 schedule clear hideseek:border2
@@ -35,6 +36,7 @@ schedule clear events:trayaurus/teleportthere
 schedule clear events:trayaurus/teleportback
 schedule clear events:disableteleports/enable
 scoreboard players set Timer time 0
+scoreboard players set #hidingTime hidingTime 64
 scoreboard players set Minutes minutes 0
 scoreboard players reset @a deaths
 scoreboard players set out out 0
@@ -89,6 +91,9 @@ tag @a remove seekerWait
 time set 7000
 tp @a @e[tag=lobby, limit=1]
 bossbar set timer value 0
+bossbar set hidingtimer value 64
+bossbar set timer visible false
+bossbar set hidingtimer visible false
 scoreboard players set swap swap 0
 scoreboard players reset @a radar
 scoreboard players set #game gameRunning 0

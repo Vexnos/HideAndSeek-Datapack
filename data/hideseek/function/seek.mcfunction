@@ -47,3 +47,8 @@ function hideseek:ping
 effect clear @a[team=2] blindness
 effect clear @a[team=1] invisibility
 schedule clear hideseek:seek
+
+# Bossbar
+bossbar set timer players @a
+bossbar set hidingtimer visible false
+bossbar set timer visible true
