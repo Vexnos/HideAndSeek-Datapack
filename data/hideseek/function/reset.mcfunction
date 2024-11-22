@@ -1,3 +1,9 @@
+# Game Over title
+execute if score hiders hiding > out out run title @a title {"text":"Hiders Win!","color":"red"}
+execute if score hiders hiding > out out as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
+execute if score hiders hiding <= out out run title @a title {"text":"Seekers Win!","color":"blue"}
+execute if score hiders hiding <= out out as @a at @s run playsound minecraft:entity.ender_dragon.growl master @s
+
 execute at @e[tag=lobby,limit=1] run spawnpoint @a ~ ~ ~
 effect clear @a
 team leave @a
@@ -7,8 +13,6 @@ kill @e[type=spectral_arrow]
 kill @e[type=trident]
 scoreboard players reset @a spectator
 gamemode adventure @a
-execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
-title @a title {"text":"The game is over!","color":"red"}
 clear @a
 team join 3 @a
 schedule clear hideseek:timer
@@ -33,7 +37,7 @@ schedule clear events:disableteleports/enable
 scoreboard players set Timer time 0
 scoreboard players set Minutes minutes 0
 scoreboard players reset @a deaths
-scoreboard players reset out out
+scoreboard players set out out 0
 scoreboard players reset hiders hiding
 scoreboard players set #majorEvent majorEvent 0
 scoreboard players set #minorEvent minorEvent 0
@@ -43,6 +47,8 @@ scoreboard players set #guardianTimer guardianTimer 0
 scoreboard players set #mountsEnabled mountsEnabled 1
 tag @a remove out
 tag @a remove notswap
+
+# Reset Worldborder
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2
 execute if score felora Felora matches 1.. run worldborder set 150 2
 execute if score tartarus Tartarus matches 1.. run worldborder set 205 2
@@ -60,6 +66,8 @@ execute if score incatasia Incatasia matches 1.. run worldborder set 275 2
 execute if score amaria Amaria matches 1.. run worldborder set 440 2
 execute if score tempus Tempus matches 1.. run worldborder set 200 2
 execute if score biggerton Biggerton matches 1.. run worldborder set 200 2
+
+# Kill Entities
 kill @e[type=silverfish]
 kill @e[type=ravager]
 kill @e[type=pillager]
@@ -76,6 +84,7 @@ kill @e[type=breeze]
 kill @e[type=breeze_wind_charge]
 kill @e[type=bat]
 kill @e[type=guardian]
+
 tag @a remove seekerWait
 time set 7000
 tp @a @e[tag=lobby, limit=1]
@@ -85,5 +94,5 @@ scoreboard players reset @a radar
 scoreboard players set #game gameRunning 0
 
 # OST
-execute if score nazgard Nazgard matches 1 run stopsound @a ambient hideseek:nether
-execute if score nazgard Nazgard matches 1 run stopsound @a ambient hideseek:theend
+execute if score nazgard Nazgard matches 1 run stopsound @a * hideseek:nether
+execute if score end End matches 1 run stopsound @a * hideseek:theend

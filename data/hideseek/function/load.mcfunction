@@ -69,6 +69,7 @@ scoreboard objectives add mountsEnabled dummy
 scoreboard objectives add range dummy
 scoreboard objectives add radar dummy
 scoreboard objectives add radarEnabled dummy
+scoreboard players set out out 0
 
 # Timer Bossbar
 bossbar add timer {"text":"Time","color":"yellow"}

@@ -30,7 +30,7 @@ give @a[team=1] magma_cream[item_name='{"color":"gold","italic":false,"text":"Fi
 give @a[team=1] slime_ball[item_name='{"color":"green","italic":false,"text":"Super Jump Power Up"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05,effects:[{effect:{id:"minecraft:levitation",amplifier:100,duration:5,show_particles:0b,show_icon:1b},probability:1}]},enchantment_glint_override=true] 1
 # give @a[team=1] potion[potion_contents={custom_color:16775126,custom_effects:[{id:"minecraft:invisibility",amplifier:0,duration:400,show_particles:0b,show_icon:1b}]},item_name='{"text":"Potion of Invisibility","italic":false}'] 1
 give @a[team=1] golden_carrot[item_name='{"color":"yellow","italic":false,"text":"Invisibility Power Up"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05,effects:[{effect:{id:"minecraft:invisibility",amplifier:0,duration:300,show_particles:0b,show_icon:1b},probability:1}]},enchantment_glint_override=true] 1
-give @a[team=1] wind_charge 1
+execute unless score end End matches 1 run give @a[team=1] wind_charge 1
 give @a[team=1] crossbow[max_damage=1,damage=1,custom_name='{"text":"Legolas\' Shot","italic":false,"color":"gold"}',enchantments={levels:{quick_charge:5}}]
 give @a[team=1] spectral_arrow[enchantment_glint_override=true]
 execute if score ataraxia Ataraxia matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Use these wisely","color":"yellow","italic":false,"bold":true}']] 2
