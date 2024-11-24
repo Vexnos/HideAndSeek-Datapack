@@ -101,3 +101,8 @@ scoreboard players set #game gameRunning 0
 # OST
 execute if score nazgard Nazgard matches 1 run stopsound @a * hideseek:nether
 execute if score end End matches 1 run stopsound @a * hideseek:theend
+execute if score hailstone Hailstone matches 1 run stopsound @a * hideseek:hailstone
+stopsound @a * hideseek:jokers
+
+# SFX
+stopsound @a * hideseek:roller

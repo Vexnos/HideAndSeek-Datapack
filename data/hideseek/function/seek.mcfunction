@@ -34,6 +34,8 @@ execute unless score end End matches 1.. run give @a[team=1] egg[item_name='{"te
 # OST
 execute if score nazgard Nazgard matches 1 as @a at @s run playsound hideseek:nether master @s
 execute if score end End matches 1 as @a at @s run playsound hideseek:theend master @s
+execute if score hailstone Hailstone matches 1 as @a at @s run playsound hideseek:hailstone master @s
+stopsound @a * hideseek:jokers
 
 # Resets
 execute unless score ataraxia Ataraxia matches 1.. run execute unless score hoa HOA matches 1.. run schedule function hideseek:reset 600s

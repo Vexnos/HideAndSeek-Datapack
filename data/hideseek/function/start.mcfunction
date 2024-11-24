@@ -74,3 +74,6 @@ execute if score #spread spreadPlayers matches 1 as @a[team=1] at @e[tag=start,l
 scoreboard players set #game gameRunning 1
 function hideseek:hidingtimer
 schedule function hideseek:seek 64s
+
+# OST
+execute as @a at @s run playsound hideseek:jokers master @a
