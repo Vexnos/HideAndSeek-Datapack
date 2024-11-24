@@ -1,6 +1,5 @@
 title @a title {"text":"Randomising Event!","color":"green"}
 execute at @a run playsound minecraft:block.anvil.land master @a
-execute as @a at @s run playsound hideseek:roller master @s
 scoreboard players set #countdown countdown 5
 schedule function events:countdown 1s
 scoreboard players add #majorEvent majorEvent 1

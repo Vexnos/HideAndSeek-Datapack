@@ -6,6 +6,9 @@ execute if score #countdown countdown matches 2 run title @a title {"score":{"na
 execute if score #countdown countdown matches 1 run title @a title {"score":{"name":"#countdown","objective":"countdown"},"color":"red"}
 execute at @a run playsound minecraft:ui.button.click master @a
 
+# SFX
+execute if score #countdown countdown matches 5 as @a at @s run playsound hideseek:roller master @s
+
 # Countdown Logic
 execute if score #countdown countdown matches 2.. run schedule function events:countdown 1s
 execute if score #countdown countdown matches 1 run schedule function events:majorevents 1s

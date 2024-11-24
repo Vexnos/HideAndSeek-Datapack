@@ -44,6 +44,7 @@ scoreboard objectives add Etherea dummy
 scoreboard objectives add Incatasia dummy
 scoreboard objectives add Amaria dummy
 scoreboard objectives add Biggerton dummy
+scoreboard objectives add QueenMary2 dummy
 scoreboard objectives add seekerAmount dummy
 title @a actionbar {"text":"The game is ready to go!","color":"green"}
 playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1
