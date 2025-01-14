@@ -1,5 +1,5 @@
 function events:roller
-execute if score #randInt randInt matches 1..5 run effect give @a blindness 5 0 false
+execute if score #randInt randInt matches 1..5 run effect give @a[team=1] blindness 5 0 false
 execute if score #randInt randInt matches 6..10 run effect give @a speed 10 2 false
 execute if score #randInt randInt matches 11..15 run effect give @a poison 10 3 false
 execute if score #randInt randInt matches 16..20 run effect give @a slowness 10 3 false
