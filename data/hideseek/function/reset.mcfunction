@@ -69,6 +69,7 @@ execute if score amaria Amaria matches 1.. run worldborder set 440 2
 execute if score tempus Tempus matches 1.. run worldborder set 150 2
 execute if score biggerton Biggerton matches 1.. run worldborder set 200 2
 execute if score queenmary2 QueenMary2 matches 1 run worldborder set 725 2
+execute if score redstoneAcademy redstoneAcademy matches 1.. run worldborder set 2 2
 
 # Kill Entities
 kill @e[type=silverfish]

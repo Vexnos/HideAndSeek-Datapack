@@ -19,6 +19,7 @@ scoreboard players set incatasia Incatasia 0
 scoreboard players set amaria Amaria 0
 scoreboard players set biggerton Biggerton 0
 scoreboard players set queenmary2 QueenMary2 0
+scoreboard players set redstoneAcademy redstoneAcademy 0
 title @a actionbar {"text":"Back to Lobby","color":"green"}
 execute in overworld run tp @a -1453 207 -699
 execute in overworld run spawnpoint @a -1453 207 -699
