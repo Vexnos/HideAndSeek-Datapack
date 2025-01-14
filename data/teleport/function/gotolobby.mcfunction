@@ -29,3 +29,5 @@ effect give @a blindness 1 0 true
 worldborder center 0 0
 worldborder set 6000000
 weather clear
+bossbar set minecraft:timer max 600
+bossbar set minecraft:timer style notched_10
