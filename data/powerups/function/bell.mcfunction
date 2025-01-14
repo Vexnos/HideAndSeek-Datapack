@@ -1,9 +1,9 @@
 advancement revoke @s only powerups:bell
 execute at @s run playsound minecraft:block.bell.resonate master @a ~ ~ ~ 100 2
 execute at @a[team=1] run playsound minecraft:entity.ghast.scream master @a ~ ~ ~ 100 1
-effect give @a[team=1] glowing 1 0 false
+effect give @a[team=1,gamemode=adventure] glowing 1 0 false
 effect give @s glowing 10 0 true
-effect give @s darkness 5 0 true
+effect give @s blindness 5 0 true
 
 # Silverfish
 execute unless score end End matches 1 at @s run summon silverfish ~ ~ ~ {Team:"1",Glowing:0b,HasVisualFire:1b,CustomName:'{"text":"Jerry","color":"red"}',attributes:[{id:"minecraft:generic.movement_speed",modifiers:[{amount:2,id:"movement_speed",operation:add_value}]}],active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:false}]}
