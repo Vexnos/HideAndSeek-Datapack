@@ -13,3 +13,5 @@ effect give @a blindness 1 0 true
 weather thunder
 bossbar set minecraft:timer max 450
 bossbar set minecraft:timer style progress
+
+clear @a

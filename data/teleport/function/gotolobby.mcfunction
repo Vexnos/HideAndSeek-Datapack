@@ -32,3 +32,5 @@ worldborder set 6000000
 weather clear
 bossbar set minecraft:timer max 600
 bossbar set minecraft:timer style notched_10
+
+clear @a
