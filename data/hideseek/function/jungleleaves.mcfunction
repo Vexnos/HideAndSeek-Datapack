@@ -12,4 +12,7 @@ execute if score kawaiinislands KawaiinIslands matches 1.. as @a[team=1] at @s i
 execute if score queenmary2 QueenMary2 matches 1.. as @a[team=1] at @s if block ~ ~ ~ water run damage @s 1.5 minecraft:sting
 execute if score queenmary2 QueenMary2 matches 1.. as @a[team=1] at @s if block ~ ~-1 ~ water run damage @s 1.5 minecraft:sting
 execute if score queenmary2 QueenMary2 matches 1.. as @a[team=1] at @s if block ~ ~-2 ~ water run damage @s 1.5 minecraft:sting
+execute if score poseidon Poseidon matches 1.. as @a[team=1] at @s if block ~ ~ ~ water run damage @s 1.5 minecraft:sting
+execute if score poseidon Poseidon matches 1.. as @a[team=1] at @s if block ~ ~-1 ~ water run damage @s 1.5 minecraft:sting
+execute if score poseidon Poseidon matches 1.. as @a[team=1] at @s if block ~ ~-2 ~ water run damage @s 1.5 minecraft:sting
 schedule function hideseek:jungleleaves 10t

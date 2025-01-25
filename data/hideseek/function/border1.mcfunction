@@ -15,8 +15,8 @@ execute if score oakendale Oakendale matches 1.. run worldborder set 250 30
 execute if score amaria Amaria matches 1.. run worldborder set 250 30
 execute if score biggerton Biggerton matches 1.. run worldborder set 150 30
 execute if score queenmary2 QueenMary2 matches 1 run worldborder set 400 60
-execute if score poseidon Poseidon matches 1 run worldborder set 400 2
-execute if score acclamator Acclamator matches 1 run worldborder set 400 2
+execute if score poseidon Poseidon matches 1 run worldborder set 400 60
+execute if score acclamator Acclamator matches 1 run worldborder set 400 60
 tellraw @a {"text":"The world border is shrinking!","color":"red","bold":true}
 execute as @a at @a run playsound minecraft:entity.ender_dragon.growl ambient @s ~ ~ ~ 100 1
 execute as @r at @s run playsound minecraft:entity.wither.spawn ambient @a ~ ~ ~ 100 1

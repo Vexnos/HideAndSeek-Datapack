@@ -35,6 +35,8 @@ schedule clear events:trayaurus/trayaurus
 schedule clear events:trayaurus/teleportthere
 schedule clear events:trayaurus/teleportback
 schedule clear events:disableteleports/enable
+schedule clear events:guardian/summon
+schedule clear events:zombies
 scoreboard players set Timer time 0
 scoreboard players set #hidingTime hidingTime 64
 scoreboard players set Minutes minutes 0
