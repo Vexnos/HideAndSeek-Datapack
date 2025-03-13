@@ -7,7 +7,7 @@ execute as @e[type=snowball] at @s run ride @p[team=1,gamemode=adventure,distanc
 execute as @e[type=trident] at @s run ride @p[team=2,gamemode=adventure,distance=..3] mount @s
 execute as @e[type=egg] at @s run ride @p[team=2,gamemode=adventure] mount @s
 execute as @e[type=wind_charge] at @s run ride @p[team=1,gamemode=adventure,distance=..3] mount @s
-execute as @e[type=spectral_arrow] at @s run ride @p[team=1,gamemode=adventure,distance=..3] mount @s
+execute as @e[type=spectral_arrow] at @s run ride @p[team=1,gamemode=adventure,distance=..5] mount @s
 execute at @e[type=trident] run particle soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0 100 normal
 execute at @e[type=egg] run particle soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0 100 normal
 # execute at @e[type=trident] as @p[team=2] run particle minecraft:soul_fire_flame ^2 ^1 ^ 1 1 1 0 100 normal
