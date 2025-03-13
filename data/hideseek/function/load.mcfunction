@@ -77,6 +77,7 @@ scoreboard objectives add radar dummy
 scoreboard objectives add radarEnabled dummy
 scoreboard objectives add hidingTime dummy
 scoreboard players set out out 0
+scoreboard objectives add nearbyTeleports dummy
 
 # Timer Bossbar
 bossbar add timer {"text":"Time","color":"yellow"}
