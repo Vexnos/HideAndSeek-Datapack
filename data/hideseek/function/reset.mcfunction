@@ -75,6 +75,7 @@ execute if score redstoneAcademy redstoneAcademy matches 1.. run worldborder set
 execute if score poseidon Poseidon matches 1.. run worldborder set 725 2
 execute if score acclamator Acclamator matches 1.. run worldborder set 725 2
 execute if score markar Markar matches 1.. run worldborder set 200 2
+execute if score kaelos Kaelos matches 1.. run worldborder set 200 2
 
 # Kill Entities
 kill @e[type=silverfish]
