@@ -36,6 +36,8 @@ schedule clear events:trayaurus/teleportthere
 schedule clear events:trayaurus/teleportback
 schedule clear events:disableteleports/enable
 schedule clear events:guardian/summon
+schedule clear events:phantoms/summon
+schedule clear events:wardenflurry/summon
 schedule clear events:zombies
 schedule clear hideseek:ping
 schedule clear hideseek:darkping
@@ -50,6 +52,8 @@ scoreboard players set #minorEvent minorEvent 0
 scoreboard players set #zombieTimer zombieTimer 0
 scoreboard players set #breezeTimer breezeTimer 0
 scoreboard players set #guardianTimer guardianTimer 0
+scoreboard players set #wardenTimer wardenTimer 0
+scoreboard players set #phantomTimer phantomTimer 0
 scoreboard players set #mountsEnabled mountsEnabled 1
 tag @a remove out
 tag @a remove notswap
