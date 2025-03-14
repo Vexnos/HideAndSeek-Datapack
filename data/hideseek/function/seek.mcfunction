@@ -3,14 +3,14 @@ give @a[team=2] stick[enchantments={levels:{sharpness:5}},unbreakable={},custom_
 # execute as @a[team=1] run give @a[team=2] ender_pearl[enchantment_glint_override=true,unbreakable={},lore=['{"text":"Go get \'em","italic":false,"color":"dark_purple"}'],item_name='{"text":"Ender Pearl","color":"light_purple"}'] 1
 # give @a[team=2] skeleton_skull[item_name='{"color":"green","italic":false,"text":"Minions Power Up"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true] 3
 give @a[team=2] bow[enchantments={levels:{punch:2}},unbreakable={}]
-execute unless score acclamator Acclamator matches 1 run item replace entity @a[team=2] inventory.1 with bell[item_name='{"color":"dark_red","italic":false,"text":"Force Taunt"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05},enchantment_glint_override=true] 3
+execute unless score acclamator Acclamator matches 1 unless score darkpeak DarkPeak matches 1 run item replace entity @a[team=2] inventory.1 with bell[item_name='{"color":"dark_red","italic":false,"text":"Force Taunt"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05},enchantment_glint_override=true] 3
 execute if score acclamator Acclamator matches 1 run item replace entity @a[team=2] inventory.1 with bell[item_name='{"color":"dark_red","italic":false,"text":"Force Taunt"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05},enchantment_glint_override=true] 15
 # give @a[team=2] chain[item_name='{"color":"blue","italic":false,"text":"Grapple"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true] 3
 execute unless score acclamator Acclamator matches 1 run item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 15
 execute if score acclamator Acclamator matches 1 run item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 45
-execute unless score acclamator Acclamator matches 1 if score #radarEnabled radarEnabled matches 1 run item replace entity @a[team=2] inventory.2 with nether_star[food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05},custom_name='{"text":"Radar","color":"green","italic":false}'] 10
+execute unless score acclamator Acclamator matches 1 unless score darkpeak DarkPeak matches 1 if score #radarEnabled radarEnabled matches 1 run item replace entity @a[team=2] inventory.2 with nether_star[food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05},custom_name='{"text":"Radar","color":"green","italic":false}'] 10
 execute if score acclamator Acclamator matches 1 if score #radarEnabled radarEnabled matches 1 run item replace entity @a[team=2] inventory.2 with nether_star[food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05},custom_name='{"text":"Radar","color":"green","italic":false}'] 50
-execute unless score acclamator Acclamator matches 1 if score minionsEnabled minionsEnabled matches 1.. run give @a[team=2] experience_bottle[custom_name='{"text":"Minions","color":"green","italic":false}'] 3
+execute unless score acclamator Acclamator matches 1 unless score darkpeak DarkPeak matches 1 if score minionsEnabled minionsEnabled matches 1.. run give @a[team=2] experience_bottle[custom_name='{"text":"Minions","color":"green","italic":false}'] 3
 execute if score acclamator Acclamator matches 1 if score minionsEnabled minionsEnabled matches 1.. run give @a[team=2] experience_bottle[custom_name='{"text":"Minions","color":"green","italic":false}'] 10
 execute unless score end End matches 1.. unless score hoa HOA matches 1.. unless score ataraxia Ataraxia matches 1.. run give @a[team=2] tripwire_hook[food={nutrition:0,saturation:0,can_always_eat:1b,eat_seconds:1000001},custom_name='{"text":"Dismount Grappling Hook","italic":false,"color":"blue"}']
 give @a[team=2] mace[enchantments={levels:{breach:10,density:10,wind_burst:10}},unbreakable={}] 1
@@ -49,7 +49,8 @@ execute unless score #eventsEnabled eventsEnabled matches 0 unless score ataraxi
 execute unless score #eventsEnabled eventsEnabled matches 0 unless score ataraxia Ataraxia matches 1 unless score hoa HOA matches 1 run schedule function events:initevent 60s
 execute unless score kaelos Kaelos matches 1.. run execute unless score ataraxia Ataraxia matches 1.. run execute unless score tempus Tempus matches 1.. run execute unless score hoa HOA matches 1.. run execute unless score redstoneAcademy redstoneAcademy matches 1 run execute unless score markar Markar matches 1 run schedule function hideseek:border1 300s
 execute if score mobsEnabled mobsEnabled matches 1.. run execute unless score hoa HOA matches 1.. unless score ataraxia Ataraxia matches 1.. run schedule function hideseek:finalminute 540s
-function hideseek:ping
+execute unless score darkpeak DarkPeak matches 1 run function hideseek:ping
+execute if score darkpeak DarkPeak matches 1 run function hideseek:darkping
 effect clear @a[team=2] blindness
 effect clear @a[team=1] invisibility
 schedule clear hideseek:seek

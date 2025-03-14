@@ -37,6 +37,8 @@ schedule clear events:trayaurus/teleportback
 schedule clear events:disableteleports/enable
 schedule clear events:guardian/summon
 schedule clear events:zombies
+schedule clear hideseek:ping
+schedule clear hideseek:darkping
 scoreboard players set Timer time 0
 scoreboard players set #hidingTime hidingTime 64
 scoreboard players set Minutes minutes 0
