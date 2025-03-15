@@ -83,6 +83,8 @@ execute if score acclamator Acclamator matches 1.. run worldborder set 725 2
 execute if score markar Markar matches 1.. run worldborder set 200 2
 execute if score kaelos Kaelos matches 1.. run worldborder set 200 2
 execute if score darkpeak DarkPeak matches 1.. run worldborder set 200 2
+execute if score nestoria Nestoria matches 1.. run worldborder set 350 2
+execute if score hindenburg Hindenburg matches 1.. run worldborder set 550 2
 
 # Kill Entities
 kill @e[type=silverfish]

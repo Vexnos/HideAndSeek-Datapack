@@ -50,6 +50,8 @@ scoreboard objectives add Poseidon dummy
 scoreboard objectives add Acclamator dummy
 scoreboard objectives add Markar dummy
 scoreboard objectives add DarkPeak dummy
+scoreboard objectives add Hindenburg dummy
+scoreboard objectives add Nestoria dummy
 scoreboard objectives add seekerAmount dummy
 title @a actionbar {"text":"The game is ready to go!","color":"green"}
 playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1

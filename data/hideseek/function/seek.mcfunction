@@ -47,7 +47,7 @@ execute if score ataraxia Ataraxia matches 1.. run schedule function hideseek:re
 execute if score hoa HOA matches 1.. run schedule function hideseek:reset 450s
 execute unless score #eventsEnabled eventsEnabled matches 0 unless score ataraxia Ataraxia matches 1 unless score hoa HOA matches 1 run schedule function events:initmevent 150s
 execute unless score #eventsEnabled eventsEnabled matches 0 unless score ataraxia Ataraxia matches 1 unless score hoa HOA matches 1 run schedule function events:initevent 60s
-execute unless score kaelos Kaelos matches 1.. run execute unless score ataraxia Ataraxia matches 1.. run execute unless score tempus Tempus matches 1.. run execute unless score hoa HOA matches 1.. run execute unless score redstoneAcademy redstoneAcademy matches 1 run execute unless score markar Markar matches 1 run schedule function hideseek:border1 300s
+execute unless score kaelos Kaelos matches 1.. run execute unless score ataraxia Ataraxia matches 1.. run execute unless score tempus Tempus matches 1.. run execute unless score hoa HOA matches 1.. run execute unless score redstoneAcademy redstoneAcademy matches 1 run execute unless score markar Markar matches 1 unless score hindenburg Hindenburg matches 1 run schedule function hideseek:border1 300s
 execute if score mobsEnabled mobsEnabled matches 1.. run execute unless score hoa HOA matches 1.. unless score ataraxia Ataraxia matches 1.. run schedule function hideseek:finalminute 540s
 execute unless score darkpeak DarkPeak matches 1 run function hideseek:ping
 execute if score darkpeak DarkPeak matches 1 run function hideseek:darkping
