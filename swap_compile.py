@@ -28,8 +28,6 @@ for x in range(2, MAX_HIDERS + 1):
   for y in range(x):
     new_y = (y + 1) % x
     result += f"tp @a[tag=swap{y}] @e[tag=aswap{new_y},limit=1]\n"
-  
-  result += "\n# Sounds\nexecute at @a[team=1, tag=!out] run playsound minecraft:entity.enderman.teleport master @a\n"
 
   result += '\n# Titles\ntellraw @a[team=1, tag=!out] {"text":"You have been swapped!","color":"blue"}\n'
   
