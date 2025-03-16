@@ -47,7 +47,7 @@ execute if score antinazgard Antinazgard matches 1.. run give @a[team=1] firewor
 execute if score hindenburg Hindenburg matches 1.. run give @a[team=1] fishing_rod[enchantment_glint_override=true,custom_name='{"text":"Grappling Hook","italic":false}']
 
 # Pavlopetri Specific Items
-execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] trident[max_damage=8,enchantments={levels:{riptide:1}},custom_name='{"text":"Booster","italic":false}']
+execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] trident[max_damage=8,enchantments={levels:{riptide:3}},custom_name='{"text":"Booster","italic":false}']
 execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] heart_of_the_sea[item_name='{"color":"aqua","italic":false,"text":"Night Vision"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05,effects:[{effect:{id:"minecraft:night_vision",amplifier:0,duration:200,show_particles:0b,show_icon:1b},probability:1}]},enchantment_glint_override=true] 3
 
 # Universal Items
