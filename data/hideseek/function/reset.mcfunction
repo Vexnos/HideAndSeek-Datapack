@@ -83,6 +83,10 @@ execute if score acclamator Acclamator matches 1.. run worldborder set 725 2
 execute if score markar Markar matches 1.. run worldborder set 200 2
 execute if score kaelos Kaelos matches 1.. run worldborder set 200 2
 execute if score darkpeak DarkPeak matches 1.. run worldborder set 200 2
+execute if score nestoria Nestoria matches 1.. run worldborder set 350 2
+execute if score hindenburg Hindenburg matches 1.. run worldborder set 550 2
+execute if score pavlopetri Pavlopetri matches 1.. run worldborder set 205 2
+execute if score antinazgard Antinazgard matches 1.. run worldborder set 249 2
 
 # Kill Entities
 kill @e[type=silverfish]
@@ -100,7 +104,7 @@ kill @e[type=bogged]
 kill @e[type=breeze]
 kill @e[type=breeze_wind_charge]
 kill @e[type=bat]
-kill @e[type=guardian]
+kill @e[type=guardian,tag=event]
 
 tag @a remove seekerWait
 time set 7000
