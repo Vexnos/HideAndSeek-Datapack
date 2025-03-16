@@ -29,20 +29,21 @@ execute if score pavlopetri Pavlopetri matches 1 run effect give @a[team=2] dolp
 
 # Items for Hiders
 execute unless score pavlopetri Pavlopetri matches 1 run give @a[team=1] ender_pearl[enchantment_glint_override=true,unbreakable={},lore=['{"text":"Your get out of jail free card","italic":false,"color":"dark_purple"}'],item_name='{"text":"Ender Pearl","color":"light_purple"}'] 1
-execute unless score end End matches 1.. unless score pavlopetri Pavlopetri matches 1 run give @a[team=1] snowball[custom_model_data=1,item_name='{"text":"Budget Ender Pearl","italic":false,"color":"red"}'] 6
+execute unless score end End matches 1.. unless score pavlopetri Pavlopetri matches 1 unless score antinazgard Antinazgard matches 1 run give @a[team=1] snowball[custom_model_data=1,item_name='{"text":"Budget Ender Pearl","italic":false,"color":"red"}'] 6
 execute unless score pavlopetri Pavlopetri matches 1 run give @a[team=1] chorus_fruit[enchantment_glint_override=true,unbreakable={},item_name='{"text":"Zoom zoom escape","italic":false,"color":"light_purple"}'] 1
 # give @a[team=1] potion[custom_name='{"italic":false,"text":"Potion of Fire Resistance"}',potion_contents={custom_color:16746496,custom_effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:400,show_particles:1b,show_icon:1b}]}] 1
 execute unless score pavlopetri Pavlopetri matches 1 run give @a[team=1] magma_cream[item_name='{"color":"gold","italic":false,"text":"Fire Resistance Power Up"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05,effects:[{effect:{id:"minecraft:fire_resistance",amplifier:0,duration:400,show_particles:0b,show_icon:1b},probability:1}]},enchantment_glint_override=true] 1
 execute unless score pavlopetri Pavlopetri matches 1 run give @a[team=1] slime_ball[item_name='{"color":"green","italic":false,"text":"Super Jump Power Up"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05,effects:[{effect:{id:"minecraft:levitation",amplifier:100,duration:5,show_particles:0b,show_icon:1b},probability:1}]},enchantment_glint_override=true] 1
 # give @a[team=1] potion[potion_contents={custom_color:16775126,custom_effects:[{id:"minecraft:invisibility",amplifier:0,duration:400,show_particles:0b,show_icon:1b}]},item_name='{"text":"Potion of Invisibility","italic":false}'] 1
 give @a[team=1] golden_carrot[item_name='{"color":"yellow","italic":false,"text":"Invisibility Power Up"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05,effects:[{effect:{id:"minecraft:invisibility",amplifier:0,duration:300,show_particles:0b,show_icon:1b},probability:1}]},enchantment_glint_override=true] 1
-execute unless score end End matches 1 unless score ataraxia Ataraxia matches 1 unless score pavlopetri Pavlopetri matches 1 run give @a[team=1] wind_charge 1
+execute unless score end End matches 1 unless score ataraxia Ataraxia matches 1 unless score pavlopetri Pavlopetri matches 1 unless score antinazgard Antinazgard matches 1 run give @a[team=1] wind_charge 1
 execute unless score pavlopetri Pavlopetri matches 1 run give @a[team=1] crossbow[max_damage=1,damage=1,custom_name='{"text":"Legolas\' Shot","italic":false,"color":"gold"}',enchantments={levels:{quick_charge:5}}]
 execute unless score pavlopetri Pavlopetri matches 1 run give @a[team=1] spectral_arrow[enchantment_glint_override=true]
 execute if score ataraxia Ataraxia matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Use these wisely","color":"yellow","italic":false,"bold":true}']] 2
 execute if score hoa HOA matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Use these wisely","color":"yellow","italic":false,"bold":true}']] 3
 execute if score hoa HOA matches 1.. run give @a[team=1] trident[damage=248,enchantments={levels:{unbreaking:4,riptide:4}}]
 execute if score end End matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
+execute if score antinazgard Antinazgard matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
 execute if score hindenburg Hindenburg matches 1.. run give @a[team=1] fishing_rod[enchantment_glint_override=true,custom_name='{"text":"Grappling Hook","italic":false}']
 
 # Pavlopetri Specific Items
@@ -53,6 +54,7 @@ execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] heart_of_th
 execute if score ataraxia Ataraxia matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
 execute if score hoa HOA matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
 execute if score end End matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score antinazgard Antinazgard matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
 
 # Titles and Tellraws
 title @a[team=1] actionbar {"text":"You are a hider! Stay hidden from the seeker to win!","color":"red"}

@@ -86,6 +86,7 @@ execute if score darkpeak DarkPeak matches 1.. run worldborder set 200 2
 execute if score nestoria Nestoria matches 1.. run worldborder set 350 2
 execute if score hindenburg Hindenburg matches 1.. run worldborder set 550 2
 execute if score pavlopetri Pavlopetri matches 1.. run worldborder set 205 2
+execute if score antinazgard Antinazgard matches 1.. run worldborder set 249 2
 
 # Kill Entities
 kill @e[type=silverfish]

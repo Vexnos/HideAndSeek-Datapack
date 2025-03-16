@@ -8,6 +8,7 @@ execute if score meridian Meridian matches 1.. run worldborder set 100 30
 execute if score twinpass TwinPass matches 1.. run worldborder set 100 30
 execute if score kawaiinislands KawaiinIslands matches 1.. run worldborder set 300 30
 execute if score nazgard Nazgard matches 1.. run worldborder set 100 30
+execute if score antinazgard Antinazgard matches 1.. run worldborder set 100 30
 execute if score incatasia Incatasia matches 1.. run worldborder set 150 30
 execute if score oakendale Oakendale matches 1.. run worldborder set 150 30
 execute if score amaria Amaria matches 1.. run worldborder set 150 30

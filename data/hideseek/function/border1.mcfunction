@@ -9,6 +9,7 @@ execute if score twinpass TwinPass matches 1.. run worldborder set 150 30
 execute if score kawaiinislands KawaiinIslands matches 1.. run worldborder set 400 30
 execute if score diamondheights DiamondHeights matches 1.. run worldborder set 150 30
 execute if score nazgard Nazgard matches 1.. run worldborder set 175 30
+execute if score antinazgard Antinazgard matches 1.. run worldborder set 175 30
 execute if score end End matches 1.. run worldborder set 200 30
 execute if score etherea Etherea matches 1.. run worldborder set 150 30
 execute if score incatasia Incatasia matches 1.. run worldborder set 200 30
