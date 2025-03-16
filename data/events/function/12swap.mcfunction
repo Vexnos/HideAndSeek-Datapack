@@ -36,9 +36,6 @@ tp @a[tag=swap9] @e[tag=aswap10,limit=1]
 tp @a[tag=swap10] @e[tag=aswap11,limit=1]
 tp @a[tag=swap11] @e[tag=aswap0,limit=1]
 
-# Sounds
-execute at @a[team=1, tag=!out] run playsound minecraft:entity.enderman.teleport master @a
-
 # Titles
 tellraw @a[team=1, tag=!out] {"text":"You have been swapped!","color":"blue"}
 
