@@ -26,6 +26,7 @@ scoreboard players set markar Markar 0
 scoreboard players set darkpeak DarkPeak 0
 scoreboard players set hindenburg Hindenburg 0
 scoreboard players set nestoria Nestoria 0
+scoreboard players set pavlopetri Pavlopetri 0
 title @a actionbar {"text":"Back to Lobby","color":"green"}
 execute in overworld run tp @a -1453 207 -699
 execute in overworld run spawnpoint @a -1453 207 -699
@@ -39,4 +40,5 @@ weather clear
 bossbar set minecraft:timer max 600
 bossbar set minecraft:timer style notched_10
 
+effect clear @a
 clear @a
