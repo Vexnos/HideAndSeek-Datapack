@@ -12,7 +12,7 @@ execute unless score acclamator Acclamator matches 1 unless score darkpeak DarkP
 execute if score acclamator Acclamator matches 1 if score #radarEnabled radarEnabled matches 1 run item replace entity @a[team=2] inventory.2 with nether_star[food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05},custom_name='{"text":"Radar","color":"green","italic":false}'] 50
 execute unless score acclamator Acclamator matches 1 unless score darkpeak DarkPeak matches 1 if score minionsEnabled minionsEnabled matches 1.. run give @a[team=2] experience_bottle[custom_name='{"text":"Minions","color":"green","italic":false}'] 3
 execute if score acclamator Acclamator matches 1 if score minionsEnabled minionsEnabled matches 1.. run give @a[team=2] experience_bottle[custom_name='{"text":"Minions","color":"green","italic":false}'] 10
-execute unless score end End matches 1.. unless score hoa HOA matches 1.. unless score ataraxia Ataraxia matches 1.. unless score antinazgard Antinazgard matches 1 unless score pavlopetri Pavlopetri matches 1 run give @a[team=2] tripwire_hook[food={nutrition:0,saturation:0,can_always_eat:1b,eat_seconds:1000001},custom_name='{"text":"Dismount Grappling Hook","italic":false,"color":"blue"}']
+execute unless score end End matches 1.. unless score hoa HOA matches 1.. unless score ataraxia Ataraxia matches 1.. unless score antinazgard Antinazgard matches 1 unless score pavlopetri Pavlopetri matches 1 unless score passtwin Passtwin matches 1 run give @a[team=2] tripwire_hook[food={nutrition:0,saturation:0,can_always_eat:1b,eat_seconds:1000001},custom_name='{"text":"Dismount Grappling Hook","italic":false,"color":"blue"}']
 give @a[team=2] mace[enchantments={levels:{breach:10,density:10,wind_burst:10}},unbreakable={}] 1
 # execute unless score end End matches 1.. run execute as @a[team=1] run give @a[team=2] egg[item_name='{"text":"Budget Ender Pearl","italic":false,"color":"blue"}'] 10
 give @a[team=2] heavy_core[custom_name='{"text":"Back to Spawn","color":"red","italic":false}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:999999},enchantment_glint_override=true]
@@ -23,6 +23,8 @@ execute if score end End matches 1.. run give @a[team=2] crossbow[unbreakable={}
 execute if score end End matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[I;16761600]},{shape:"large_ball",colors:[I;16747528]},{shape:"burst",colors:[I;16770688]},{shape:"large_ball",colors:[I;16766251]},{shape:"burst",colors:[I;16768786]},{shape:"small_ball",colors:[I;16749622]},{shape:"small_ball",colors:[I;16763968]},{shape:"star",colors:[I;16764723]},{shape:"large_ball",colors:[I;16755717]}]}] 96
 execute if score antinazgard Antinazgard matches 1.. run give @a[team=2] crossbow[unbreakable={},enchantments={levels:{piercing:5,multishot:1,quick_charge:5}},item_name='{"text":"SPANKR","color":"red","bold":true,"italic":false}']
 execute if score antinazgard Antinazgard matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[I;16761600]},{shape:"large_ball",colors:[I;16747528]},{shape:"burst",colors:[I;16770688]},{shape:"large_ball",colors:[I;16766251]},{shape:"burst",colors:[I;16768786]},{shape:"small_ball",colors:[I;16749622]},{shape:"small_ball",colors:[I;16763968]},{shape:"star",colors:[I;16764723]},{shape:"large_ball",colors:[I;16755717]}]}] 96
+execute if score passtwin Passtwin matches 1.. run give @a[team=2] crossbow[unbreakable={},enchantments={levels:{piercing:5,multishot:1,quick_charge:5}},item_name='{"text":"SPANKR","color":"red","bold":true,"italic":false}']
+execute if score passtwin Passtwin matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[I;16761600]},{shape:"large_ball",colors:[I;16747528]},{shape:"burst",colors:[I;16770688]},{shape:"large_ball",colors:[I;16766251]},{shape:"burst",colors:[I;16768786]},{shape:"small_ball",colors:[I;16749622]},{shape:"small_ball",colors:[I;16763968]},{shape:"star",colors:[I;16764723]},{shape:"large_ball",colors:[I;16755717]}]}] 96
 execute if score pavlopetri Pavlopetri matches 1 run give @a[team=2] trident[unbreakable={},enchantments={levels:{riptide:3}},custom_name='{"text":"Booster","italic":false}']
 
 tag @a[team=2] remove seekerWait
@@ -36,7 +38,7 @@ execute at @a run playsound minecraft:entity.evoker.prepare_attack ambient @a ~ 
 title @a[team=1] title {"text":"The seeker is released!","color":"blue"}
 # give @a[team=2] fishing_rod[unbreakable={},enchantment_glint_override=true,rarity=epic,custom_name='{"text":"Grappling Hook","italic":false}']
 schedule function hideseek:timer 1s
-execute unless score end End matches 1.. unless score antinazgard Antinazgard matches 1.. run give @a[team=1] egg[item_name='{"text":"Make the Seeker go away","color":"blue","italic":false}'] 1
+execute unless score end End matches 1.. unless score antinazgard Antinazgard matches 1.. unless score passtwin Passtwin matches 1.. run give @a[team=1] egg[item_name='{"text":"Make the Seeker go away","color":"blue","italic":false}'] 1
 
 # OST
 execute if score nazgard Nazgard matches 1 as @a at @s run playsound hideseek:nether record @s
@@ -50,7 +52,7 @@ execute if score ataraxia Ataraxia matches 1.. run schedule function hideseek:re
 execute if score hoa HOA matches 1.. run schedule function hideseek:reset 450s
 execute unless score #eventsEnabled eventsEnabled matches 0 unless score ataraxia Ataraxia matches 1 unless score hoa HOA matches 1 run schedule function events:initmevent 150s
 execute unless score #eventsEnabled eventsEnabled matches 0 unless score ataraxia Ataraxia matches 1 unless score hoa HOA matches 1 run schedule function events:initevent 60s
-execute unless score kaelos Kaelos matches 1.. run execute unless score ataraxia Ataraxia matches 1.. run execute unless score tempus Tempus matches 1.. run execute unless score hoa HOA matches 1.. run execute unless score redstoneAcademy redstoneAcademy matches 1 run execute unless score markar Markar matches 1 unless score hindenburg Hindenburg matches 1 run schedule function hideseek:border1 300s
+execute unless score kaelos Kaelos matches 1.. run execute unless score ataraxia Ataraxia matches 1.. run execute unless score tempus Tempus matches 1.. run execute unless score hoa HOA matches 1.. run execute unless score redstoneAcademy redstoneAcademy matches 1 run execute unless score markar Markar matches 1 unless score hindenburg Hindenburg matches 1 unless score passtwin Passtwin matches 1 run schedule function hideseek:border1 300s
 execute if score mobsEnabled mobsEnabled matches 1.. run execute unless score hoa HOA matches 1.. unless score ataraxia Ataraxia matches 1.. run schedule function hideseek:finalminute 540s
 execute unless score darkpeak DarkPeak matches 1 run function hideseek:ping
 execute if score darkpeak DarkPeak matches 1 run function hideseek:darkping

@@ -55,6 +55,7 @@ scoreboard objectives add Nestoria dummy
 scoreboard objectives add Pavlopetri dummy
 scoreboard objectives add Antinazgard dummy
 scoreboard objectives add Antiend dummy
+scoreboard objectives add Passtwin dummy
 scoreboard objectives add seekerAmount dummy
 title @a actionbar {"text":"The game is ready to go!","color":"green"}
 playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1
