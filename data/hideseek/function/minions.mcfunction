@@ -12,8 +12,8 @@ execute if score pavlopetri Pavlopetri matches 1.. as @e[type=experience_orb,nbt
 execute if score pavlopetri Pavlopetri matches 1.. at @a as @e[type=experience_orb,distance=..5] run summon drowned ~ ~ ~ {CustomName:'{"text":"Drownedling","color":"blue"}',Team:"2",Tags:["seekerguardian"],HandItems:[{id:"minecraft:trident",count:1,components:{unbreakable:{},enchantments:{levels:{impaling:3,channeling:1}}}},{}]}
 
 # Passtwin Minions
-execute if score pavlopetri Pavlopetri matches 1.. as @e[type=experience_orb,nbt={OnGround:1b}] at @s run summon phantom ~ ~ ~ {PersistenceRequired:1b,Team:"2",CustomName:'{"text":"Phantom","color":"blue","italic":false}'}
-execute if score pavlopetri Pavlopetri matches 1.. at @a as @e[type=experience_orb,distance=..5] run summon phantom ~ ~ ~ {PersistenceRequired:1b,Team:"2",CustomName:'{"text":"Phantom","color":"blue","italic":false}'}
+execute if score passtwin Passtwin matches 1.. as @e[type=experience_orb,nbt={OnGround:1b}] at @s run summon phantom ~ ~ ~ {PersistenceRequired:1b,Team:"2",CustomName:'{"text":"Phantom","color":"blue","italic":false}'}
+execute if score passtwin Passtwin matches 1.. at @a as @e[type=experience_orb,distance=..5] run summon phantom ~ ~ ~ {PersistenceRequired:1b,Team:"2",CustomName:'{"text":"Phantom","color":"blue","italic":false}'}
 
 execute as @e[type=experience_orb,nbt={OnGround:1b}] at @s run playsound minecraft:entity.allay.ambient_without_item ambient @a ~ ~ ~ 100 2
 execute as @e[type=experience_orb,nbt={OnGround:1b}] at @s run playsound minecraft:entity.evoker.prepare_attack ambient @a ~ ~ ~ 100 1

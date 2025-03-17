@@ -29,6 +29,7 @@ scoreboard players set nestoria Nestoria 0
 scoreboard players set pavlopetri Pavlopetri 0
 scoreboard players set antinazgard Antinazgard 0
 scoreboard players set antiend Antiend 0
+scoreboard players set passtwin Passtwin 0
 title @a actionbar {"text":"Back to Lobby","color":"green"}
 execute in overworld run tp @a -1453 207 -699
 execute in overworld run spawnpoint @a -1453 207 -699
