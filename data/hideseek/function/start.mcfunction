@@ -19,7 +19,7 @@ tp @a[team=1] @e[tag=start,limit=1]
 # Effects
 effect give @a[team=1] minecraft:invisibility 64 0 true
 effect give @a[team=2] minecraft:blindness 64 0 true
-execute unless score darkpeak DarkPeak matches 1 unless score pavlopetri Pavlopetri matches 1 run effect give @a[team=2] minecraft:resistance infinite 255 true
+execute unless score darkpeak DarkPeak matches 1 unless score pavlopetri Pavlopetri matches 1 unless score antinazgard Antinazgard matches 1 unless score antiend Antiend matches 1 run effect give @a[team=2] minecraft:resistance infinite 255 true
 
 # Pavlopetri Effects
 execute if score pavlopetri Pavlopetri matches 1 run effect give @a[team=1] water_breathing infinite 0 true
