@@ -90,4 +90,4 @@ function hideseek:hidingtimer
 schedule function hideseek:seek 64s
 
 # OST
-execute as @a at @s run playsound hideseek:jokers master @a
+execute as @a at @s run playsound hideseek:jokers record @a
