@@ -7,7 +7,7 @@ worldborder set 205
 scoreboard players set pavlopetri Pavlopetri 1
 title @a actionbar ["",{"text":"Pavlopetri","color":"aqua"},{"text":" selected","color":"dark_aqua"}]
 execute as @a at @s run particle glow ~ ~1 ~ 0.5 0.5 0.5 2 500 force
-execute as @a at @s run playsound entity.allay.item_given master @s ~ ~ ~ 100 0
+execute as @a at @s run playsound entity.elder_guardian.curse master @s ~ ~ ~ 100 1
 execute as @a at @s run playsound minecraft:entity.allay.ambient_without_item master @s ~ ~ ~ 100 0
 effect give @a blindness 1 0 true
 

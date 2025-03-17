@@ -104,7 +104,10 @@ kill @e[type=bogged]
 kill @e[type=breeze]
 kill @e[type=breeze_wind_charge]
 kill @e[type=bat]
+kill @e[type=blaze]
 kill @e[type=guardian,tag=event]
+kill @e[type=drowned,tag=seekerguardian]
+kill @e[type=drowned,tag=!NoKill]
 
 tag @a remove seekerWait
 time set 7000
