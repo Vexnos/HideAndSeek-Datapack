@@ -1,1 +1,2 @@
+# Give glowing to Hiders if the Seeker is nearby
 execute if score glowingEnabled glowingEnabled matches 1.. at @a[team=1,tag=!out] run effect give @a[team=2,distance=..10] glowing 5 0 false
