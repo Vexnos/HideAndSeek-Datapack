@@ -127,7 +127,7 @@ kill @e[type=drowned,tag=seekerguardian]
 kill @e[type=drowned,tag=!NoKill]
 
 # Reset Time
-time set 700
+time set 7000
 
 # Back to Lobby
 tp @a @e[tag=lobby, limit=1]
