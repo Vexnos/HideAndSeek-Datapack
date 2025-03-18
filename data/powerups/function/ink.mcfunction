@@ -6,3 +6,6 @@ execute at @s run summon area_effect_cloud ~ ~ ~ {Particle:{type:"squid_ink"},Re
 
 # Invisibility for Hider using this ability
 effect give @s invisibility 10 0 true
+
+# Sound
+execute at @s run playsound minecraft:entity.squid.squirt master @a ~ ~ ~ 100 1
