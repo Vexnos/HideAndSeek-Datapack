@@ -1,3 +1,4 @@
+# Set all Maps to be unselected
 scoreboard players set crownpeak CrownPeak 0
 scoreboard players set felora Felora 0
 scoreboard players set tartarus Tartarus 0
@@ -30,18 +31,31 @@ scoreboard players set pavlopetri Pavlopetri 0
 scoreboard players set antinazgard Antinazgard 0
 scoreboard players set antiend Antiend 0
 scoreboard players set passtwin Passtwin 0
+
+# Back to Lobby Message
 title @a actionbar {"text":"Back to Lobby","color":"green"}
+
+# Teleports
 execute in overworld run tp @a -1453 207 -699
 execute in overworld run spawnpoint @a -1453 207 -699
+
+# Particles, Effects and Sounds
 execute as @a at @s run particle portal ~ ~1 ~ 0.5 0.5 0.5 2 500 force
 execute as @a at @s run playsound entity.allay.item_given master @s ~ ~ ~ 100 0
 execute as @a at @s run playsound minecraft:entity.allay.ambient_without_item master @s ~ ~ ~ 100 0
 effect give @a blindness 1 0 true
+
+# Reset Worldborder
 worldborder center 0 0
-worldborder set 30000000
+worldborder set 59999968
+
+# Set Weather to Clear
 weather clear
+
+# Set Timer max to default
 bossbar set minecraft:timer max 600
 bossbar set minecraft:timer style notched_10
 
+# Clear Effects and Inventories
 effect clear @a
 clear @a
