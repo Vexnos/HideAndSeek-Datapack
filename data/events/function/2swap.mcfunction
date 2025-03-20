@@ -7,8 +7,8 @@ tp @a[tag=swap1] @e[tag=aswap2,limit=1]
 tp @a[tag=swap2] @e[tag=aswap1,limit=1]
 
 # Sounds
-execute at @a[tag=swap1] run playsound minecraft:entity.enderman.teleport master @a
-execute at @a[tag=swap2] run playsound minecraft:entity.enderman.teleport master @a
+execute as @a[tag=swap1] at @s run playsound minecraft:entity.enderman.teleport master @s
+execute as @a[tag=swap2] at @s run playsound minecraft:entity.enderman.teleport master @s
 
 # Titles
 tellraw @a[tag=swap1] {"text":"You have been swapped!","color":"blue"}
