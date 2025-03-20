@@ -26,6 +26,7 @@ execute if score antinazgard Antinazgard matches 1.. run execute as @a[team=1] r
 execute if score passtwin Passtwin matches 1.. run give @a[team=2] crossbow[unbreakable={},enchantments={levels:{piercing:5,multishot:1,quick_charge:5}},item_name='{"text":"SPANKR","color":"red","bold":true,"italic":false}']
 execute if score passtwin Passtwin matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[I;16761600]},{shape:"large_ball",colors:[I;16747528]},{shape:"burst",colors:[I;16770688]},{shape:"large_ball",colors:[I;16766251]},{shape:"burst",colors:[I;16768786]},{shape:"small_ball",colors:[I;16749622]},{shape:"small_ball",colors:[I;16763968]},{shape:"star",colors:[I;16764723]},{shape:"large_ball",colors:[I;16755717]}]}] 96
 execute if score pavlopetri Pavlopetri matches 1 run give @a[team=2] trident[unbreakable={},enchantments={levels:{riptide:3,impaling:1}},custom_name='{"text":"Booster","italic":false}']
+execute if score hindenburg Hindenburg matches 1.. run give @a[team=2] fishing_rod[enchantment_glint_override=true,unbreakable={},custom_name='{"text":"Grappling Hook","italic":false}']
 
 # Tags
 tag @a[team=2] remove seekerWait

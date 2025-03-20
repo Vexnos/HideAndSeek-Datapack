@@ -45,7 +45,7 @@ execute if score hoa HOA matches 1.. run give @a[team=1] trident[damage=248,ench
 execute if score end End matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
 execute if score passtwin Passtwin matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
 execute if score antinazgard Antinazgard matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
-execute if score hindenburg Hindenburg matches 1.. run give @a[team=1] fishing_rod[enchantment_glint_override=true,custom_name='{"text":"Grappling Hook","italic":false}']
+execute if score hindenburg Hindenburg matches 1.. run give @a[team=1] fishing_rod[max_damage=3,enchantment_glint_override=true,custom_name='{"text":"Grappling Hook","italic":false}']
 
 # Pavlopetri Specific Items
 execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] ink_sac[food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05},enchantment_glint_override=true,custom_name='{"text":"Ink Bomb","italic":false,"color":"black"}'] 3

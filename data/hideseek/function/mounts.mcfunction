@@ -15,7 +15,8 @@ execute as @e[type=wind_charge] at @s run ride @p[team=1,gamemode=adventure,dist
 execute at @e[type=wind_charge] run particle minecraft:gust ~ ~ ~ 0.1 0.1 0.1 0 100 normal
 effect give @e[type=wind_charge] glowing infinite 0 true
 
-execute as @e[type=fishing_bobber] at @s run ride @p[team=1,gamemode=adventure,distance=..10] mount @s
+execute as @e[type=fishing_bobber] at @s run ride @p[gamemode=adventure,distance=..10] mount @s
+execute as @e[type=fishing_bobber] at @s run ride @p[gamemode=adventure,tag=Rider] mount @s
 
 # Seeker Mounts
 execute as @e[type=egg] at @s run ride @p[team=2,gamemode=adventure,tag=Rider] mount @s
