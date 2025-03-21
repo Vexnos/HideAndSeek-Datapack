@@ -21,6 +21,7 @@ execute if score poseidon Poseidon matches 1 run worldborder set 150 60
 execute if score acclamator Acclamator matches 1 run worldborder set 150 60
 execute if score nestoria Nestoria matches 1 run worldborder set 200 30
 execute if score pavlopetri Pavlopetri matches 1.. run worldborder set 75 30
+execute if score cathedral Cathedral matches 1.. run worldborder set 200 60
 
 # Warning Message
 tellraw @a {"text":"The world border is shrinking!","color":"red","bold":true}

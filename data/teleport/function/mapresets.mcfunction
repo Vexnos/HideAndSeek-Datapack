@@ -31,3 +31,4 @@ scoreboard players set pavlopetri Pavlopetri 0
 scoreboard players set antinazgard Antinazgard 0
 scoreboard players set antiend Antiend 0
 scoreboard players set passtwin Passtwin 0
+scoreboard players set cathedral Cathedral 0
