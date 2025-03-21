@@ -104,6 +104,7 @@ execute if score pavlopetri Pavlopetri matches 1.. run worldborder set 205 2
 execute if score antinazgard Antinazgard matches 1.. run worldborder set 249 2
 execute if score passtwin Passtwin matches 1.. run worldborder set 230 2
 execute if score cathedral Cathedral matches 1.. run worldborder set 700 2
+execute if score hailstorm Hailstorm matches 1.. run worldborder set 300 2
 
 # Kill Mobs
 kill @e[type=silverfish]

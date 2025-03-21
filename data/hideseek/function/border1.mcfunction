@@ -5,6 +5,7 @@ execute if score felora Felora matches 1.. run worldborder set 100 30
 execute if score tartarus Tartarus matches 1.. run worldborder set 125 30
 execute if score hyperia Hyperia matches 1.. run worldborder set 200 30
 execute if score hailstone Hailstone matches 1.. run worldborder set 200 30
+execute if score hailstorm Hailstorm matches 1.. run worldborder set 200 30
 execute if score meridian Meridian matches 1.. run worldborder set 200 30
 execute if score twinpass TwinPass matches 1.. run worldborder set 150 30
 execute if score kawaiinislands KawaiinIslands matches 1.. run worldborder set 400 30

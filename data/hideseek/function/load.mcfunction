@@ -81,6 +81,7 @@ scoreboard objectives add Antinazgard dummy
 scoreboard objectives add Antiend dummy
 scoreboard objectives add Passtwin dummy
 scoreboard objectives add Cathedral dummy
+scoreboard objectives add Hailstorm dummy
 
 # Event Scoreboards
 scoreboard objectives add swap dummy
