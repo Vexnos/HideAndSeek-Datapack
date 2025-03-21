@@ -4,7 +4,7 @@ execute if score #countdown countdown matches 4.. run title @a title {"score":{"
 execute if score #countdown countdown matches 3 run title @a title {"score":{"name":"#countdown","objective":"countdown"},"color":"green"}
 execute if score #countdown countdown matches 2 run title @a title {"score":{"name":"#countdown","objective":"countdown"},"color":"yellow"}
 execute if score #countdown countdown matches 1 run title @a title {"score":{"name":"#countdown","objective":"countdown"},"color":"red"}
-execute at @a run playsound minecraft:ui.button.click master @a
+execute as @a at @s run playsound minecraft:ui.button.click master @s
 
 # SFX
 execute if score #countdown countdown matches 5 as @a at @s run playsound hideseek:roller master @s

@@ -1,6 +1,11 @@
+# Revoke advancement so the function doesn't run repeatedly
 advancement revoke @s only powerups:bell
+
+# Sounds
 execute at @s run playsound minecraft:block.bell.resonate master @a ~ ~ ~ 100 2
 execute at @a[team=1] run playsound minecraft:entity.ghast.scream master @a ~ ~ ~ 100 1
+
+# Effects
 effect give @a[team=1,gamemode=adventure] glowing 1 0 false
 effect give @s glowing 10 0 true
 effect give @s blindness 5 0 true

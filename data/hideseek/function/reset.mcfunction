@@ -6,15 +6,21 @@ execute if score hiders hiding <= out out as @a at @s run playsound minecraft:en
 
 execute at @e[tag=lobby,limit=1] run spawnpoint @a ~ ~ ~
 effect clear @a
+
+# Teams
 team leave @a
+team join 3 @a
+
+# Kill Mount Entities
 kill @e[type=snowball]
 kill @e[type=egg]
 kill @e[type=spectral_arrow]
 kill @e[type=trident]
-scoreboard players reset @a spectator
+
 gamemode adventure @a
 clear @a
-team join 3 @a
+
+# Clear scheduled functions
 schedule clear hideseek:timer
 schedule clear hideseek:hidingtimer
 schedule clear hideseek:reset
@@ -41,6 +47,9 @@ schedule clear events:wardenflurry/summon
 schedule clear events:zombies
 schedule clear hideseek:ping
 schedule clear hideseek:darkping
+
+# Scoreboards
+scoreboard players reset @a spectator
 scoreboard players set Timer time 0
 scoreboard players set #hidingTime hidingTime 64
 scoreboard players set Minutes minutes 0
@@ -55,8 +64,14 @@ scoreboard players set #guardianTimer guardianTimer 0
 scoreboard players set #wardenTimer wardenTimer 0
 scoreboard players set #phantomTimer phantomTimer 0
 scoreboard players set #mountsEnabled mountsEnabled 1
+scoreboard players set swap swap 0
+scoreboard players reset @a radar
+scoreboard players set #game gameRunning 0
+
+# Tags
 tag @a remove out
 tag @a remove notswap
+tag @a remove seekerWait
 
 # Reset Worldborder
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2
@@ -87,8 +102,11 @@ execute if score nestoria Nestoria matches 1.. run worldborder set 350 2
 execute if score hindenburg Hindenburg matches 1.. run worldborder set 550 2
 execute if score pavlopetri Pavlopetri matches 1.. run worldborder set 205 2
 execute if score antinazgard Antinazgard matches 1.. run worldborder set 249 2
+execute if score passtwin Passtwin matches 1.. run worldborder set 230 2
+execute if score cathedral Cathedral matches 1.. run worldborder set 700 2
+execute if score hailstorm Hailstorm matches 1.. run worldborder set 300 2
 
-# Kill Entities
+# Kill Mobs
 kill @e[type=silverfish]
 kill @e[type=ravager]
 kill @e[type=pillager]
@@ -104,18 +122,24 @@ kill @e[type=bogged]
 kill @e[type=breeze]
 kill @e[type=breeze_wind_charge]
 kill @e[type=bat]
+kill @e[type=vex]
+kill @e[type=blaze]
+kill @e[type=zombie,tag=!dummy]
 kill @e[type=guardian,tag=event]
+kill @e[type=drowned,tag=seekerguardian]
+kill @e[type=drowned,tag=!NoKill]
 
-tag @a remove seekerWait
+# Reset Time
 time set 7000
+
+# Back to Lobby
 tp @a @e[tag=lobby, limit=1]
+
+# Bossbar Reset
 bossbar set timer value 0
 bossbar set hidingtimer value 64
 bossbar set timer visible false
 bossbar set hidingtimer visible false
-scoreboard players set swap swap 0
-scoreboard players reset @a radar
-scoreboard players set #game gameRunning 0
 
 # OST
 execute if score nazgard Nazgard matches 1 run stopsound @a * hideseek:nether

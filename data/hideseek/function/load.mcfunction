@@ -1,3 +1,4 @@
+# Teams
 team add 1 "Hider"
 team modify 1 collisionRule never
 team modify 1 color red
@@ -16,7 +17,11 @@ team modify 3 nametagVisibility always
 team modify 3 friendlyFire false
 team add 4 "Guardians"
 team modify 4 color green
+
+# Disable MobGriefing
 gamerule mobGriefing false
+
+# Game Scoreboards
 scoreboard objectives add out dummy "out"
 scoreboard objectives add hiding dummy "hiding"
 scoreboard objectives add time dummy {"text":"Time","color":"yellow"}
@@ -24,6 +29,25 @@ scoreboard objectives add minutes dummy
 # scoreboard objectives setdisplay sidebar time
 scoreboard objectives add spectator killedByTeam.blue "spectator"
 scoreboard objectives add deaths deathCount
+scoreboard objectives add seekerAmount dummy
+scoreboard objectives add pingEnabled dummy
+scoreboard objectives add glowingEnabled dummy
+scoreboard objectives add mobsEnabled dummy
+scoreboard objectives add minionsEnabled dummy
+scoreboard objectives add raycastEnabled dummy
+scoreboard objectives add radarEnabled dummy
+scoreboard objectives add velocity dummy
+scoreboard objectives add gameRunning dummy
+scoreboard objectives add spreadPlayers dummy
+scoreboard objectives add radarEnabled dummy
+scoreboard objectives add hidingTime dummy
+scoreboard players set out out 0
+scoreboard objectives add nearbyTeleports dummy
+scoreboard objectives add range dummy
+scoreboard objectives add radar dummy
+scoreboard objectives add mountsEnabled dummy
+
+# Map Scoreboards
 scoreboard objectives add CrownPeak dummy
 scoreboard objectives add Felora dummy
 scoreboard objectives add Tartarus dummy
@@ -54,18 +78,12 @@ scoreboard objectives add Hindenburg dummy
 scoreboard objectives add Nestoria dummy
 scoreboard objectives add Pavlopetri dummy
 scoreboard objectives add Antinazgard dummy
-scoreboard objectives add seekerAmount dummy
-title @a actionbar {"text":"The game is ready to go!","color":"green"}
-playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1
-scoreboard objectives add pingEnabled dummy
-scoreboard objectives add glowingEnabled dummy
-scoreboard objectives add mobsEnabled dummy
-scoreboard objectives add minionsEnabled dummy
-scoreboard objectives add raycastEnabled dummy
-scoreboard objectives add radarEnabled dummy
-scoreboard objectives add velocity dummy
-scoreboard objectives add gameRunning dummy
-scoreboard objectives add spreadPlayers dummy
+scoreboard objectives add Antiend dummy
+scoreboard objectives add Passtwin dummy
+scoreboard objectives add Cathedral dummy
+scoreboard objectives add Hailstorm dummy
+
+# Event Scoreboards
 scoreboard objectives add swap dummy
 scoreboard objectives add zombieTimer dummy
 scoreboard objectives add breezeTimer dummy
@@ -78,13 +96,6 @@ scoreboard objectives add minorEvent dummy
 scoreboard objectives add countdown dummy
 scoreboard objectives add mcountdown dummy
 scoreboard objectives add eventsEnabled dummy
-scoreboard objectives add mountsEnabled dummy
-scoreboard objectives add range dummy
-scoreboard objectives add radar dummy
-scoreboard objectives add radarEnabled dummy
-scoreboard objectives add hidingTime dummy
-scoreboard players set out out 0
-scoreboard objectives add nearbyTeleports dummy
 
 # Timer Bossbar
 bossbar add timer {"text":"Time","color":"yellow"}
@@ -99,6 +110,11 @@ bossbar set hidingtimer max 64
 bossbar set hidingtimer value 64
 bossbar set hidingtimer players @a
 
+# Confirmation Message
+title @a actionbar {"text":"The game is ready to go!","color":"green"}
+playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1
+
+# Start scheduled functions
 function hideseek:saturation
 function hideseek:jungleleaves
 function hideseek:ping

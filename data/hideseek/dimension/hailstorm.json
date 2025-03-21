@@ -1,0 +1,18 @@
+{
+    "type": "hideseek:hailstorm",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "biome": "minecraft:snowy_plains",
+            "lakes": false,
+            "features": false,
+            "layers": [
+                {
+                    "block": "minecraft:air",
+                    "height": 0
+                }
+            ],
+            "structure_overrides": []
+        }
+    }
+}

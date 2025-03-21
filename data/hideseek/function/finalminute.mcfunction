@@ -62,14 +62,26 @@ execute if score end End matches 1 at @a[team=2] run summon wither ~ ~ ~ {Team:"
 execute if score end End matches 1 at @a[team=2] run summon wither ~ ~ ~ {Team:"2",PersistenceRequired:1b}
 execute if score end End matches 1 at @a[team=2] run summon wither ~ ~ ~ {Team:"2",PersistenceRequired:1b}
 
+# Give temporary Darkness for flair
 effect give @a[team=1] darkness 3 0 true
 
+# Title
 title @a title {"text":"Final Minute!","color":"dark_red"}
+
+# Sounds
 execute at @a run playsound entity.ender_dragon.growl ambient @a ~ ~ ~ 100 0
 execute at @a run playsound entity.wither.spawn ambient @a ~ ~ ~ 100 0
+
+# Slowly shrink the Worldborder
 worldborder set 50 150
+
+# Set time to night for dramatic effect
 time set 18000
+
+# Effects
 # effect give @a[team=1] blindness infinite 0 true
 effect clear @a[team=2] resistance
+
+# Give Stone Sword to Hiders
 give @a[team=1,gamemode=adventure] stone_sword[unbreakable={},custom_name='{"text":"Seeker\'s Bane","color":"yellow","italic":false}',enchantments={levels:{fire_aspect:2,sharpness:1}}]
 # give @a[team=1,gamemode=adventure] blaze_rod[custom_name='{"text":"Fire Stick","italic":false,"color":"gold"}',enchantment_glint_override=true,food={nutrition:0,saturation:0,can_always_eat:1b,eat_seconds:1000000}]

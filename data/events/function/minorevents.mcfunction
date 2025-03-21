@@ -6,7 +6,7 @@ execute if score #randInt randInt matches 16..20 run effect give @a slowness 10 
 execute if score #randInt randInt matches 21..24 run effect give @a[team=1] resistance 10 5 false
 execute if score #randInt randInt matches 25..30 run effect give @a nausea 10 5 false
 # execute if score #randInt randInt matches 30 run function events:trayaurus/trayaurus
-execute at @a run playsound entity.zombie_villager.cure master @a
+execute as @a at @s run playsound entity.zombie_villager.cure master @s ~ ~ ~ 25 1
 scoreboard players add #minorEvent minorEvent 1
 execute unless score ataraxia Ataraxia matches 1 unless score hoa HOA matches 1 unless score #minorEvent minorEvent matches 9.. run schedule function events:initevent 60s
 # execute if score ataraxia Ataraxia matches 1 unless score #minorEvent minorEvent matches 2.. run schedule function events:initmevent 150s
