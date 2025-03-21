@@ -7,7 +7,7 @@ result = ""
 for x in range(2, MAX_HIDERS + 1):
   result += f"execute if score swap swap matches {x} run function events:{x}swap\n"
 
-result += 'title @a title {"text":"Swap!","color":"blue"}\nexecute at @a run playsound minecraft:entity.enderman.teleport master @a\n'
+result += 'title @a title {"text":"Swap!","color":"blue"}\nexecute as @a at @s run playsound minecraft:entity.enderman.teleport master @s\n'
 
 with open("data/events/function/swap.mcfunction", "w") as file:
   file.write(result)

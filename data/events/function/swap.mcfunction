@@ -10,4 +10,4 @@ execute if score swap swap matches 10 run function events:10swap
 execute if score swap swap matches 11 run function events:11swap
 execute if score swap swap matches 12 run function events:12swap
 title @a title {"text":"Swap!","color":"blue"}
-execute at @a run playsound minecraft:entity.enderman.teleport master @a
+execute as @a at @s run playsound minecraft:entity.enderman.teleport master @s
