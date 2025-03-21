@@ -12,11 +12,11 @@ worldborder set 230
 scoreboard players set passtwin Passtwin 1
 
 # Selection Message
-title @a actionbar ["",{"text":"Pass Twin","color":"dark_green"},{"text":" selected","color":"green"}]
+title @a title ["",{"text":"ssɐd uıʍʇ","color":"dark_green"},{"text":" selected","color":"green"}]
 
 # Particles, Effects and Sounds
 execute as @a at @s run particle portal ~ ~1 ~ 0.5 0.5 0.5 2 500 force
-execute as @a at @s run playsound entity.allay.item_given master @s ~ ~ ~ 100 0
+execute as @a at @s run playsound entity.allay.death master @s ~ ~ ~ 100 0
 execute as @a at @s run playsound minecraft:entity.allay.ambient_without_item master @s ~ ~ ~ 100 0
 effect give @a blindness 1 0 true
 
