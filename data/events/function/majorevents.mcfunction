@@ -1,4 +1,7 @@
+# Generate a random number
 function events:roller
+
+# Run the event corresponding with the randomly generated number
 execute if score #randInt randInt matches 1..5 run function events:initzombies
 execute if score #randInt randInt matches 6..10 run function events:initswap
 execute if score #randInt randInt matches 11..15 run function events:disableteleports/disable
