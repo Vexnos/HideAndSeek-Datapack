@@ -1,2 +1,2 @@
-scoreboard players operation swap swap -= out out
+scoreboard players remove swap swap 1
 tag @s add notswap
