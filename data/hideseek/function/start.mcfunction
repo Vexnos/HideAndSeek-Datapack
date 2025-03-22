@@ -3,10 +3,7 @@ team leave @a
 clear @a
 gamemode adventure @a
 scoreboard players set swap swap 0
-execute if score seekerAmount seekerAmount matches 1 run team join 2 @a[sort=random,limit=1]
-execute if score seekerAmount seekerAmount matches 2 run team join 2 @a[sort=random,limit=2]
-execute if score seekerAmount seekerAmount matches 3 run team join 2 @a[sort=random,limit=3]
-execute if score seekerAmount seekerAmount matches 4 run team join 2 @a[sort=random,limit=4]
+function hideseek:seekers
 team join 1 @a[sort=random,team=!2]
 execute as @a[team=1] run scoreboard players add hiders hiding 1
 execute as @a[team=1] run scoreboard players add swap swap 1

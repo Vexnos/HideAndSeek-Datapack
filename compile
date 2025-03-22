@@ -1,0 +1,5 @@
+export MAX_HIDERS=12
+export MAX_SEEKERS=12
+python swap_compile.py
+python seeker_compile.py
+zip -r HideAndSeekDatapack.zip -9 -X -q -@ < manifest
