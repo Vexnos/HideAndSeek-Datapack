@@ -2,7 +2,7 @@ import os
 
 MAX_HIDERS = int(os.environ["MAX_HIDERS"])
 
-result = ""
+result = "# Run the corresponding function depending on the result of calculateswap\n"
 
 for x in range(2, MAX_HIDERS + 1):
   result += f"execute if score swap swap matches {x} run function events:{x}swap\n"
