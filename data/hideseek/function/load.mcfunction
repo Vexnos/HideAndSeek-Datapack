@@ -82,6 +82,7 @@ scoreboard objectives add Antiend dummy
 scoreboard objectives add Passtwin dummy
 scoreboard objectives add Cathedral dummy
 scoreboard objectives add Hailstorm dummy
+scoreboard objectives add Venator dummy
 
 # Event Scoreboards
 scoreboard objectives add swap dummy

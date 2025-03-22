@@ -1,5 +1,5 @@
 # Summon Wardens in Dark Peak
-execute in overworld positioned 1 -36 878 run summon warden
+execute in overworld at @e[tag=start,limit=1] run summon warden
 
 # Sounds
 execute as @a at @s run playsound minecraft:entity.evoker.prepare_summon master @s

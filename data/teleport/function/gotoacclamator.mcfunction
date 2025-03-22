@@ -1,11 +1,11 @@
 # Teleporting
-execute in overworld run tp @e[tag=lobby,limit=1] 715 299 -2749
-execute in overworld run tp @e[tag=start,limit=1] 715 173 -2749
-execute in overworld run tp @a 715 299 -2749
-execute in overworld run spawnpoint @a 715 299 -2749
+execute in hideseek:acclamator run tp @e[tag=lobby,limit=1] -32 221 14
+execute in hideseek:acclamator run tp @e[tag=start,limit=1] -32 94 14
+execute in hideseek:acclamator run tp @a -32 221 14
+execute in hideseek:acclamator run spawnpoint @a -32 221 14
 
 # Worldborder
-worldborder center 715 -2749
+worldborder center -32 14
 worldborder set 725
 
 # Map Scoreboard (Defines which map is active)

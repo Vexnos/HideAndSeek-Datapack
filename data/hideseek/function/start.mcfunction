@@ -38,6 +38,7 @@ execute if score ataraxia Ataraxia matches 1.. run give @a[team=1] firework_rock
 execute if score hoa HOA matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true,lore=['{"text":"Use these wisely","color":"yellow","italic":false,"bold":true}']] 3
 execute if score hoa HOA matches 1.. run give @a[team=1] trident[damage=248,enchantments={levels:{unbreaking:4,riptide:4}}]
 execute if score end End matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
+execute if score venator Venator matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
 execute if score passtwin Passtwin matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
 execute if score antinazgard Antinazgard matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
 execute if score hindenburg Hindenburg matches 1.. run give @a[team=1] fishing_rod[max_damage=3,enchantment_glint_override=true,custom_name='{"text":"Grappling Hook","italic":false}']
@@ -49,6 +50,7 @@ execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] heart_of_th
 
 # Universal Items
 execute if score ataraxia Ataraxia matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score venator Venator matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
 execute if score passtwin Passtwin matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
 execute if score hoa HOA matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
 execute if score end End matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]

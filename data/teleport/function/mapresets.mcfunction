@@ -33,3 +33,4 @@ scoreboard players set antiend Antiend 0
 scoreboard players set passtwin Passtwin 0
 scoreboard players set cathedral Cathedral 0
 scoreboard players set hailstorm Hailstorm 0
+scoreboard players set venator Venator 0
