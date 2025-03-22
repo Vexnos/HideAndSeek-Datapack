@@ -3,10 +3,14 @@ tag @a[team=1,sort=random,limit=1,tag=!out] add swap1
 tag @a[team=1,sort=random,tag=!swap1,limit=1,tag=!out] add swap2
 tag @a[team=1,sort=random,tag=!swap1,tag=!swap2,limit=1,tag=!out] add swap3
 tag @a[team=1,sort=random,tag=!swap1,tag=!swap2,tag=!swap3,limit=1,tag=!out] add swap4
+
+# Summon armor stands
 execute at @a[tag=swap1,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap1"],NoGravity:1b}
 execute at @a[tag=swap2,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap2"],NoGravity:1b}
 execute at @a[tag=swap3,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap3"],NoGravity:1b}
 execute at @a[tag=swap4,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap4"],NoGravity:1b}
+
+# Swap
 tp @a[tag=swap1] @e[tag=aswap2,limit=1]
 tp @a[tag=swap2] @e[tag=aswap3,limit=1]
 tp @a[tag=swap3] @e[tag=aswap4,limit=1]
