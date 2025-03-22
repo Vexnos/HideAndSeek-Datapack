@@ -11,6 +11,8 @@ tag @r[team=1, tag=!out, tag=!swap0, tag=!swap1, tag=!swap2, tag=!swap3, tag=!sw
 tag @r[team=1, tag=!out, tag=!swap0, tag=!swap1, tag=!swap2, tag=!swap3, tag=!swap4, tag=!swap5, tag=!swap6, tag=!swap7, tag=!swap8] add swap9
 tag @r[team=1, tag=!out, tag=!swap0, tag=!swap1, tag=!swap2, tag=!swap3, tag=!swap4, tag=!swap5, tag=!swap6, tag=!swap7, tag=!swap8, tag=!swap9] add swap10
 tag @r[team=1, tag=!out, tag=!swap0, tag=!swap1, tag=!swap2, tag=!swap3, tag=!swap4, tag=!swap5, tag=!swap6, tag=!swap7, tag=!swap8, tag=!swap9, tag=!swap10] add swap11
+
+# Summon armor stands
 execute at @a[tag=swap0,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap0"],NoGravity:1b}
 execute at @a[tag=swap1,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap1"],NoGravity:1b}
 execute at @a[tag=swap2,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap2"],NoGravity:1b}
@@ -23,6 +25,8 @@ execute at @a[tag=swap8,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invu
 execute at @a[tag=swap9,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap9"],NoGravity:1b}
 execute at @a[tag=swap10,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap10"],NoGravity:1b}
 execute at @a[tag=swap11,limit=1] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["aswap11"],NoGravity:1b}
+
+# Swap
 tp @a[tag=swap0] @e[tag=aswap1,limit=1]
 tp @a[tag=swap1] @e[tag=aswap2,limit=1]
 tp @a[tag=swap2] @e[tag=aswap3,limit=1]
