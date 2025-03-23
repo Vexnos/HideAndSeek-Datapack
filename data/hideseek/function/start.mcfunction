@@ -49,12 +49,12 @@ execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] trident[max
 execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] heart_of_the_sea[item_name='{"color":"aqua","italic":false,"text":"Night Vision"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.05,effects:[{effect:{id:"minecraft:night_vision",amplifier:0,duration:200,show_particles:0b,show_icon:1b},probability:1}]},enchantment_glint_override=true] 3
 
 # Universal Items
-execute if score ataraxia Ataraxia matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
-execute if score venator Venator matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
-execute if score passtwin Passtwin matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
-execute if score hoa HOA matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
-execute if score end End matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
-execute if score antinazgard Antinazgard matches 1.. run give @a elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score ataraxia Ataraxia matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score venator Venator matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score passtwin Passtwin matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score hoa HOA matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score end End matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score antinazgard Antinazgard matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
 
 # Titles and Tellraws
 title @a[team=1] actionbar {"text":"You are a hider! Stay hidden from the seeker to win!","color":"red"}
