@@ -24,7 +24,8 @@ execute if score pavlopetri Pavlopetri matches 1 run effect give @a[team=1] dolp
 execute if score pavlopetri Pavlopetri matches 1 run effect give @a[team=2] dolphins_grace infinite 1 true
 
 # Items for Hiders
-execute unless score pavlopetri Pavlopetri matches 1 run give @a[team=1] ender_pearl[enchantment_glint_override=true,unbreakable={},lore=['{"text":"Your get out of jail free card","italic":false,"color":"dark_purple"}'],item_name='{"text":"Ender Pearl","color":"light_purple"}'] 1
+execute unless score pavlopetri Pavlopetri matches 1 unless score cathedral Cathedral matches 1 run give @a[team=1] ender_pearl[enchantment_glint_override=true,unbreakable={},lore=['{"text":"Your get out of jail free card","italic":false,"color":"dark_purple"}'],item_name='{"text":"Ender Pearl","color":"light_purple"}'] 1
+execute if score cathedral Cathedral matches 1 run give @a[team=1] ender_pearl[enchantment_glint_override=true,unbreakable={},lore=['{"text":"Your get out of jail free card","italic":false,"color":"dark_purple"}'],item_name='{"text":"Ender Pearl","color":"light_purple"}'] 2
 execute unless score end End matches 1.. unless score pavlopetri Pavlopetri matches 1 unless score antinazgard Antinazgard matches 1 unless score passtwin Passtwin matches 1 unless score hindenburg Hindenburg matches 1 run give @a[team=1] snowball[custom_model_data=1,item_name='{"text":"Budget Ender Pearl","italic":false,"color":"red"}'] 6
 execute unless score pavlopetri Pavlopetri matches 1 unless score hindenburg Hindenburg matches 1 run give @a[team=1] chorus_fruit[enchantment_glint_override=true,unbreakable={},item_name='{"text":"Zoom zoom escape","italic":false,"color":"light_purple"}'] 1
 # give @a[team=1] potion[custom_name='{"italic":false,"text":"Potion of Fire Resistance"}',potion_contents={custom_color:16746496,custom_effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:400,show_particles:1b,show_icon:1b}]}] 1
@@ -40,6 +41,7 @@ execute if score hoa HOA matches 1.. run give @a[team=1] trident[damage=248,ench
 execute if score end End matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
 execute if score venator Venator matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
 execute if score passtwin Passtwin matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
+execute if score cathedral Cathedral matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 10
 execute if score antinazgard Antinazgard matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
 execute if score hindenburg Hindenburg matches 1.. run give @a[team=1] fishing_rod[max_damage=3,enchantment_glint_override=true,custom_name='{"text":"Grappling Hook","italic":false}']
 
@@ -50,7 +52,7 @@ execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] heart_of_th
 
 # Universal Items
 execute if score ataraxia Ataraxia matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
-execute if score cathedral Cathedral matches 1.. run item replace entity @a[team=2] armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score cathedral Cathedral matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
 execute if score venator Venator matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
 execute if score passtwin Passtwin matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
 execute if score hoa HOA matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]

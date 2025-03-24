@@ -103,7 +103,7 @@ execute if score hindenburg Hindenburg matches 1.. run worldborder set 550 2
 execute if score pavlopetri Pavlopetri matches 1.. run worldborder set 205 2
 execute if score antinazgard Antinazgard matches 1.. run worldborder set 249 2
 execute if score passtwin Passtwin matches 1.. run worldborder set 230 2
-execute if score cathedral Cathedral matches 1.. run worldborder set 700 2
+execute if score cathedral Cathedral matches 1.. run worldborder set 1150 2
 execute if score hailstorm Hailstorm matches 1.. run worldborder set 300 2
 execute if score venator Venator matches 1.. run worldborder set 1225 2
 execute if score newworld NewWorld matches 1.. run worldborder set 200 2
