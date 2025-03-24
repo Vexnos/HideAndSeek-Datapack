@@ -50,6 +50,7 @@ execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] heart_of_th
 
 # Universal Items
 execute if score ataraxia Ataraxia matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score cathedral Cathedral matches 1.. run item replace entity @a[team=2] armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
 execute if score venator Venator matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
 execute if score passtwin Passtwin matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
 execute if score hoa HOA matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
