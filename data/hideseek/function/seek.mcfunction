@@ -67,14 +67,21 @@ execute if score end End matches 1 as @a at @s run playsound hideseek:theend rec
 execute if score hailstone Hailstone matches 1 as @a at @s run playsound hideseek:hailstone record @s
 stopsound @a * hideseek:jokers
 
-# Reset, Event, and Worldborder Schedules
-execute unless score ataraxia Ataraxia matches 1.. run execute unless score hoa HOA matches 1.. run schedule function hideseek:reset 600s
+# Reset
+execute unless score ataraxia Ataraxia matches 1.. run execute unless score hoa HOA matches 1.. unless score newworld NewWorld matches 1 run schedule function hideseek:reset 600s
 execute if score ataraxia Ataraxia matches 1.. run schedule function hideseek:reset 300s
 execute if score hoa HOA matches 1.. run schedule function hideseek:reset 450s
+execute if score newworld NewWorld matches 1 run schedule function hideseek:reset 300s
+
+# Events
 execute unless score #eventsEnabled eventsEnabled matches 0 unless score ataraxia Ataraxia matches 1 unless score hoa HOA matches 1 run schedule function events:initmevent 150s
 execute unless score #eventsEnabled eventsEnabled matches 0 unless score ataraxia Ataraxia matches 1 unless score hoa HOA matches 1 run schedule function events:initevent 60s
-execute unless score kaelos Kaelos matches 1.. run execute unless score ataraxia Ataraxia matches 1.. run execute unless score tempus Tempus matches 1.. run execute unless score hoa HOA matches 1.. run execute unless score redstoneAcademy redstoneAcademy matches 1 run execute unless score markar Markar matches 1 unless score hindenburg Hindenburg matches 1 unless score passtwin Passtwin matches 1 unless score venator Venator matches 1 run schedule function hideseek:border1 300s
 execute if score mobsEnabled mobsEnabled matches 1.. run execute unless score hoa HOA matches 1.. unless score ataraxia Ataraxia matches 1.. run schedule function hideseek:finalminute 540s
+
+# Worldborder
+execute unless score kaelos Kaelos matches 1.. run execute unless score ataraxia Ataraxia matches 1.. run execute unless score tempus Tempus matches 1.. run execute unless score hoa HOA matches 1.. run execute unless score redstoneAcademy redstoneAcademy matches 1 run execute unless score markar Markar matches 1 unless score hindenburg Hindenburg matches 1 unless score passtwin Passtwin matches 1 unless score venator Venator matches 1 unless score newworld NewWorld matches 1 run schedule function hideseek:border1 300s
+
+# Ping
 execute unless score darkpeak DarkPeak matches 1 run function hideseek:ping
 execute if score darkpeak DarkPeak matches 1 run function hideseek:darkping
 

@@ -14,6 +14,7 @@ schedule function events:countdown 1s
 scoreboard players add #majorEvent majorEvent 1
 
 # Set the amount of times a Major Event can roll for each map
-execute unless score ataraxia Ataraxia matches 1 unless score hoa HOA matches 1 unless score #majorEvent majorEvent matches 3.. run schedule function events:initmevent 150s
+execute unless score ataraxia Ataraxia matches 1 unless score hoa HOA matches 1 unless score newworld NewWorld matches 1 unless score #majorEvent majorEvent matches 3.. run schedule function events:initmevent 150s
 execute if score ataraxia Ataraxia matches 1 unless score #majorEvent majorEvent matches 2.. run schedule function events:initmevent 150s
 execute if score hoa HOA matches 1 unless score #majorEvent majorEvent matches 2.. run schedule function events:initmevent 150s
+execute if score newworld NewWorld matches 1 unless score #majorEvent majorEvent matches 2.. run schedule function events:initmevent 150s

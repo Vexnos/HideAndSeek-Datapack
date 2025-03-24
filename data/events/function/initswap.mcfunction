@@ -2,4 +2,4 @@
 execute unless score swap swap matches ..1 run function events:swap
 
 # Reroll the Major Events if not
-execute if score swap swap matches ..1 run function events:majorevents
+execute if score swap swap matches ..1 run schedule function events:majorevents 1s

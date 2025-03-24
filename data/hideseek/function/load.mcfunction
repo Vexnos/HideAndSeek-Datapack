@@ -83,6 +83,7 @@ scoreboard objectives add Passtwin dummy
 scoreboard objectives add Cathedral dummy
 scoreboard objectives add Hailstorm dummy
 scoreboard objectives add Venator dummy
+scoreboard objectives add NewWorld dummy
 
 # Event Scoreboards
 scoreboard objectives add swap dummy
@@ -113,7 +114,7 @@ bossbar set hidingtimer players @a
 
 # Confirmation Message
 title @a actionbar {"text":"The game is ready to go!","color":"green"}
-playsound minecraft:entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1
+execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
 # Start scheduled functions
 function hideseek:saturation
