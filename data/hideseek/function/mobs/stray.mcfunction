@@ -1,0 +1,1 @@
+execute at Vexnos run summon minecraft:stray ~ ~ ~ {Team:"4",Tags:["NoKill"],HandItems:[{id:bow,count:1,components:{unbreakable:{}}},{}],active_effects:[{id:"minecraft:resistance",amplifier:5,duration:-1,show_particles:0b},{id:"minecraft:weakness",amplifier:3,duration:-1,show_particles:0b}]}
