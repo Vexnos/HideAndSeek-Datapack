@@ -46,7 +46,7 @@ execute if score antinazgard Antinazgard matches 1.. run give @a[team=1] firewor
 execute if score hindenburg Hindenburg matches 1.. run give @a[team=1] fishing_rod[max_damage=3,enchantment_glint_override=true,custom_name={"text":"Grappling Hook","italic":false}]
 
 # Pavlopetri Specific Items
-execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] ink_sac[consumable={consume_seconds:0.05},enchantment_glint_override=true,custom_name='{"text":"Ink Bomb","italic":false,"color":"black"}'] 3
+execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] ink_sac[consumable={consume_seconds:0.05},enchantment_glint_override=true,custom_name={"text":"Ink Bomb","italic":false,"color":"black"}] 3
 execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] trident[max_damage=8,enchantments={riptide:3},custom_name={"text":"Booster","italic":false}]
 execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] heart_of_the_sea[item_name={"color":"aqua","italic":false,"text":"Night Vision"},consumable={consume_seconds:0.05,on_consume_effects:[{type:apply_effects,effects:[{id:"minecraft:night_vision",amplifier:0,duration:200,show_particles:0b,show_icon:1b}],probability:1}]},enchantment_glint_override=true] 3
 
