@@ -6,11 +6,8 @@
                 "item": {
                     "items": "minecraft:skeleton_skull",
                     "components": {
-                        "minecraft:food": {
-                            "nutrition": 0,
-                            "saturation": 0,
-                            "can_always_eat": true,
-                            "eat_seconds": 0.1
+                        "minecraft:consumable": {
+                            "consume_seconds": 0.1
                         }
                     }
                 }

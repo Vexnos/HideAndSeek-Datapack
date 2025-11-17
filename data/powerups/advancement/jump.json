@@ -6,20 +6,20 @@
                 "item": {
                     "items": "minecraft:slime_ball",
                     "components": {
-                        "minecraft:food": {
-                            "nutrition": 0,
-                            "saturation": 0,
-                            "can_always_eat": true,
-                            "eat_seconds": 0.05,
-                            "effects": [
+                        "minecraft:consumable": {
+                            "consume_seconds": 0.05,
+                            "on_consume_effects": [
                                 {
-                                    "effect": {
-                                        "id": "minecraft:levitation",
-                                        "amplifier": 100,
-                                        "duration": 5,
-                                        "show_particles": false,
-                                        "show_icon": true
-                                    },
+                                    "type": "apply_effects",
+                                    "effects": [
+                                        {
+                                            "id": "minecraft:levitation",
+                                            "amplifier": 100,
+                                            "duration": 5,
+                                            "show_particles": false,
+                                            "show_icon": true
+                                        }
+                                    ],
                                     "probability": 1
                                 }
                             ]
