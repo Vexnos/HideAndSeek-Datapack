@@ -1,5 +1,5 @@
 # Items for Seekers (This is an eyesore)
-give @a[team=2] stick[enchantments={sharpness:5},unbreakable={},custom_name={"text":"Whacky Stick","color":"aqua","italic":false},lore=[{"text":"Whack them moles","color":"dark_aqua","italic":false}]]
+give @a[team=2] stick[enchantment_glint_override=true,unbreakable={},custom_name={"text":"Whacky Stick","color":"aqua","italic":false},lore=[{"text":"Whack them moles","color":"dark_aqua","italic":false}],attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:9,operation:"add_value"}]]
 # execute as @a[team=1] run give @a[team=2] ender_pearl[enchantment_glint_override=true,unbreakable={},lore=['{"text":"Go get \'em","italic":false,"color":"dark_purple"}'],item_name='{"text":"Ender Pearl","color":"light_purple"}'] 1
 # give @a[team=2] skeleton_skull[item_name='{"color":"green","italic":false,"text":"Minions Power Up"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true] 3
 give @a[team=2] bow[enchantments={punch:2},unbreakable={}]
