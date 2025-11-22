@@ -4,6 +4,9 @@ execute as @a[team=1,tag=!out] if score @s deaths matches 1.. run scoreboard pla
 # Give dead hiders the 'Out' Tag
 execute as @a[team=1,tag=!out] if score @s deaths matches 1.. run tag @s add out
 
+# Seeker Respawn Invincibility
+execute as @a[team=2,scores={deaths=1..}] run schedule function hideseek:seekerdeath 1t
+
 # Kill volumes on unique maps
 execute if score tartarus Tartarus matches 1.. run execute as @a[team=1,x=-143,y=77,z=2432,dx=175,dy=90,dz=175] run damage @s 10 minecraft:outside_border
 execute if score ataraxia Ataraxia matches 1.. run execute as @a[team=1,x=44,y=245,z=-805,dx=300,dy=90,dz=300] run damage @s 999 minecraft:outside_border

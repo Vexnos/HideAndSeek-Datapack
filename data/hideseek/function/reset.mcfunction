@@ -45,6 +45,7 @@ schedule clear events:guardian/summon
 schedule clear events:phantoms/summon
 schedule clear events:breeze/summon
 schedule clear events:wardenflurry/summon
+schedule clear events:killerbunny/summon
 schedule clear events:zombies
 schedule clear hideseek:ping
 schedule clear hideseek:darkping
@@ -64,6 +65,7 @@ scoreboard players set #breezeTimer breezeTimer 0
 scoreboard players set #guardianTimer guardianTimer 0
 scoreboard players set #wardenTimer wardenTimer 0
 scoreboard players set #phantomTimer phantomTimer 0
+scoreboard players set #bunnyTimer bunnyTimer 0
 scoreboard players set #mountsEnabled mountsEnabled 1
 scoreboard players set swap swap 0
 scoreboard players reset @a radar
@@ -77,7 +79,7 @@ tag @a remove seekerWait
 # Reset Worldborder
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2
 execute if score felora Felora matches 1.. run worldborder set 150 2
-execute if score paleora Paleora matches 1.. run worldborder set 154 2
+execute if score paleora Paleora matches 1.. run worldborder set 151 2
 execute if score tartarus Tartarus matches 1.. run worldborder set 205 2
 execute if score hyperia Hyperia matches 1.. run worldborder set 370 2
 execute if score hailstone Hailstone matches 1.. run worldborder set 300 2
@@ -132,6 +134,7 @@ kill @e[type=zombie,tag=!dummy]
 kill @e[type=guardian,tag=event]
 kill @e[type=drowned,tag=seekerguardian]
 kill @e[type=drowned,tag=!NoKill]
+kill @e[type=rabbit,nbt={RabbitType:99}]
 
 # Reset Time
 execute unless score paleora Paleora matches 1 run time set 7000
