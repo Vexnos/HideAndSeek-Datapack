@@ -43,6 +43,7 @@ schedule clear events:trayaurus/teleportback
 schedule clear events:disableteleports/enable
 schedule clear events:guardian/summon
 schedule clear events:phantoms/summon
+schedule clear events:breeze/summon
 schedule clear events:wardenflurry/summon
 schedule clear events:zombies
 schedule clear hideseek:ping
