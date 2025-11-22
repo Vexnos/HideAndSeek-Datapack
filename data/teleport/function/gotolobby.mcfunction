@@ -21,6 +21,9 @@ worldborder set 59999968
 # Set Weather to Clear
 weather clear
 
+# Set Time
+time set 7000
+
 # Set Timer max to default
 bossbar set minecraft:timer max 600
 bossbar set minecraft:timer style notched_10

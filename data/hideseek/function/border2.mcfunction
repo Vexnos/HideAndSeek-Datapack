@@ -2,6 +2,7 @@
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 75 30
 execute if score darkpeak DarkPeak matches 1.. run worldborder set 75 30
 execute if score felora Felora matches 1.. run worldborder set 75 30
+execute if score paleora Paleora matches 1.. run worldborder set 75 30
 execute if score tartarus Tartarus matches 1.. run worldborder set 75 30
 execute if score hyperia Hyperia matches 1.. run worldborder set 100 30
 execute if score hailstone Hailstone matches 1.. run worldborder set 100 30

@@ -84,6 +84,7 @@ scoreboard objectives add Cathedral dummy
 scoreboard objectives add Hailstorm dummy
 scoreboard objectives add Venator dummy
 scoreboard objectives add NewWorld dummy
+scoreboard objectives add Paleora dummy
 
 # Event Scoreboards
 scoreboard objectives add swap dummy

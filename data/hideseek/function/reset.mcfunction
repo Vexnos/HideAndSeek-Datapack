@@ -76,6 +76,7 @@ tag @a remove seekerWait
 # Reset Worldborder
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2
 execute if score felora Felora matches 1.. run worldborder set 150 2
+execute if score paleora Paleora matches 1.. run worldborder set 154 2
 execute if score tartarus Tartarus matches 1.. run worldborder set 205 2
 execute if score hyperia Hyperia matches 1.. run worldborder set 370 2
 execute if score hailstone Hailstone matches 1.. run worldborder set 300 2
@@ -132,7 +133,7 @@ kill @e[type=drowned,tag=seekerguardian]
 kill @e[type=drowned,tag=!NoKill]
 
 # Reset Time
-time set 7000
+execute unless score paleora Paleora matches 1 run time set 7000
 
 # Back to Lobby
 tp @a @e[tag=lobby, limit=1]
