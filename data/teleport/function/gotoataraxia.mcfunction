@@ -21,7 +21,7 @@ execute as @a at @s run playsound minecraft:entity.allay.ambient_without_item ma
 effect give @a blindness 1 0 true
 
 # Timer max is less on Ataraxia
-bossbar set minecraft:timer max 300
-bossbar set minecraft:timer style progress
+bossbar set minecraft:timer max 600
+bossbar set minecraft:timer style notched_10
 
 clear @a
