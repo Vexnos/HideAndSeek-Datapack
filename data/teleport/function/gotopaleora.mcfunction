@@ -21,6 +21,6 @@ execute as @a at @s run playsound minecraft:entity.allay.death master @s ~ ~ ~ 1
 effect give @a blindness 1 0 true
 
 # Set Time
-time set 15000
+time set 18000
 
 clear @a
