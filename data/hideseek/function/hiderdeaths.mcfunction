@@ -28,8 +28,8 @@ execute unless score end End matches 1.. unless score hoa HOA matches 1.. unless
 clear @a[team=2] spectral_arrow
 
 # Superjump ability effects and sounds
-execute at @a[nbt={active_effects:[{id:"minecraft:levitation"}]}] run playsound minecraft:entity.evoker.prepare_summon master @a ~ ~ ~ 100 2
-execute at @a[nbt={active_effects:[{id:"minecraft:levitation"}]}] run particle minecraft:portal ~ ~ ~ 1 1 1 0 200 normal
+# execute at @a[nbt={active_effects:[{id:"minecraft:levitation"}]}] run playsound minecraft:entity.evoker.prepare_summon master @a ~ ~ ~ 100 2
+execute at @a[nbt={active_effects:[{id:"minecraft:levitation"}]}] run particle minecraft:sonic_boom ~ ~ ~ 0.1 0.1 0.1 1 10 normal
 
 # Teleport players going under Biggerton back to the spawn point
 execute if score biggerton Biggerton matches 1.. as @a[tag=!out,x=-496,y=63,z=-1442,dx=210,dy=-100,dz=210] run tp @s @e[tag=start,limit=1]

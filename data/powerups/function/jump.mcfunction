@@ -1,2 +1,2 @@
 advancement revoke @s only powerups:jump
-execute at @s run playsound minecraft:block.bell.resonate master @a ~ ~ ~ 100 2
+execute at @s run playsound minecraft:block.beacon.activate master @a ~ ~ ~ 100 2

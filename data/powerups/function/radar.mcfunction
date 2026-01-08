@@ -9,4 +9,4 @@ tellraw @a [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> Marco!"}]
 execute at @s run tellraw @a [{"text":"<","color":"white"},{"selector":"@a[team=1,limit=1,gamemode=adventure,sort=nearest]"},{"text":"> Polo!"}]
 
 # Sound
-execute at @s run playsound minecraft:block.bell.resonate master @a ~ ~ ~ 100 2
+execute at @s run playsound minecraft:entity.guardian.death master @a ~ ~ ~ 100 0
