@@ -67,10 +67,10 @@ schedule function hideseek:timer 1s
 execute unless score end End matches 1.. unless score antinazgard Antinazgard matches 1.. unless score passtwin Passtwin matches 1.. run give @a[team=1] egg[item_name={"text":"Make the Seeker go away","color":"blue","italic":false}] 1
 
 # OST
-execute if score nazgard Nazgard matches 1 as @a at @s run playsound hideseek:nether record @s
-execute if score end End matches 1 as @a at @s run playsound hideseek:theend record @s
-execute if score hailstone Hailstone matches 1 as @a at @s run playsound hideseek:hailstone record @s
-stopsound @a * hideseek:jokers
+# execute if score nazgard Nazgard matches 1 as @a at @s run playsound hideseek:nether record @s
+# execute if score end End matches 1 as @a at @s run playsound hideseek:theend record @s
+# execute if score hailstone Hailstone matches 1 as @a at @s run playsound hideseek:hailstone record @s
+# stopsound @a * hideseek:jokers
 
 # Reset
 execute unless score ataraxia Ataraxia matches 1.. run execute unless score hoa HOA matches 1.. unless score newworld NewWorld matches 1 run schedule function hideseek:reset 600s
