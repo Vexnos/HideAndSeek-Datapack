@@ -5,7 +5,7 @@ MAX_HIDERS = int(os.environ["MAX_HIDERS"])
 result = "# Run the corresponding function depending on the result of calculateswap\n"
 
 for x in range(2, MAX_HIDERS + 1):
-  result += f"execute if score swap swap matches {x} run function events:{x}swap\n"
+  result += f"execute if score swap swap matches {x} run function hideseek:events/{x}swap\n"
 
 result += '\n# Title\ntitle @a title {"text":"Swap!","color":"blue"}\n'
 result += '\n# Play sound to everyone\nexecute as @a at @s run playsound minecraft:entity.enderman.teleport master @s\n'

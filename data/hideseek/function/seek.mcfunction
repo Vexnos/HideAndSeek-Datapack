@@ -79,8 +79,8 @@ execute if score hoa HOA matches 1.. run schedule function hideseek:reset 450s
 execute if score newworld NewWorld matches 1 run schedule function hideseek:reset 300s
 
 # Events
-execute unless score #eventsEnabled eventsEnabled matches 0 unless score hoa HOA matches 1 run schedule function events:initmevent 150s
-execute unless score #eventsEnabled eventsEnabled matches 0 unless score hoa HOA matches 1 run schedule function events:initevent 60s
+execute unless score #eventsEnabled eventsEnabled matches 0 unless score hoa HOA matches 1 run schedule function hideseek:events/initmevent 150s
+execute unless score #eventsEnabled eventsEnabled matches 0 unless score hoa HOA matches 1 run schedule function hideseek:events/initevent 60s
 execute if score mobsEnabled mobsEnabled matches 1.. run execute unless score hoa HOA matches 1.. run schedule function hideseek:finalminute 540s
 
 # Worldborder

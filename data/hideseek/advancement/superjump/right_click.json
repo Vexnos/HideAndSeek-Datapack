@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "minecraft:consumable": {
+                            "consume_seconds": 10000
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "hideseek:superjump/jump"
+    }
+}

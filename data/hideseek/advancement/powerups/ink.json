@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:ink_sac",
+                    "components": {
+                        "minecraft:consumable": {
+                            "consume_seconds": 0.05
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "hideseek:powerups/ink"
+    }
+}

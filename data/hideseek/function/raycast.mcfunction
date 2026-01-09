@@ -1,1 +1,1 @@
-execute as @a[team=2] at @s anchored eyes run function hitboxes:ray
+execute as @a[team=2] at @s anchored eyes run function hideseek:hitboxes/ray
