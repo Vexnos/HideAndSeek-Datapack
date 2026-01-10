@@ -4,7 +4,7 @@
             "trigger": "minecraft:using_item",
             "conditions": {
                 "item": {
-                    "items": "minecraft:chain",
+                    "items": "minecraft:iron_chain",
                     "components": {
                         "minecraft:consumable": {
                             "consume_seconds": 0.1
