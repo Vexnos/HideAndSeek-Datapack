@@ -87,8 +87,8 @@ execute if score meridian Meridian matches 1.. run worldborder set 300 2
 execute if score twinpass TwinPass matches 1.. run worldborder set 230 2
 execute if score kawaiinislands KawaiinIslands matches 1.. run worldborder set 540 2
 execute if score diamondheights DiamondHeights matches 1.. run worldborder set 250 2
-execute if score nazgard Nazgard matches 1.. run worldborder set 250 2
-execute if score end End matches 1.. run worldborder set 360 2
+execute if score nazgard Nazgard matches 1.. in the_nether run worldborder set 250 2
+execute if score end End matches 1.. in the_end run worldborder set 360 2
 execute if score oakendale Oakendale matches 1.. run worldborder set 400 2
 execute if score etherea Etherea matches 1.. run worldborder set 200 2
 execute if score incatasia Incatasia matches 1.. run worldborder set 275 2
@@ -105,7 +105,7 @@ execute if score darkpeak DarkPeak matches 1.. run worldborder set 200 2
 execute if score nestoria Nestoria matches 1.. run worldborder set 350 2
 execute if score hindenburg Hindenburg matches 1.. run worldborder set 550 2
 execute if score pavlopetri Pavlopetri matches 1.. run worldborder set 205 2
-execute if score antinazgard Antinazgard matches 1.. run worldborder set 249 2
+execute if score antinazgard Antinazgard matches 1.. in the_end run worldborder set 249 2
 execute if score passtwin Passtwin matches 1.. run worldborder set 230 2
 execute if score cathedral Cathedral matches 1.. run worldborder set 1150 2
 execute if score hailstorm Hailstorm matches 1.. run worldborder set 300 2
