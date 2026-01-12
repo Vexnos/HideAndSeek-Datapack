@@ -5,8 +5,8 @@ execute in the_nether run tp @a -248 93 -1089
 execute in the_nether run spawnpoint @a -248 93 -1089
 
 # Worldborder
-worldborder center -1632 -8520
-worldborder set 250
+execute in the_nether run worldborder center -204 -1065
+execute in the_nether run worldborder set 250
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set nazgard Nazgard 1

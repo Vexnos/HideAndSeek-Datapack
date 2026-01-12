@@ -5,8 +5,8 @@ execute in the_end run tp @a 85 118 604
 execute in the_end run spawnpoint @a 85 118 604
 
 # Worldborder
-worldborder center 129 628
-worldborder set 249
+execute in the_end run worldborder center 129 628
+execute in the_end run worldborder set 249
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set antinazgard Antinazgard 1

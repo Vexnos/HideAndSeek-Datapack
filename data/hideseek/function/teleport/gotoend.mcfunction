@@ -5,8 +5,8 @@ execute in the_end run tp @a -1047 252 -607
 execute in the_end run spawnpoint @a -1047 252 -607
 
 # Worldborder
-worldborder center -1047 -607
-worldborder set 360
+execute in the_end run worldborder center -1047 -607
+execute in the_end run worldborder set 360
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set end End 1

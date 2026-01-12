@@ -5,8 +5,8 @@ execute in the_nether run tp @a 488 234 488
 execute in the_nether run spawnpoint @a 488 234 488
 
 # Worldborder
-worldborder center 0 0
-worldborder set 59999968
+execute in the_nether run worldborder center 0 0
+execute in the_nether run worldborder set 59999968
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set antiend Antiend 1
