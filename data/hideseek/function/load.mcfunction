@@ -85,6 +85,11 @@ scoreboard objectives add Hailstorm dummy
 scoreboard objectives add Venator dummy
 scoreboard objectives add NewWorld dummy
 scoreboard objectives add Paleora dummy
+scoreboard objectives add start trigger
+scoreboard objectives add seek trigger
+scoreboard objectives add reset trigger
+scoreboard objectives add border1 trigger
+scoreboard objectives add border2 trigger
 
 # Event Scoreboards
 scoreboard objectives add swap dummy

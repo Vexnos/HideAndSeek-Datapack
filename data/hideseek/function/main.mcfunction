@@ -18,3 +18,17 @@ execute in minecraft:overworld run kill @e[type=ender_pearl,x=-1457,y=207,z=-703
 
 execute in minecraft:overworld run kill @e[type=arrow,x=-1455,y=191,z=-685,dx=5,dy=10,dz=2]
 execute in minecraft:overworld run kill @e[type=arrow,x=-1457,y=207,z=-703,dx=8,dy=7,dz=8]
+
+# Enable Triggers
+scoreboard players enable @a[tag=admin] start
+scoreboard players enable @a[tag=admin] seek
+scoreboard players enable @a[tag=admin] reset
+scoreboard players enable @a[tag=admin] border1
+scoreboard players enable @a[tag=admin] border2
+
+# Triggers
+execute as @a[tag=admin,scores={start=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={seek=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={reset=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={border1=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={border2=1..}] run function hideseek:triggers
