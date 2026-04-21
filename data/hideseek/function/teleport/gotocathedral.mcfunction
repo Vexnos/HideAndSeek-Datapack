@@ -5,8 +5,8 @@ execute in hideseek:cathedral run tp @a -114 56 0
 execute in hideseek:cathedral run spawnpoint @a -114 56 0
 
 # Worldborder
-worldborder center -114 0
-worldborder set 1150
+execute in hideseek:cathedral run worldborder center -114 0
+execute in hideseek:cathedral run worldborder set 1150
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set cathedral Cathedral 1

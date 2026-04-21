@@ -5,8 +5,8 @@ execute in hideseek:hailstorm run tp @a -707 277 -3942
 execute in hideseek:hailstorm run spawnpoint @a -707 277 -3942
 
 # Worldborder
-worldborder center -741 -4033
-worldborder set 300
+execute in hideseek:hailstorm run worldborder center -741 -4033
+execute in hideseek:hailstorm run worldborder set 300
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set hailstorm Hailstorm 1

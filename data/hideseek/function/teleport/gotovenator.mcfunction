@@ -5,8 +5,8 @@ execute in hideseek:venator run tp @a -522 148 0
 execute in hideseek:venator run spawnpoint @a -522 148 0
 
 # Worldborder
-worldborder center -522 0
-worldborder set 1225
+execute in hideseek:venator run worldborder center -522 0
+execute in hideseek:venator run worldborder set 1225
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set venator Venator 1

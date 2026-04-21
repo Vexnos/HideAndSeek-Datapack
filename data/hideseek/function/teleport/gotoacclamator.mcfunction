@@ -5,8 +5,8 @@ execute in hideseek:acclamator run tp @a -32 221 14
 execute in hideseek:acclamator run spawnpoint @a -32 221 14
 
 # Worldborder
-worldborder center -32 14
-worldborder set 725
+execute in hideseek:acclamator run worldborder center -32 14
+execute in hideseek:acclamator run worldborder set 725
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set acclamator Acclamator 1

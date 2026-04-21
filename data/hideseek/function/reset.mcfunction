@@ -98,7 +98,7 @@ execute if score biggerton Biggerton matches 1.. run worldborder set 200 2
 execute if score queenmary2 QueenMary2 matches 1 run worldborder set 725 2
 execute if score redstoneAcademy redstoneAcademy matches 1.. run worldborder set 150 2
 execute if score poseidon Poseidon matches 1.. run worldborder set 725 2
-execute if score acclamator Acclamator matches 1.. run worldborder set 725 2
+execute if score acclamator Acclamator matches 1.. in hideseek:acclamator run worldborder set 725 2
 execute if score markar Markar matches 1.. run worldborder set 200 2
 execute if score kaelos Kaelos matches 1.. run worldborder set 200 2
 execute if score darkpeak DarkPeak matches 1.. run worldborder set 200 2
@@ -107,9 +107,9 @@ execute if score hindenburg Hindenburg matches 1.. run worldborder set 550 2
 execute if score pavlopetri Pavlopetri matches 1.. run worldborder set 205 2
 execute if score antinazgard Antinazgard matches 1.. in the_end run worldborder set 249 2
 execute if score passtwin Passtwin matches 1.. run worldborder set 230 2
-execute if score cathedral Cathedral matches 1.. run worldborder set 1150 2
-execute if score hailstorm Hailstorm matches 1.. run worldborder set 300 2
-execute if score venator Venator matches 1.. run worldborder set 1225 2
+execute if score cathedral Cathedral matches 1.. in hideseek:cathedral run worldborder set 1150 2
+execute if score hailstorm Hailstorm matches 1.. in hideseek:hailstorm run worldborder set 300 2
+execute if score venator Venator matches 1.. in hideseek:venator run worldborder set 1225 2
 execute if score newworld NewWorld matches 1.. run worldborder set 200 2
 
 # Kill Mobs
