@@ -106,6 +106,14 @@ scoreboard objectives add countdown dummy
 scoreboard objectives add mcountdown dummy
 scoreboard objectives add eventsEnabled dummy
 
+# Stats Scoreboards
+scoreboard objectives add winsAsHider dummy {text:"Wins as Hider",color:"red"}
+scoreboard objectives add winsAsSeeker dummy {text:"Wins as Seeker",color:"blue"}
+function hideseek:display_scores
+
+scoreboard players set #max winsAsHider -2147483648
+scoreboard players set #max winsAsSeeker -2147483648
+
 # Timer Bossbar
 bossbar add timer {"text":"Time","color":"yellow"}
 bossbar set timer color yellow

@@ -1,0 +1,1 @@
+execute as @e[type=mannequin,tag=!NoKill] at @s run tp @s[type=minecraft:mannequin] ^ ^ ^0.2 facing entity @a[sort=nearest,team=2,limit=1]

@@ -9,6 +9,8 @@ function hideseek:killroguewindcharge
 execute if score #raycastEnabled raycastEnabled matches 1 run function hideseek:raycast
 execute as @a[team=1,tag=!notswap,scores={deaths=1..}] run function hideseek:events/calculateswap
 
+execute if entity @e[type=mannequin,tag=!NoKill] run function hideseek:mannequin
+
 # Clear players items from the Lobby
 execute in minecraft:overworld run clear @a[x=-1455,y=191,z=-685,dx=5,dy=10,dz=2,gamemode=adventure]
 execute in minecraft:overworld run clear @a[x=-1457,y=207,z=-703,dx=8,dy=7,dz=8,gamemode=adventure]

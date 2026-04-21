@@ -4,6 +4,10 @@ execute if score hiders hiding > out out as @a at @s run playsound minecraft:ui.
 execute if score hiders hiding <= out out run title @a title {"text":"Seekers Win!","color":"blue"}
 execute if score hiders hiding <= out out as @a at @s run playsound minecraft:entity.ender_dragon.growl master @s
 
+# Points for Stats
+execute unless score #test playTesting matches 1 run execute as @a[team=1] if score hiders hiding > out out if entity @s[tag=!out] run scoreboard players add @s winsAsHider 1
+execute unless score #test playTesting matches 1 run execute as @a[team=2] if score hiders hiding <= out out run scoreboard players add @s winsAsSeeker 1
+
 execute at @e[tag=lobby,limit=1] run spawnpoint @a ~ ~ ~
 effect clear @a
 
@@ -135,6 +139,7 @@ kill @e[type=guardian,tag=event]
 kill @e[type=drowned,tag=seekerguardian]
 kill @e[type=drowned,tag=!NoKill]
 kill @e[type=rabbit,nbt={RabbitType:99}]
+kill @e[type=mannequin,tag=!NoKill]
 
 # Reset Time
 execute unless score paleora Paleora matches 1 run time set 7000
