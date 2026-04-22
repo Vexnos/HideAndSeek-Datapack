@@ -10,4 +10,6 @@ execute at @a[tag=cloner] as @e[tag=shadowclone,limit=1,sort=nearest] run execut
 execute at @a[tag=cloner] as @e[tag=shadowclone,limit=1,sort=nearest] run execute store result score @s uuid3 run data get entity @a[tag=cloner,limit=1,sort=nearest] UUID[3]
 tag @a remove cloner
 
+execute as @a at @s run playsound minecraft:block.trial_spawner.about_to_spawn_item master @s ~ ~ ~ 100 1
+
 advancement revoke @s only hideseek:powerups/amethyst_shard

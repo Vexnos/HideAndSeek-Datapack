@@ -10,7 +10,7 @@ execute at @a[tag=shadowclone_teleport,limit=1] run summon marker ~ ~ ~ {Tags:["
 kill @e[type=mannequin,tag=tp_to_me,limit=1]
 
 execute at @e[tag=mswap0] run tp @a[tag=shadowclone_teleport,limit=1] ~ ~ ~ ~ ~
-execute at @e[tag=mswap1] run summon armor_stand ~ ~ ~ {Tags:["dummy"],ShowArms:1b,equipment:{head:{id:"minecraft:leather_helmet"}}}
+execute at @e[tag=mswap1] run summon armor_stand ~ ~ ~ {Tags:["dummy"],ShowArms:1b,equipment:{head:{id:"minecraft:leather_helmet"}},DisabledSlots:4144896}
 
 kill @e[type=marker,tag=mswap0]
 kill @e[type=marker,tag=mswap1]
