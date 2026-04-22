@@ -11,10 +11,10 @@ execute as @e[type=spectral_arrow,nbt={inGround:1b}] at @s run playsound minecra
 execute as @e[type=spectral_arrow,nbt={inGround:0b}] at @s run playsound minecraft:entity.evoker.cast_spell ambient @a ~ ~ ~ 1 1
 execute as @e[type=spectral_arrow,nbt={inGround:1b}] at @s run summon lightning_bolt ~ ~5 ~
 
-execute as @e[type=wind_charge] at @s run ride @p[team=1,gamemode=adventure,tag=Rider] mount @s
-execute as @e[type=wind_charge] at @s run ride @p[team=1,gamemode=adventure,distance=..3] mount @s
-execute at @e[type=wind_charge] run particle minecraft:gust ~ ~ ~ 0.1 0.1 0.1 0 25 normal
-effect give @e[type=wind_charge] glowing infinite 0 true
+# execute as @e[type=wind_charge] at @s run ride @p[team=1,gamemode=adventure,tag=Rider] mount @s
+# execute as @e[type=wind_charge] at @s run ride @p[team=1,gamemode=adventure,distance=..3] mount @s
+# execute at @e[type=wind_charge] run particle minecraft:gust ~ ~ ~ 0.1 0.1 0.1 0 25 normal
+# effect give @e[type=wind_charge] glowing infinite 0 true
 
 execute as @e[type=fishing_bobber] at @s run ride @p[gamemode=adventure,distance=..10] mount @s
 execute as @e[type=fishing_bobber] at @s run ride @p[gamemode=adventure,tag=Rider] mount @s
