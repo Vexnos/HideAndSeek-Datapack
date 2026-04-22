@@ -4,7 +4,7 @@
             "trigger": "minecraft:using_item",
             "conditions": {
                 "item": {
-                    "items": "minecraft:clock",
+                    "items": "minecraft:amethyst_shard",
                     "components": {
                         "minecraft:consumable": {
                             "consume_seconds": 0.05,
@@ -18,6 +18,6 @@
         }
     },
     "rewards": {
-        "function": "hideseek:shadowclones/check"
+        "function": "hideseek:powerups/shadowclones"
     }
 }

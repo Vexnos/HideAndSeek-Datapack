@@ -46,6 +46,7 @@ scoreboard objectives add nearbyTeleports dummy
 scoreboard objectives add range dummy
 scoreboard objectives add radar dummy
 scoreboard objectives add mountsEnabled dummy
+scoreboard objectives add shardsUsed minecraft.used:minecraft.amethyst_shard
 
 # Map Scoreboards
 scoreboard objectives add CrownPeak dummy
@@ -91,6 +92,7 @@ scoreboard objectives add reset trigger
 scoreboard objectives add border1 trigger
 scoreboard objectives add border2 trigger
 
+
 # Event Scoreboards
 scoreboard objectives add swap dummy
 scoreboard objectives add zombieTimer dummy
@@ -113,6 +115,12 @@ function hideseek:display_scores
 
 scoreboard players set #max winsAsHider -2147483648
 scoreboard players set #max winsAsSeeker -2147483648
+
+# UUIDs
+scoreboard objectives add uuid0 dummy
+scoreboard objectives add uuid1 dummy
+scoreboard objectives add uuid2 dummy
+scoreboard objectives add uuid3 dummy
 
 # Timer Bossbar
 bossbar add timer {"text":"Time","color":"yellow"}

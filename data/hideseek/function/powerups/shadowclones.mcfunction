@@ -1,6 +1,13 @@
-execute at @s run summon mannequin ~ ~ ~ {Tags:["shadowclone"]}
-execute at @s as @s run data modify entity @e[tag=shadowclone,limit=1,sort=nearest] profile.id set from entity @s UUID
-execute at @s as @s run data modify entity @e[tag=shadowclone,limit=1,sort=nearest] Rotation set from entity @s Rotation
-execute at @s as @s run data modify entity @e[tag=shadowclone,limit=1,sort=nearest] Motion set from entity @s Motion
+tag @s add cloner
+execute at @s[tag=cloner] run summon mannequin ~ ~ ~ {Tags:["shadowclone"],Invulnerable:1b}
+execute at @s[tag=cloner] as @s run data modify entity @e[tag=shadowclone,limit=1,sort=nearest] profile.id set from entity @s UUID
+execute at @s[tag=cloner] as @s run data modify entity @e[tag=shadowclone,limit=1,sort=nearest] Rotation set from entity @s Rotation
 
-advancement revoke @s only hideseek:powerups/clock
+# Get UUID and store in scoreboard
+execute at @a[tag=cloner] as @e[tag=shadowclone,limit=1,sort=nearest] run execute store result score @s uuid0 run data get entity @a[tag=cloner,limit=1,sort=nearest] UUID[0]
+execute at @a[tag=cloner] as @e[tag=shadowclone,limit=1,sort=nearest] run execute store result score @s uuid1 run data get entity @a[tag=cloner,limit=1,sort=nearest] UUID[1]
+execute at @a[tag=cloner] as @e[tag=shadowclone,limit=1,sort=nearest] run execute store result score @s uuid2 run data get entity @a[tag=cloner,limit=1,sort=nearest] UUID[2]
+execute at @a[tag=cloner] as @e[tag=shadowclone,limit=1,sort=nearest] run execute store result score @s uuid3 run data get entity @a[tag=cloner,limit=1,sort=nearest] UUID[3]
+tag @a remove cloner
+
+advancement revoke @s only hideseek:powerups/amethyst_shard

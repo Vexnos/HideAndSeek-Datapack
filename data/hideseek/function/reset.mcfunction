@@ -74,11 +74,17 @@ scoreboard players set #mountsEnabled mountsEnabled 1
 scoreboard players set swap swap 0
 scoreboard players reset @a radar
 scoreboard players set #game gameRunning 0
+scoreboard players reset @a shardsUsed
+scoreboard players reset @e uuid0
+scoreboard players reset @e uuid1
+scoreboard players reset @e uuid2
+scoreboard players reset @e uuid3
 
 # Tags
 tag @a remove out
 tag @a remove notswap
 tag @a remove seekerWait
+tag @a remove itemsGiven
 
 # Reset Worldborder
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2
@@ -140,6 +146,7 @@ kill @e[type=drowned,tag=seekerguardian]
 kill @e[type=drowned,tag=!NoKill]
 kill @e[type=rabbit,nbt={RabbitType:99}]
 kill @e[type=mannequin,tag=!NoKill]
+kill @e[type=armor_stand,tag=dummy]
 
 # Reset Time
 execute unless score paleora Paleora matches 1 run time set 7000

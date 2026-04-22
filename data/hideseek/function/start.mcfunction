@@ -90,6 +90,12 @@ execute unless score hindenburg Hindenburg matches 1 run scoreboard players set 
 # Spread Players
 execute if score #spread spreadPlayers matches 1 as @a[team=1] at @e[tag=start,limit=1] run spreadplayers ~ ~ 75 100 true @s
 
+# Get UUIDS
+execute as @a store result score @s uuid0 run data get entity @s UUID[0]
+execute as @a store result score @s uuid1 run data get entity @s UUID[1]
+execute as @a store result score @s uuid2 run data get entity @s UUID[2]
+execute as @a store result score @s uuid3 run data get entity @s UUID[3]
+
 # Set the game as running
 scoreboard players set #game gameRunning 1
 function hideseek:hidingtimer
