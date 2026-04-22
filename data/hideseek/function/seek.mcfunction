@@ -38,7 +38,6 @@ execute if score venator Venator matches 1.. run execute as @a[team=1] run give 
 execute if score cathedral Cathedral matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]}] 96
 execute if score cathedral Cathedral matches 1.. run give @a[team=2] crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
 execute unless score pavlopetri Pavlopetri matches 1 unless score hindenburg Hindenburg matches 1 run item replace entity @a[team=2] hotbar.8 with chorus_fruit[max_stack_size=99,consumable={consume_seconds:0.05,on_consume_effects:[{type:teleport_randomly}]}] 99
-give @a[team=1] amethyst_shard[custom_name={text:"Decoy",italic:false,color:"yellow"},enchantment_glint_override=true,max_stack_size=3,consumable={animation:spear,consume_seconds:0.05,has_consume_particles:false,sound:"minecraft:entity.enderman.teleport"}] 3
 
 # Tags
 tag @a[team=2] remove seekerWait
