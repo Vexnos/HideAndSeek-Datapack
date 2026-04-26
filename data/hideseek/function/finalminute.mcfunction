@@ -80,7 +80,7 @@ time set 18000
 
 # Effects
 # effect give @a[team=1] blindness infinite 0 true
-effect clear @a[team=2] resistance
+execute unless score end End matches 1 unless score hoa HOA matches 1 unless score ataraxia Ataraxia matches 1 unless score cathedral Cathedral matches 1 unless score acclamator Acclamator matches 1 unless score venator Venator matches 1 run effect clear @a[team=2] resistance
 
 # Give Stone Sword to Hiders
 give @a[team=1,gamemode=adventure] stone_sword[unbreakable={},custom_name={"text":"Seeker's Bane","color":"yellow","italic":false},enchantments={fire_aspect:2,sharpness:1}]
