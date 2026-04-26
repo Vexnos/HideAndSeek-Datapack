@@ -13,4 +13,4 @@ execute if score darkpeak DarkPeak matches 1 at @e[tag=start,limit=1] run summon
 execute as @a at @s run playsound minecraft:entity.wither.spawn master @s
 
 # Title
-title @a title {"text":"Wither!","color":"dark_red","bold":true}
+title @a title [{type:"object",object:"atlas",atlas:"minecraft:blocks",sprite:"block/wither_rose"},{"text":" Wither! ","color":"dark_red","bold":true},{type:"object",object:"atlas",atlas:"minecraft:blocks",sprite:"block/wither_rose"}]

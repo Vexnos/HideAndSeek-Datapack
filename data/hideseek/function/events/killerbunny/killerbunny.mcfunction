@@ -1,5 +1,5 @@
 # Title
-title @a title {"text":"Killer Bunnies!","color":"red"}
+title @a title [{type:"object",object:"atlas",atlas:"minecraft:particles",sprite:"minecraft:heart"},{"text":" Killer Bunnies! ","color":"red"},{type:"object",object:"atlas",atlas:"minecraft:particles",sprite:"minecraft:heart"}]
 
 # Sounds
 execute as @a at @s run playsound minecraft:entity.evoker.prepare_summon master @s

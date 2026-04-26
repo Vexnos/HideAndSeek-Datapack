@@ -1,5 +1,6 @@
-title @a title {"text":"Time Warp!","color":"dark_purple"}
-execute at @a run playsound minecraft:block.bell.resonate master @a ~ ~ ~ 100 2
-execute at @a run summon area_effect_cloud ~ ~ ~ {Tags:["timelord"],Duration:300}
-execute as @e[tag=timelord] at @s run tag @a[sort=nearest,limit=1] add timewarp
-schedule function hideseek:events/timelord/teleport 10s
+title @a title [{type:"object",object:"atlas",atlas:"minecraft:blocks",sprite:"item/clock_00"},{"text":" Time Warp! ","color":"dark_purple"},{type:"object",object:"atlas",atlas:"minecraft:blocks",sprite:"item/clock_00"}]
+execute as @a at @s run playsound minecraft:block.vault.insert_item_fail master @s ~ ~ ~ 100 0
+execute as @a at @s run playsound minecraft:block.trial_spawner.about_to_spawn_item master @s ~ ~ ~ 100 0
+execute as @a[tag=!out] at @s run summon marker ~ ~ ~ {Tags:["timelord"]}
+execute as @e[tag=timelord] at @s run function hideseek:events/timelord/tags
+schedule function hideseek:events/timelord/teleport 20s

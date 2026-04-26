@@ -1,8 +1,8 @@
 # Game Over title
-execute if score hiders hiding > out out run title @a title {"text":"Hiders Win!","color":"red"}
+execute if score hiders hiding > out out run title @a title [{type:"object",object:"atlas",atlas:"minecraft:blocks",sprite:"item/nether_star"},{"text":" Hiders Win! ","color":"red"},{type:"object",object:"atlas",atlas:"minecraft:blocks",sprite:"item/nether_star"}]
 execute if score hiders hiding > out out as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
-execute if score hiders hiding <= out out run title @a title {"text":"Seekers Win!","color":"blue"}
-execute if score hiders hiding <= out out as @a at @s run playsound minecraft:entity.ender_dragon.growl master @s
+execute if score hiders hiding <= out out run title @a title [{type:"object",object:"atlas",atlas:"minecraft:blocks",sprite:"item/nether_star"},{"text":" Seekers Win! ","color":"blue"},{type:"object",object:"atlas",atlas:"minecraft:blocks",sprite:"item/nether_star"}]
+execute if score hiders hiding <= out out as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
 
 # Points for Stats
 execute unless score #test playTesting matches 1 run execute as @a[team=1] if score hiders hiding > out out if entity @s[tag=!out] run scoreboard players add @s winsAsHider 1
@@ -53,6 +53,7 @@ schedule clear hideseek:events/killerbunny/summon
 schedule clear hideseek:events/zombies
 schedule clear hideseek:ping
 schedule clear hideseek:darkping
+schedule clear hideseek:events/timelord/teleport
 
 # Scoreboards
 scoreboard players reset @a spectator
@@ -85,6 +86,26 @@ tag @a remove out
 tag @a remove notswap
 tag @a remove seekerWait
 tag @a remove itemsGiven
+tag @a remove tp1
+tag @a remove tp2
+tag @a remove tp3
+tag @a remove tp4
+tag @a remove tp5
+tag @a remove tp6
+tag @a remove tp7
+tag @a remove tp8
+tag @a remove swap1
+tag @a remove swap2
+tag @a remove swap3
+tag @a remove swap4
+tag @a remove swap5
+tag @a remove swap6
+tag @a remove swap7
+tag @a remove swap8
+tag @a remove swap9
+tag @a remove swap10
+tag @a remove swap11
+tag @a remove swap12
 
 # Reset Worldborder
 execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2
@@ -147,6 +168,7 @@ kill @e[type=drowned,tag=!NoKill]
 kill @e[type=rabbit,nbt={RabbitType:99}]
 kill @e[type=mannequin,tag=!NoKill]
 kill @e[type=armor_stand,tag=dummy]
+kill @e[type=marker]
 
 # Reset Time
 execute unless score paleora Paleora matches 1 run time set 7000

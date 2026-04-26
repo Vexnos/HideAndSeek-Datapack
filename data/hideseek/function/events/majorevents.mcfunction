@@ -11,4 +11,5 @@ execute if score #randInt randInt matches 20..21 run function hideseek:events/wi
 execute unless score darkpeak DarkPeak matches 1 if score #randInt randInt matches 22..25 run function hideseek:events/guardian/guardians
 execute if score darkpeak DarkPeak matches 1 if score #randInt randInt matches 22..25 run function hideseek:events/wardenflurry/wardens
 execute if score #randInt randInt matches 26..29 run function hideseek:events/breeze/breeze
+# execute if score #randInt randInt matches 30..34 run function hideseek:events/timelord/timelord
 execute if score #randInt randInt matches 30..31 run function hideseek:events/killerbunny/killerbunny

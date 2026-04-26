@@ -1,5 +1,5 @@
 # Title
-title @a title {"text":"Creepers!","color":"dark_green"}
+title @a title [{type:"object",object:"atlas",atlas:"minecraft:particles",sprite:"minecraft:angry"},{"text":" Creepers! ","color":"dark_green"},{type:"object",object:"atlas",atlas:"minecraft:particles",sprite:"minecraft:angry"}]
 
 # Sounds
 execute as @a at @s run playsound minecraft:entity.creeper.primed master @s
