@@ -12,7 +12,7 @@ execute if score swap swap matches 11 run function hideseek:events/11swap
 execute if score swap swap matches 12 run function hideseek:events/12swap
 
 # Title
-title @a title [{type:"object",object:"atlas",atlas:"minecraft:blocks",sprite:"item/ender_eye"},{"text":" Swap! ","color":"blue"},{type:"object",object:"atlas",atlas:"minecraft:blocks",sprite:"item/ender_eye"}]
+title @a title [{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/ender_eye"},{"text":" Swap! ","color":"blue"},{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/ender_eye"}]
 
 # Play sound to everyone
 execute as @a at @s run playsound minecraft:entity.enderman.teleport master @s

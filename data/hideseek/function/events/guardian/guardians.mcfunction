@@ -1,5 +1,5 @@
 # Title
-title @a title [{type:"object",object:"atlas",atlas:"minecraft:blocks",sprite:"item/prismarine_shard"},{"text":" Guardians! ","color":"dark_aqua"},{type:"object",object:"atlas",atlas:"minecraft:blocks",sprite:"item/prismarine_shard"}]
+title @a title [{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/prismarine_shard"},{"text":" Guardians! ","color":"dark_aqua"},{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/prismarine_shard"}]
 
 # Sounds
 execute as @a at @s run playsound minecraft:entity.elder_guardian.curse master @s ~ ~ ~ 100 0

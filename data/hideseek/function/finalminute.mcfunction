@@ -73,7 +73,7 @@ execute at @a run playsound entity.ender_dragon.growl ambient @a ~ ~ ~ 100 0
 execute at @a run playsound entity.wither.spawn ambient @a ~ ~ ~ 100 0
 
 # Slowly shrink the Worldborder
-worldborder set 50 150
+worldborder set 50 150s
 
 # Set time to night for dramatic effect
 time set 18000

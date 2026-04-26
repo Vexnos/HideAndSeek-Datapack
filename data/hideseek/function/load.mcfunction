@@ -19,7 +19,7 @@ team add 4 "Guardians"
 team modify 4 color green
 
 # Disable MobGriefing
-gamerule mobGriefing false
+gamerule mob_griefing false
 
 # Game Scoreboards
 scoreboard objectives add out dummy "out"
