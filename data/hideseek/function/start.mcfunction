@@ -45,7 +45,7 @@ execute if score passtwin Passtwin matches 1.. run give @a[team=1] firework_rock
 execute if score cathedral Cathedral matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 10
 execute if score antinazgard Antinazgard matches 1.. run give @a[team=1] firework_rocket[enchantment_glint_override=true] 20
 execute if score hindenburg Hindenburg matches 1.. run give @a[team=1] fishing_rod[max_damage=3,enchantment_glint_override=true,custom_name={"text":"Grappling Hook","italic":false}]
-give @a[team=1] amethyst_shard[custom_name={text:"Shadowclone",italic:false,color:"yellow"},enchantment_glint_override=true,max_stack_size=3,consumable={animation:trident,consume_seconds:0.05,has_consume_particles:false}] 3
+give @a[team=1] amethyst_shard[custom_name={text:"Shadowclone",italic:false,color:"yellow"},enchantment_glint_override=true,max_stack_size=3,consumable={animation:crossbow,consume_seconds:0.05,has_consume_particles:false}] 3
 
 # Pavlopetri Specific Items
 execute if score pavlopetri Pavlopetri matches 1 run give @a[team=1] ink_sac[consumable={consume_seconds:0.05},enchantment_glint_override=true,custom_name={"text":"Ink Bomb","italic":false,"color":"black"}] 3
@@ -92,6 +92,7 @@ execute as @a store result score @s uuid3 run data get entity @s UUID[3]
 
 # Set the game as running
 scoreboard players set #game gameRunning 1
+scoreboard players set #trackStats trackStats 0
 function hideseek:hidingtimer
 schedule function hideseek:seek 64s
 

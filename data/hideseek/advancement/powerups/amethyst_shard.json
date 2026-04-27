@@ -8,7 +8,7 @@
                     "components": {
                         "minecraft:consumable": {
                             "consume_seconds": 0.05,
-                            "animation": "trident",
+                            "animation": "crossbow",
                             "has_consume_particles": false
                         }
                     }

@@ -5,8 +5,8 @@ execute if score hiders hiding <= out out run title @a title [{type:"object",obj
 execute if score hiders hiding <= out out as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
 
 # Points for Stats
-execute unless score #test playTesting matches 1 if entity @a[tag=trackStats] run execute as @a[team=1] if score hiders hiding > out out if entity @s[tag=!out] run scoreboard players add @s winsAsHider 1
-execute unless score #test playTesting matches 1 if entity @a[tag=trackStats] run execute as @a[team=2] if score hiders hiding <= out out run scoreboard players add @s winsAsSeeker 1
+execute unless score #test playTesting matches 1 if score #trackStats trackStats matches 1 run execute as @a[team=1] if score hiders hiding > out out if entity @s[tag=!out] run scoreboard players add @s winsAsHider 1
+execute unless score #test playTesting matches 1 if score #trackStats trackStats matches 1 run execute as @a[team=2] if score hiders hiding <= out out run scoreboard players add @s winsAsSeeker 1
 
 execute at @e[tag=lobby,limit=1] run spawnpoint @a ~ ~ ~
 effect clear @a
@@ -75,6 +75,7 @@ scoreboard players set #mountsEnabled mountsEnabled 1
 scoreboard players set swap swap 0
 scoreboard players reset @a radar
 scoreboard players set #game gameRunning 0
+scoreboard players set #trackStats trackStats 0
 scoreboard players reset @a shardsUsed
 scoreboard players reset @e uuid0
 scoreboard players reset @e uuid1

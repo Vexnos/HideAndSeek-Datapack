@@ -38,6 +38,7 @@ scoreboard objectives add raycastEnabled dummy
 scoreboard objectives add radarEnabled dummy
 scoreboard objectives add velocity dummy
 scoreboard objectives add gameRunning dummy
+scoreboard objectives add trackStats dummy
 scoreboard objectives add spreadPlayers dummy
 scoreboard objectives add radarEnabled dummy
 scoreboard objectives add hidingTime dummy
