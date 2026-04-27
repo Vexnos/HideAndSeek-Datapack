@@ -68,14 +68,6 @@ title @a[team=2] actionbar {"text":"You are seeking! Find the other players to w
 # Sounds
 playsound minecraft:ambient.cave ambient @a[team=1] ~ ~ ~ 100 1
 
-# Goat Horns
-execute as @a[name=Vexnos,team=1] run give @s goat_horn[instrument=ponder_goat_horn]
-execute as @a[name=Atomhix,team=1] run give @s goat_horn[instrument=sing_goat_horn]
-execute as @a[name=Mathmagician8191,team=1] run give @s goat_horn[instrument=seek_goat_horn]
-execute as @a[name=qqqqqwwwww009,team=1] run give @s goat_horn[instrument=call_goat_horn]
-execute as @a[name=mR_P0tat012,team=1] run give @s goat_horn[instrument=dream_goat_horn]
-give @a[name=!Vexnos,name=!Mathmagician8191,name=!Atomhix,name=!qqqqqwwwww009,name=!mR_P0tat012,team=1] goat_horn[instrument=yearn_goat_horn]
-
 # Spawnpoint
 execute at @e[tag=start,limit=1] run spawnpoint @a[team=2] ~ ~ ~
 
