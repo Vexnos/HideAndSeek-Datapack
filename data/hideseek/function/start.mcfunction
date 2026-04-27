@@ -9,6 +9,7 @@ execute as @a[team=1] run scoreboard players add hiders hiding 1
 execute as @a[team=1] run scoreboard players add swap swap 1
 tag @a[team=2] add seekerWait
 tag @a remove notswap
+tag @a remove last_seeker
 
 # Teleportation
 tp @a[team=1] @e[tag=start,limit=1]

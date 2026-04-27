@@ -11,6 +11,9 @@ execute unless score #test playTesting matches 1 if score #trackStats trackStats
 execute at @e[tag=lobby,limit=1] run spawnpoint @a ~ ~ ~
 effect clear @a
 
+# Previous Seeker tag
+tag @a[team=2] add last_seeker
+
 # Teams
 team leave @a
 team join 3 @a
