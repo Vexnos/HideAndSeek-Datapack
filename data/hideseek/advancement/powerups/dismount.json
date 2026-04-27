@@ -1,12 +1,12 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:using_item",
+            "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "components": {
                         "minecraft:consumable": {
-                            "consume_seconds": 1000001
+                            "consume_seconds": 0.05
                         }
                     }
                 }
