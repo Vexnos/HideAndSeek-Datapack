@@ -1,13 +1,13 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:using_item",
+            "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
                     "items": "minecraft:heavy_core",
                     "components": {
                         "minecraft:consumable": {
-                            "consume_seconds": 999999
+                            "consume_seconds": 0.05
                         }
                     }
                 }
