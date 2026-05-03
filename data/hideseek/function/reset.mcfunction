@@ -145,7 +145,7 @@ execute if score passtwin Passtwin matches 1.. run worldborder set 230 2s
 execute if score cathedral Cathedral matches 1.. in hideseek:cathedral run worldborder set 1150 2s
 execute if score hailstorm Hailstorm matches 1.. in hideseek:hailstorm run worldborder set 300 2s
 execute if score venator Venator matches 1.. in hideseek:venator run worldborder set 1225 2s
-execute if score newworld NewWorld matches 1.. run worldborder set 200 2s
+execute if score newworld NewWorld matches 1.. in hideseek:newworld run worldborder set 200 2s
 execute if score ataraxia Ataraxia matches 1.. run worldborder set 300 2s
 
 # Kill Mobs

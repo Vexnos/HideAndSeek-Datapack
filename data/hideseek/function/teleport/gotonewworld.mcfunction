@@ -5,8 +5,8 @@ execute in hideseek:newworld run tp @a 9 149 -22
 execute in hideseek:newworld run spawnpoint @a 9 149 -22
 
 # Worldborder
-worldborder center 9 -22
-worldborder set 200
+execute in hideseek:newworld run worldborder center 9 -22
+execute in hideseek:newworld run worldborder set 200
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set newworld NewWorld 1
