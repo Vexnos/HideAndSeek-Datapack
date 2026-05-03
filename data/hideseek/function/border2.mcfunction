@@ -24,6 +24,7 @@ execute if score acclamator Acclamator matches 1 in hideseek:acclamator run worl
 execute if score nestoria Nestoria matches 1 run worldborder set 200 30s
 execute if score pavlopetri Pavlopetri matches 1.. run worldborder set 75 30s
 execute if score cathedral Cathedral matches 1.. in hideseek:cathedral run worldborder set 200 60s
+execute if score ataraxia Ataraxia matches 1.. run worldborder set 125 25s
 
 # Warning Message
 tellraw @a {"text":"The world border is shrinking!","color":"red","bold":true}
