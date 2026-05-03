@@ -1,9 +1,9 @@
 {
-  "values": [
-    "minecraft:egg",
-    "minecraft:snowball",
-    "minecraft:trident",
-    "minecraft:spectral_arrow",
-    "minecraft:fishing_bobber"
-  ]
+    "values": [
+        "minecraft:egg",
+        "minecraft:snowball",
+        "minecraft:trident",
+        "minecraft:spectral_arrow",
+        "minecraft:fishing_bobber"
+    ]
 }
