@@ -14,9 +14,10 @@
         },
         "minecraft:gameplay/can_start_raid": false,
         "minecraft:gameplay/nether_portal_spawns_piglin": true,
-        "minecraft:visual/fog_color": "#88ccee",
-        "minecraft:visual/sky_color": "#77aadd"
+        "minecraft:visual/fog_color": "#c0d8ff",
+        "minecraft:visual/sky_color": "#78a7ff"
     },
+    "timelines": "#minecraft:in_overworld",
     "has_skylight": true,
     "has_ceiling": false,
     "coordinate_scale": 1,
