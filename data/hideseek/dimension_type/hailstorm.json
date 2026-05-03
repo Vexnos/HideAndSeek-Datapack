@@ -22,7 +22,7 @@
     "has_ceiling": false,
     "coordinate_scale": 1,
     "ambient_light": 0,
-    "logical_height": 320,
+    "logical_height": 384,
     "skybox": "overworld",
     "cardinal_light": "default",
     "infiniburn": "#minecraft:infiniburn_overworld",
