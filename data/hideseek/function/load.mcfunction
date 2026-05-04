@@ -87,6 +87,7 @@ scoreboard objectives add Hailstorm dummy
 scoreboard objectives add Venator dummy
 scoreboard objectives add NewWorld dummy
 scoreboard objectives add Paleora dummy
+scoreboard objectives add Donut dummy
 scoreboard objectives add start trigger
 scoreboard objectives add seek trigger
 scoreboard objectives add reset trigger
