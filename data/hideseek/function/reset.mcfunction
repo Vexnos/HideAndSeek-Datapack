@@ -149,6 +149,7 @@ execute if score newworld NewWorld matches 1.. in hideseek:newworld run worldbor
 execute if score ataraxia Ataraxia matches 1.. run worldborder set 300 2s
 execute if score donut Donut matches 1.. run worldborder set 250 2s
 execute if score castle Castle matches 1.. in hideseek:castle run worldborder set 100 2s
+execute if score imperator Imperator matches 1.. in hideseek:imperator run worldborder set 350 2s
 
 # Kill Mobs
 kill @e[type=silverfish]
