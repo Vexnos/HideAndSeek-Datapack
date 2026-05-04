@@ -11,6 +11,9 @@ execute as @a[team=1,tag=!notswap,scores={deaths=1..}] run function hideseek:eve
 # Imperial Star Destroyer Kill Barrier
 execute if score imperator Imperator matches 1 if score #game gameRunning matches 1 in hideseek:imperator run kill @a[tag=!out,gamemode=adventure,team=1,x=-1427,y=715,z=-148,dx=300,dy=-100,dz=300]
 
+# Castle Kill Barrier
+execute if score imperator Imperator matches 1 if score #game gameRunning matches 1 in hideseek:castle run kill @a[tag=!out,gamemode=adventure,team=1,x=91,y=102,z=-130,dx=110,dy=-200,dz=110]
+
 # Mannequins Moving
 # execute if entity @e[type=mannequin,tag=!NoKill] run function hideseek:mannequin
 
