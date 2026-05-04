@@ -1,0 +1,18 @@
+{
+    "type": "hideseek:castle",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "biome": "minecraft:meadow",
+            "lakes": false,
+            "features": false,
+            "layers": [
+                {
+                    "block": "minecraft:air",
+                    "height": 0
+                }
+            ],
+            "structure_overrides": []
+        }
+    }
+}

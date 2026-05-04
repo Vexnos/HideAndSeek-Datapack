@@ -36,3 +36,5 @@ scoreboard players set hailstorm Hailstorm 0
 scoreboard players set venator Venator 0
 scoreboard players set newworld NewWorld 0
 scoreboard players set paleora Paleora 0
+scoreboard players set donut Donut 0
+scoreboard players set castle Castle 0

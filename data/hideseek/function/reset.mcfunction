@@ -148,6 +148,7 @@ execute if score venator Venator matches 1.. in hideseek:venator run worldborder
 execute if score newworld NewWorld matches 1.. in hideseek:newworld run worldborder set 200 2s
 execute if score ataraxia Ataraxia matches 1.. run worldborder set 300 2s
 execute if score donut Donut matches 1.. run worldborder set 250 2s
+execute if score castle Castle matches 1.. in hideseek:castle run worldborder set 100 2s
 
 # Kill Mobs
 kill @e[type=silverfish]
