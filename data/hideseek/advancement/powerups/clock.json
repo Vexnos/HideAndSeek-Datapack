@@ -7,8 +7,8 @@
                     "items": "minecraft:clock",
                     "components": {
                         "minecraft:consumable": {
-                            "consume_seconds": 5,
-                            "animation": "crossbow",
+                            "consume_seconds": 3,
+                            "animation": "trident",
                             "has_consume_particles": false,
                             "sound": "minecraft:entity.enderman.teleport"
                         }
