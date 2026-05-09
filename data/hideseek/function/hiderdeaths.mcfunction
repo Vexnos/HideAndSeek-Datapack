@@ -21,7 +21,7 @@ execute if score out out >= hiders hiding run function hideseek:reset
 # Replace hotbar slots in players' inventories
 # execute unless score ataraxia Ataraxia matches 1.. run execute unless score hoa HOA matches 1.. run execute unless score end End matches 1.. run item replace entity @a[team=1] hotbar.8 with firework_rocket{CanPlaceOn:["minecraft:stone","minecraft:grass_block","minecraft:dirt","minecraft:cobblestone","minecraft:stone_bricks","minecraft:coarse_dirt","minecraft:jungle_leaves","minecraft:birch_leaves","minecraft:oak_leaves"]} 1
 # execute unless score pavlopetri Pavlopetri matches 1 unless score hindenburg Hindenburg matches 1 run item replace entity @a[team=2] hotbar.8 with chorus_fruit[enchantment_glint_override=true]
-execute unless score pavlopetri Pavlopetri matches 1 run item replace entity @a[team=2] hotbar.6 with ender_pearl[enchantment_glint_override=true,rarity=epic]
+execute unless score pavlopetri Pavlopetri matches 1 run item replace entity @a[team=2] hotbar.6 with ender_pearl[enchantment_glint_override=true,rarity=epic,use_cooldown={seconds:0.05}]
 execute unless score end End matches 1.. unless score hoa HOA matches 1.. unless score ataraxia Ataraxia matches 1.. unless score pavlopetri Pavlopetri matches 1 unless score passtwin Passtwin matches 1 run item replace entity @a[team=2] hotbar.7 with trident[enchantments={impaling:5,lunge:10,channeling:1,"hideseek:dismount":1},unbreakable={},custom_name={"text":"Grappling Hook","color":"aqua","italic":false},tooltip_display={hidden_components:["minecraft:enchantments"]},piercing_weapon={deals_knockback:false,dismounts:false}]
 
 # Clear Spectral Arrows from Seekers to stop them teleporting Hiders to them
