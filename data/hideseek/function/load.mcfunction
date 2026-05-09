@@ -90,6 +90,7 @@ scoreboard objectives add Paleora dummy
 scoreboard objectives add Donut dummy
 scoreboard objectives add Castle dummy
 scoreboard objectives add Imperator dummy
+scoreboard objectives add Atlantide dummy
 scoreboard objectives add start trigger
 scoreboard objectives add seek trigger
 scoreboard objectives add reset trigger

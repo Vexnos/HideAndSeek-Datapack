@@ -26,6 +26,7 @@ execute if score pavlopetri Pavlopetri matches 1.. run worldborder set 75 30s
 execute if score cathedral Cathedral matches 1.. in hideseek:cathedral run worldborder set 200 60s
 execute if score ataraxia Ataraxia matches 1.. run worldborder set 125 25s
 execute if score donut Donut matches 1.. in hideseek:donut run worldborder set 150 30s
+execute if score atlantide Atlantide matches 1.. in hideseek:atlantide run worldborder set 125 45s
 
 # Warning Message
 tellraw @a {"text":"The world border is shrinking!","color":"red","bold":true}
