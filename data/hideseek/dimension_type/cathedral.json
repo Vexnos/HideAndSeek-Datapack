@@ -1,10 +1,7 @@
 {
     "attributes": {
-        "minecraft:gameplay/water_evaporates": true,
-        "minecraft:gameplay/fast_lava": true,
-        "minecraft:visual/default_dripstone_particle": {
-            "type": "minecraft:dripping_dripstone_lava"
-        },
+        "minecraft:gameplay/water_evaporates": false,
+        "minecraft:gameplay/fast_lava": false,
         "minecraft:gameplay/piglins_zombify": true,
         "minecraft:gameplay/respawn_anchor_works": false,
         "minecraft:gameplay/bed_rule": {
@@ -13,7 +10,7 @@
             "explodes": false
         },
         "minecraft:gameplay/can_start_raid": false,
-        "minecraft:gameplay/nether_portal_spawns_piglin": true,
+        "minecraft:gameplay/nether_portal_spawns_piglin": false,
         "minecraft:visual/fog_color": "#c0d8ff",
         "minecraft:visual/sky_color": "#78a7ff"
     },
