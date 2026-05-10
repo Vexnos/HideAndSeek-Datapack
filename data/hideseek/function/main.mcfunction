@@ -34,6 +34,12 @@ scoreboard players enable @a[tag=admin] reset
 scoreboard players enable @a[tag=admin] border1
 scoreboard players enable @a[tag=admin] border2
 
+# Lobby teleports
+execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/west
+execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/north
+execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/south
+execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/east
+
 # Triggers
 execute as @a[tag=admin,scores={start=1..}] run function hideseek:triggers
 execute as @a[tag=admin,scores={seek=1..}] run function hideseek:triggers

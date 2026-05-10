@@ -9,10 +9,10 @@ execute in overworld run worldborder center 0 0
 execute in overworld run worldborder set 59999968
 
 # Teleports
-execute in overworld run tp @a -1453 207 -699
-execute in overworld run spawnpoint @a -1453 207 -699
-# execute in hideseek:lobby run tp @a 0 170 1
-# execute in hideseek:lobby run spawnpoint @a 0 170 1
+# execute in overworld run tp @a -1453 207 -699
+# execute in overworld run spawnpoint @a -1453 207 -699
+execute in hideseek:lobby run tp @a 0 170 1
+execute in hideseek:lobby run spawnpoint @a 0 170 1
 
 # Particles, Effects and Sounds
 execute as @a at @s run particle portal ~ ~1 ~ 0.5 0.5 0.5 2 500 force
