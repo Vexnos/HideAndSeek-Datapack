@@ -7,6 +7,8 @@ title @a actionbar {"text":"Back to Lobby","color":"green"}
 # Reset Worldborder
 execute in overworld run worldborder center 0 0
 execute in overworld run worldborder set 59999968
+execute in hideseek:lobby run worldborder center 0 0
+execute in hideseek:lobby run worldborder set 59999968
 
 # Teleports
 # execute in overworld run tp @a -1453 207 -699

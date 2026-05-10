@@ -5,8 +5,8 @@ execute in overworld run tp @a -768 168 -4133
 execute in overworld run spawnpoint @a -768 168 -4133
 
 # Worldborder
-worldborder center -734 -4042
-worldborder set 300
+execute in overworld run worldborder center -734 -4042
+execute in overworld run worldborder set 300
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set hailstone Hailstone 1

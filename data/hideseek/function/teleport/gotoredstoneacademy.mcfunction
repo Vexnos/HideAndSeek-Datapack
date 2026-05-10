@@ -5,8 +5,8 @@ execute in overworld run tp @a -1376 183 -136
 execute in overworld run spawnpoint @a -1376 183 -136
 
 # Worldborder
-worldborder center -1376 -203
-worldborder set 150
+execute in overworld run worldborder center -1376 -203
+execute in overworld run worldborder set 150
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set redstoneAcademy redstoneAcademy 1

@@ -5,8 +5,8 @@ execute in overworld run tp @a 5125 130 98
 execute in overworld run spawnpoint @a 5125 130 98
 
 # Worldborder
-worldborder center 5121 98
-worldborder set 230
+execute in overworld run worldborder center 5121 98
+execute in overworld run worldborder set 230
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set passtwin Passtwin 1

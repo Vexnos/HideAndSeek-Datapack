@@ -5,8 +5,8 @@ execute in overworld run tp @a -1087 230 -969
 execute in overworld run spawnpoint @a -1087 230 -969
 
 # Worldborder
-worldborder center -1087 -969
-worldborder set 230
+execute in overworld run worldborder center -1087 -969
+execute in overworld run worldborder set 230
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set twinpass TwinPass 1

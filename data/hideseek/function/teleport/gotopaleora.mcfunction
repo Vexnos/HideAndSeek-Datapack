@@ -5,8 +5,8 @@ execute in overworld run tp @a -5123 105 93
 execute in overworld run spawnpoint @a -5123 105 93
 
 # Worldborder
-worldborder center -5123 93
-worldborder set 151
+execute in overworld run worldborder center -5123 93
+execute in overworld run worldborder set 151
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set paleora Paleora 1

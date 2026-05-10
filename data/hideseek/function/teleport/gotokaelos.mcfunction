@@ -5,8 +5,8 @@ execute in overworld run tp @a 217 119 2812
 execute in overworld run spawnpoint @a 217 119 2812
 
 # Worldborder
-worldborder center 217 2812
-worldborder set 200
+execute in overworld run worldborder center 217 2812
+execute in overworld run worldborder set 200
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set kaelos Kaelos 1

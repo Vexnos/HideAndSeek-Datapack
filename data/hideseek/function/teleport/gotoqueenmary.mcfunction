@@ -5,8 +5,8 @@ execute in overworld run tp @a -1739 225 3339
 execute in overworld run spawnpoint @a -1739 225 3339
 
 # Worldborder
-worldborder center -2010 3339
-worldborder set 725
+execute in overworld run worldborder center -2010 3339
+execute in overworld run worldborder set 725
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set queenmary2 QueenMary2 1

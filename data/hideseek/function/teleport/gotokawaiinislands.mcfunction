@@ -5,8 +5,8 @@ execute in overworld run tp @a -4606 174 365
 execute in overworld run spawnpoint @a -4606 174 365
 
 # Worldborder
-worldborder center -4606 365
-worldborder set 540
+execute in overworld run worldborder center -4606 365
+execute in overworld run worldborder set 540
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set kawaiinislands KawaiinIslands 1

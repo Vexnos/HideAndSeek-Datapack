@@ -5,8 +5,8 @@ execute in overworld run tp @a 158 274 -691
 execute in overworld run spawnpoint @a 158 274 -691
 
 # Worldborder
-worldborder center 158 -691
-worldborder set 300
+execute in overworld run worldborder center 158 -691
+execute in overworld run worldborder set 300
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set ataraxia Ataraxia 1

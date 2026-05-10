@@ -5,8 +5,8 @@ execute in overworld run tp @a -3806 206 -64
 execute in overworld run spawnpoint @a -3806 206 -64
 
 # Worldborder
-worldborder center -3806 -64
-worldborder set 150
+execute in overworld run worldborder center -3806 -64
+execute in overworld run worldborder set 150
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set felora Felora 1

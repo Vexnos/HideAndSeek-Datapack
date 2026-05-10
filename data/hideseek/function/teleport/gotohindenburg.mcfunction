@@ -5,8 +5,8 @@ execute in overworld run tp @a 229 238 2404
 execute in overworld run spawnpoint @a 229 238 2404
 
 # Worldborder
-worldborder center 474 2404
-worldborder set 550
+execute in overworld run worldborder center 474 2404
+execute in overworld run worldborder set 550
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set hindenburg Hindenburg 1

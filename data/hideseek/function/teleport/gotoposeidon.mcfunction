@@ -5,8 +5,8 @@ execute in overworld run tp @a -2079 246 2292
 execute in overworld run spawnpoint @a -2079 246 2292
 
 # Worldborder
-worldborder center -2079 2292
-worldborder set 725
+execute in overworld run worldborder center -2079 2292
+execute in overworld run worldborder set 725
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set poseidon Poseidon 1

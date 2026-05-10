@@ -5,8 +5,8 @@ execute in overworld run tp @a -396 221 -1342
 execute in overworld run spawnpoint @a -396 221 -1342
 
 # Worldborder
-worldborder center -396 -1342
-worldborder set 200
+execute in overworld run worldborder center -396 -1342
+execute in overworld run worldborder set 200
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set biggerton Biggerton 1

@@ -5,8 +5,8 @@ execute in overworld run tp @a 1331 177 -104
 execute in overworld run spawnpoint @a 1331 177 -104
 
 # Worldborder
-worldborder center 1331 -104
-worldborder set 250
+execute in overworld run worldborder center 1331 -104
+execute in overworld run worldborder set 250
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set diamondheights DiamondHeights 1

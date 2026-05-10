@@ -5,8 +5,8 @@ execute in overworld run tp @a 61 137 4606
 execute in overworld run spawnpoint @a 61 137 4606
 
 # Worldborder
-worldborder center 61 4606
-worldborder set 300
+execute in overworld run worldborder center 61 4606
+execute in overworld run worldborder set 300
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set meridian Meridian 1

@@ -5,8 +5,8 @@ execute in overworld run tp @a 1610 161 -3249
 execute in overworld run spawnpoint @a 1610 161 -3249
 
 # Worldborder
-worldborder center 1610 -3249
-worldborder set 350
+execute in overworld run worldborder center 1610 -3249
+execute in overworld run worldborder set 350
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set nestoria Nestoria 1

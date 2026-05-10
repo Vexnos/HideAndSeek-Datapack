@@ -5,8 +5,8 @@ execute in overworld run tp @a -3429 180 1244
 execute in overworld run spawnpoint @a -3429 180 1244
 
 # Worldborder
-worldborder center -3429 1239
-worldborder set 150
+execute in overworld run worldborder center -3429 1239
+execute in overworld run worldborder set 150
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set tempus Tempus 1

@@ -5,8 +5,8 @@ execute in overworld run tp @a 1 113 878
 execute in overworld run spawnpoint @a 1 113 878
 
 # Worldborder
-worldborder center 1 878
-worldborder set 200
+execute in overworld run worldborder center 1 878
+execute in overworld run worldborder set 200
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set darkpeak DarkPeak 1

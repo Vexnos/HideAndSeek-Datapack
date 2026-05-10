@@ -5,8 +5,8 @@ execute in overworld run tp @a -55 51 2434
 execute in overworld run spawnpoint @a -55 51 2434
 
 # Worldborder
-worldborder center -55 2510
-worldborder set 205
+execute in overworld run worldborder center -55 2510
+execute in overworld run worldborder set 205
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set tartarus Tartarus 1

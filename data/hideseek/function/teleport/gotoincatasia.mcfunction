@@ -5,8 +5,8 @@ execute in overworld run tp @a -916 227 1325
 execute in overworld run spawnpoint @a -916 227 1325
 
 # Worldborder
-worldborder center -916 1325
-worldborder set 275
+execute in overworld run worldborder center -916 1325
+execute in overworld run worldborder set 275
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set incatasia Incatasia 1

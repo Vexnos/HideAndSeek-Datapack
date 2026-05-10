@@ -5,8 +5,8 @@ execute in overworld run tp @a -1291 190 -1301
 execute in overworld run spawnpoint @a -1291 190 -1301
 
 # Worldborder
-worldborder center -1289 -1367
-worldborder set 400
+execute in overworld run worldborder center -1289 -1367
+execute in overworld run worldborder set 400
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set oakendale Oakendale 1

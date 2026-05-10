@@ -5,8 +5,8 @@ execute in overworld run tp @a -1988 215 -899
 execute in overworld run spawnpoint @a -1988 215 -899
 
 # Worldborder
-worldborder center -1988 -899
-worldborder set 200
+execute in overworld run worldborder center -1988 -899
+execute in overworld run worldborder set 200
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set etherea Etherea 1

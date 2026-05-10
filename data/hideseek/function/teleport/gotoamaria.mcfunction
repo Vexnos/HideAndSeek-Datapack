@@ -5,8 +5,8 @@ execute in overworld run tp @a 1639 238 1307
 execute in overworld run spawnpoint @a 1639 238 1307
 
 # Worldborder
-worldborder center 1588 1228
-worldborder set 440
+execute in overworld run worldborder center 1588 1228
+execute in overworld run worldborder set 440
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set amaria Amaria 1

@@ -5,8 +5,8 @@ execute in overworld run tp @a 1656 -4 285
 execute in overworld run spawnpoint @a 1656 -4 285
 
 # Worldborder
-worldborder center 1656 361
-worldborder set 205
+execute in overworld run worldborder center 1656 361
+execute in overworld run worldborder set 205
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set pavlopetri Pavlopetri 1
