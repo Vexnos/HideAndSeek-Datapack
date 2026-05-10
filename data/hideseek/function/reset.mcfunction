@@ -141,7 +141,8 @@ execute if score nestoria Nestoria matches 1.. run worldborder set 350 2s
 execute if score hindenburg Hindenburg matches 1.. run worldborder set 550 2s
 execute if score pavlopetri Pavlopetri matches 1.. run worldborder set 205 2s
 execute if score antinazgard Antinazgard matches 1.. in the_end run worldborder set 249 2s
-execute if score passtwin Passtwin matches 1.. run worldborder set 230 2s
+execute if score passtwin Passtwin matches 1.. in hideseek:lobby run worldborder set 230 2s
+execute if score paleora Paleora matches 1.. in hideseek:lobby run worldborder set 150 2s
 execute if score cathedral Cathedral matches 1.. in hideseek:cathedral run worldborder set 1150 2s
 execute if score hailstorm Hailstorm matches 1.. in hideseek:hailstorm run worldborder set 300 2s
 execute if score venator Venator matches 1.. in hideseek:venator run worldborder set 1225 2s

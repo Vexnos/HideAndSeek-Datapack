@@ -1,12 +1,12 @@
 # Teleports
-execute in overworld run tp @e[tag=lobby,limit=1] -5123 105 93
-execute in overworld run tp @e[tag=start,limit=1] -5123 2 93
-execute in overworld run tp @a -5123 105 93
-execute in overworld run spawnpoint @a -5123 105 93
+execute in hideseek:lobby run tp @e[tag=lobby,limit=1] -5053 265 170
+execute in hideseek:lobby run tp @e[tag=start,limit=1] -5053 162 170
+execute in hideseek:lobby run tp @a -5053 265 170
+execute in hideseek:lobby run spawnpoint @a -5053 265 170
 
 # Worldborder
-execute in overworld run worldborder center -5123 93
-execute in overworld run worldborder set 151
+execute in hideseek:lobby run worldborder center -5053 170
+execute in hideseek:lobby run worldborder set 151
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set paleora Paleora 1

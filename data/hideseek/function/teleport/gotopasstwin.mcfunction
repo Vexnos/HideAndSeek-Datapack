@@ -1,12 +1,12 @@
 # Teleports
-execute in overworld run tp @e[tag=lobby,limit=1] 5125 130 98
-execute in overworld run tp @e[tag=start,limit=1] 5125 28 98
-execute in overworld run tp @a 5125 130 98
-execute in overworld run spawnpoint @a 5125 130 98
+execute in hideseek:lobby run tp @e[tag=lobby,limit=1] 5125 130 98
+execute in hideseek:lobby run tp @e[tag=start,limit=1] 5125 28 98
+execute in hideseek:lobby run tp @a 5125 130 98
+execute in hideseek:lobby run spawnpoint @a 5125 130 98
 
 # Worldborder
-execute in overworld run worldborder center 5121 98
-execute in overworld run worldborder set 230
+execute in hideseek:lobby run worldborder center 5121 98
+execute in hideseek:lobby run worldborder set 230
 
 # Map Scoreboard (Defines which map is active)
 scoreboard players set passtwin Passtwin 1
