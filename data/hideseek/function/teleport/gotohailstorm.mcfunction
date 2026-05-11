@@ -23,4 +23,7 @@ effect give @a blindness 1 0 true
 # Weather
 weather thunder
 
+# Scale
+execute as @a run attribute @s minecraft:scale base set 0.25
+
 clear @a

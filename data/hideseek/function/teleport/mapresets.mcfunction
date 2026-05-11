@@ -40,3 +40,5 @@ scoreboard players set donut Donut 0
 scoreboard players set castle Castle 0
 scoreboard players set imperator Imperator 0
 scoreboard players set atlantide Atlantide 0
+
+execute as @a run attribute @s minecraft:scale base reset
