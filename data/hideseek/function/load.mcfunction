@@ -106,6 +106,7 @@ scoreboard objectives add guardianTimer dummy
 scoreboard objectives add wardenTimer dummy
 scoreboard objectives add phantomTimer dummy
 scoreboard objectives add bunnyTimer dummy
+scoreboard objectives add doomTimer dummy
 scoreboard objectives add randInt dummy
 scoreboard objectives add majorEvent dummy
 scoreboard objectives add minorEvent dummy

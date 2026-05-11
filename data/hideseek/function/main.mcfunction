@@ -34,6 +34,8 @@ execute unless score #game gameRunning matches 1 in hideseek:lobby run function 
 execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/east
 execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/dark
 
+execute if score #game gameRunning matches 1 run function hideseek:holy_hand_grenade
+
 # Triggers
 execute as @a[tag=admin,scores={start=1..}] run function hideseek:triggers
 execute as @a[tag=admin,scores={seek=1..}] run function hideseek:triggers
