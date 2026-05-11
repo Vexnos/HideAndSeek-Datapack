@@ -53,6 +53,7 @@ schedule clear hideseek:events/phantoms/summon
 schedule clear hideseek:events/breeze/summon
 schedule clear hideseek:events/wardenflurry/summon
 schedule clear hideseek:events/killerbunny/summon
+schedule clear hideseek:events/absdoom/summon
 schedule clear hideseek:events/zombies
 schedule clear hideseek:ping
 schedule clear hideseek:darkping
