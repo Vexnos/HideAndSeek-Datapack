@@ -18,14 +18,7 @@ execute if score castle Castle matches 1 if score #game gameRunning matches 1 in
 # execute if entity @e[type=mannequin,tag=!NoKill] run function hideseek:mannequin
 
 # Clear players items from the Lobby
-execute in hideseek:lobby run clear @a[x=-3,y=170,z=10,dx=6,dy=8,dz=2,gamemode=adventure]
-execute in hideseek:lobby run clear @a[x=-2,y=170,z=-1,dx=4,dy=4,dz=4,gamemode=adventure]
-
-execute in hideseek:lobby run kill @e[type=ender_pearl,x=-3,y=170,z=10,dx=6,dy=8,dz=2]
-execute in hideseek:lobby run kill @e[type=ender_pearl,x=-2,y=170,z=-1,dx=4,dy=4,dz=4]
-
-execute in hideseek:lobby run kill @e[type=arrow,x=-3,y=170,z=10,dx=6,dy=8,dz=2]
-execute in hideseek:lobby run kill @e[type=arrow,x=-2,y=170,z=-1,dx=4,dy=4,dz=4]
+function hideseek:lobby/clear
 
 # Enable Triggers
 scoreboard players enable @a[tag=admin] start
