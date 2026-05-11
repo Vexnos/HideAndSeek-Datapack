@@ -26,6 +26,35 @@ scoreboard players enable @a[tag=admin] seek
 scoreboard players enable @a[tag=admin] reset
 scoreboard players enable @a[tag=admin] border1
 scoreboard players enable @a[tag=admin] border2
+scoreboard players enable @a[tag=admin] creepers
+scoreboard players enable @a[tag=admin] killerbunnies
+scoreboard players enable @a[tag=admin] initguardians
+scoreboard players enable @a[tag=admin] wardens
+scoreboard players enable @a[tag=admin] zombies
+scoreboard players enable @a[tag=admin] initswap
+scoreboard players enable @a[tag=admin] breezes
+scoreboard players enable @a[tag=admin] absdoom
+scoreboard players enable @a[tag=admin] disableteleports
+scoreboard players enable @a[tag=admin] phantoms
+scoreboard players enable @a[tag=admin] wither
+
+# Triggers
+execute as @a[tag=admin,scores={start=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={seek=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={reset=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={border1=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={border2=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={creepers=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={killerbunnies=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={initguardians=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={wardens=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={zombies=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={initswap=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={breezes=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={absdoom=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={disableteleports=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={phantoms=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={wither=1..}] run function hideseek:triggers
 
 # Lobby teleports
 execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/west
@@ -34,11 +63,5 @@ execute unless score #game gameRunning matches 1 in hideseek:lobby run function 
 execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/east
 execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/dark
 
+# Holy Hand Grenade
 execute if score #game gameRunning matches 1 run function hideseek:holy_hand_grenade
-
-# Triggers
-execute as @a[tag=admin,scores={start=1..}] run function hideseek:triggers
-execute as @a[tag=admin,scores={seek=1..}] run function hideseek:triggers
-execute as @a[tag=admin,scores={reset=1..}] run function hideseek:triggers
-execute as @a[tag=admin,scores={border1=1..}] run function hideseek:triggers
-execute as @a[tag=admin,scores={border2=1..}] run function hideseek:triggers

@@ -96,7 +96,17 @@ scoreboard objectives add seek trigger
 scoreboard objectives add reset trigger
 scoreboard objectives add border1 trigger
 scoreboard objectives add border2 trigger
-
+scoreboard objectives add creepers trigger
+scoreboard objectives add killerbunnies trigger
+scoreboard objectives add initguardians trigger
+scoreboard objectives add wardens trigger
+scoreboard objectives add zombies trigger
+scoreboard objectives add initswap trigger
+scoreboard objectives add breezes trigger
+scoreboard objectives add absdoom trigger
+scoreboard objectives add disableteleports trigger
+scoreboard objectives add phantoms trigger
+scoreboard objectives add wither trigger
 
 # Event Scoreboards
 scoreboard objectives add swap dummy

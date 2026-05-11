@@ -14,3 +14,36 @@ execute if entity @s[scores={border1=1..}] as @s run scoreboard players set @s b
 execute if entity @s[scores={border2=1..}] as @s run schedule clear hideseek:border2
 execute if entity @s[scores={border2=1..}] as @s run function hideseek:border2
 execute if entity @s[scores={border2=1..}] as @s run scoreboard players set @s border2 0
+
+execute if entity @s[scores={creepers=1..}] as @s run function hideseek:events/surprisebang
+execute if entity @s[scores={creepers=1..}] as @s run scoreboard players set @s creepers 0
+
+execute if entity @s[scores={killerbunnies=1..}] as @s run function hideseek:events/killerbunny/killerbunny
+execute if entity @s[scores={killerbunnies=1..}] as @s run scoreboard players set @s killerbunnies 0
+
+execute if entity @s[scores={initguardians=1..}] as @s run function hideseek:events/guardian/guardians
+execute if entity @s[scores={initguardians=1..}] as @s run scoreboard players set @s initguardians 0
+
+execute if entity @s[scores={wardens=1..}] as @s run function hideseek:events/wardenflurry/wardens
+execute if entity @s[scores={wardens=1..}] as @s run scoreboard players set @s wardens 0
+
+execute if entity @s[scores={zombies=1..}] as @s run function hideseek:events/initzombies
+execute if entity @s[scores={zombies=1..}] as @s run scoreboard players set @s zombies 0
+
+execute if entity @s[scores={initswap=1..}] as @s run function hideseek:events/initswap
+execute if entity @s[scores={initswap=1..}] as @s run scoreboard players set @s initswap 0
+
+execute if entity @s[scores={breezes=1..}] as @s run function hideseek:events/breeze/breeze
+execute if entity @s[scores={breezes=1..}] as @s run scoreboard players set @s breezes 0
+
+execute if entity @s[scores={absdoom=1..}] as @s run function hideseek:events/absdoom/parched
+execute if entity @s[scores={absdoom=1..}] as @s run scoreboard players set @s absdoom 0
+
+execute if entity @s[scores={disableteleports=1..}] as @s run function hideseek:events/disableteleports/disable
+execute if entity @s[scores={disableteleports=1..}] as @s run scoreboard players set @s disableteleports 0
+
+execute if entity @s[scores={phantoms=1..}] as @s run function hideseek:events/phantoms/phantoms
+execute if entity @s[scores={phantoms=1..}] as @s run scoreboard players set @s phantoms 0
+
+execute if entity @s[scores={wither=1..}] as @s run function hideseek:events/wither
+execute if entity @s[scores={wither=1..}] as @s run scoreboard players set @s wither 0
