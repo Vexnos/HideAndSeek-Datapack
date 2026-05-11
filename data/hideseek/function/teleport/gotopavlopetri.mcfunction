@@ -19,5 +19,6 @@ execute as @a at @s run particle glow ~ ~1 ~ 0.5 0.5 0.5 2 500 force
 execute as @a at @s run playsound entity.elder_guardian.curse master @s ~ ~ ~ 100 1
 execute as @a at @s run playsound minecraft:entity.allay.ambient_without_item master @s ~ ~ ~ 100 0
 effect give @a blindness 1 0 true
+effect clear @a speed
 
 clear @a
