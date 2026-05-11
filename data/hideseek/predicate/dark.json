@@ -1,0 +1,25 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "type": "minecraft:player",
+        "type_specific": {
+            "type": "minecraft:player",
+            "input": {
+                "forward": false,
+                "backward": false,
+                "left": false,
+                "right": false,
+                "sneak": true
+            }
+        },
+        "location": {
+            "dimension": "hideseek:lobby"
+        },
+        "stepping_on": {
+            "block": {
+                "blocks": "minecraft:budding_amethyst"
+            }
+        }
+    }
+}
