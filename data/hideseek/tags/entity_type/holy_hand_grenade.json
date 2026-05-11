@@ -6,6 +6,8 @@
         "minecraft:ghast",
         "minecraft:parched",
         "minecraft:phantom",
-        "minecraft:area_effect_cloud"
+        "minecraft:area_effect_cloud",
+        "minecraft:breeze",
+        "minecraft:blaze"
     ]
 }
