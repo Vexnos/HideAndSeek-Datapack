@@ -189,6 +189,9 @@ execute unless score paleora Paleora matches 1 run time set 7000
 # Back to Lobby
 tp @a @e[tag=lobby, limit=1]
 
+# Clear the Weather except on Heart of Ardonia
+execute unless score hoa HOA matches 1 run weather clear
+
 # Bossbar Reset
 bossbar set timer value 0
 bossbar set hidingtimer value 64
