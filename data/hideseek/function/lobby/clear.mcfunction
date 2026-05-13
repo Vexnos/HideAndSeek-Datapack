@@ -7,7 +7,7 @@ execute in hideseek:lobby run kill @e[type=ender_pearl,x=-2,y=170,z=-1,dx=4,dy=4
 execute in hideseek:lobby run kill @e[type=arrow,x=-3,y=170,z=10,dx=6,dy=8,dz=2]
 execute in hideseek:lobby run kill @e[type=arrow,x=-2,y=170,z=-1,dx=4,dy=4,dz=4]
 
-execute in hideseek:lobby as @a[x=-2,y=170,z=-1,dx=4,dy=4,dz=4] run effect give @s speed infinite 3 true
+execute in hideseek:lobby as @a[x=-2,y=170,z=-1,dx=4,dy=4,dz=7] run effect give @s speed infinite 5 true
 execute in hideseek:lobby as @a[x=-3,y=170,z=10,dx=6,dy=8,dz=2] run effect clear @s
 
 execute in hideseek:lobby run kill @e[type=item,x=-3,y=170,z=10,dx=6,dy=8,dz=2]
