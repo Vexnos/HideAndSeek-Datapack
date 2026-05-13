@@ -9,7 +9,7 @@ execute in overworld run worldborder center 1331 -104
 execute in overworld run worldborder set 250
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set diamondheights DiamondHeights 1
+scoreboard players set diamondHeights map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Diamond Heights","color":"dark_aqua"},{"text":" selected","color":"green"}]

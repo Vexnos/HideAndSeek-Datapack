@@ -9,7 +9,7 @@ execute in hideseek:newworld run worldborder center 9 -22
 execute in hideseek:newworld run worldborder set 200
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set newworld NewWorld 1
+scoreboard players set newWorld map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"New World","color":"red"},{"text":" selected","color":"green"}]

@@ -9,7 +9,7 @@ execute in overworld run worldborder center -1376 -203
 execute in overworld run worldborder set 150
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set redstoneAcademy redstoneAcademy 1
+scoreboard players set redstoneAcademy map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Redstone Academy","color":"red"},{"text":" selected","color":"green"}]

@@ -9,7 +9,7 @@ execute in hideseek:venator run worldborder center -522 0
 execute in hideseek:venator run worldborder set 1225
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set venator Venator 1
+scoreboard players set venator map 1
 
 # Selection Message
 title @a title ["",{"text":"Venator","color":"dark_red"},{"text":" selected","color":"red"}]

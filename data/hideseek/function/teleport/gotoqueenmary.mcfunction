@@ -9,7 +9,7 @@ execute in overworld run worldborder center -2010 3339
 execute in overworld run worldborder set 725
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set queenmary2 QueenMary2 1
+scoreboard players set queenMary2 map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Queen Mary 2","color":"blue"},{"text":" selected","color":"green"}]

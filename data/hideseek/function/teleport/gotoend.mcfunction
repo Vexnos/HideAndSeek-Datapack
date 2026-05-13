@@ -9,7 +9,7 @@ execute in the_end run worldborder center -1047 -607
 execute in the_end run worldborder set 360
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set end End 1
+scoreboard players set end map 1
 
 # Selection Message
 title @a title ["",{"text":"The End","color":"dark_purple"},{"text":" selected","color":"light_purple"}]

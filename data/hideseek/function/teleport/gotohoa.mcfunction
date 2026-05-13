@@ -9,7 +9,7 @@ execute in overworld run worldborder center 0 0
 execute in overworld run worldborder set 200
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set hoa HOA 1
+scoreboard players set HOA map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Heart of Ardonia","color":"blue"},{"text":" selected","color":"green"}]

@@ -8,4 +8,4 @@ execute if score pingEnabled pingEnabled matches 1.. at @a[team=1,tag=!out] run 
 execute if score pingEnabled pingEnabled matches 1.. at @a[team=2] run playsound minecraft:entity.allay.ambient_with_item master @a[team=1,tag=!out,distance=..30]
 
 # Run the function every 5 seconds
-execute if score darkpeak DarkPeak matches 1 run schedule function hideseek:darkping 5s
+execute if score darkPeak map matches 1 run schedule function hideseek:darkping 5s

@@ -9,7 +9,7 @@ execute in hideseek:cathedral run worldborder center -114 0
 execute in hideseek:cathedral run worldborder set 1150
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set cathedral Cathedral 1
+scoreboard players set cathedral map 1
 
 # Selection Message
 title @a title ["",{"text":"Cathedral","color":"dark_purple"},{"text":" selected","color":"light_purple"}]

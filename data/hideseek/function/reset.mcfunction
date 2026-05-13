@@ -113,46 +113,46 @@ tag @a remove swap11
 tag @a remove swap12
 
 # Reset Worldborder
-execute if score crownpeak CrownPeak matches 1.. run worldborder set 200 2s
-execute if score felora Felora matches 1.. run worldborder set 150 2s
-execute if score paleora Paleora matches 1.. run worldborder set 151 2s
-execute if score tartarus Tartarus matches 1.. run worldborder set 205 2s
-execute if score hyperia Hyperia matches 1.. run worldborder set 370 2s
-execute if score hailstone Hailstone matches 1.. run worldborder set 300 2s
-execute if score meridian Meridian matches 1.. run worldborder set 300 2s
-execute if score twinpass TwinPass matches 1.. run worldborder set 230 2s
-execute if score kawaiinislands KawaiinIslands matches 1.. run worldborder set 540 2s
-execute if score diamondheights DiamondHeights matches 1.. run worldborder set 250 2s
-execute if score nazgard Nazgard matches 1.. in the_nether run worldborder set 250 2s
-execute if score end End matches 1.. in the_end run worldborder set 360 2s
-execute if score oakendale Oakendale matches 1.. run worldborder set 400 2s
-execute if score etherea Etherea matches 1.. run worldborder set 200 2s
-execute if score incatasia Incatasia matches 1.. run worldborder set 275 2s
-execute if score amaria Amaria matches 1.. run worldborder set 440 2s
-execute if score tempus Tempus matches 1.. run worldborder set 150 2s
-execute if score biggerton Biggerton matches 1.. run worldborder set 200 2s
-execute if score queenmary2 QueenMary2 matches 1 run worldborder set 725 2s
-execute if score redstoneAcademy redstoneAcademy matches 1.. run worldborder set 150 2s
-execute if score poseidon Poseidon matches 1.. run worldborder set 725 2s
-execute if score acclamator Acclamator matches 1.. in hideseek:acclamator run worldborder set 725 2s
-execute if score markar Markar matches 1.. run worldborder set 200 2s
-execute if score kaelos Kaelos matches 1.. run worldborder set 200 2s
-execute if score darkpeak DarkPeak matches 1.. run worldborder set 200 2s
-execute if score nestoria Nestoria matches 1.. run worldborder set 350 2s
-execute if score hindenburg Hindenburg matches 1.. run worldborder set 550 2s
-execute if score pavlopetri Pavlopetri matches 1.. run worldborder set 205 2s
-execute if score antinazgard Antinazgard matches 1.. in the_end run worldborder set 249 2s
-execute if score passtwin Passtwin matches 1.. in hideseek:lobby run worldborder set 230 2s
-execute if score paleora Paleora matches 1.. in hideseek:lobby run worldborder set 150 2s
-execute if score cathedral Cathedral matches 1.. in hideseek:cathedral run worldborder set 1150 2s
-execute if score hailstorm Hailstorm matches 1.. in hideseek:hailstorm run worldborder set 300 2s
-execute if score venator Venator matches 1.. in hideseek:venator run worldborder set 1225 2s
-execute if score newworld NewWorld matches 1.. in hideseek:newworld run worldborder set 200 2s
-execute if score ataraxia Ataraxia matches 1.. run worldborder set 300 2s
-execute if score donut Donut matches 1.. in hideseek:donut run worldborder set 250 2s
-execute if score castle Castle matches 1.. in hideseek:castle run worldborder set 100 2s
-execute if score imperator Imperator matches 1.. in hideseek:imperator run worldborder set 350 2s
-execute if score atlantide Atlantide matches 1.. in hideseek:atlantide run worldborder set 850 2s
+execute if score crownPeak map matches 1.. run worldborder set 200 2s
+execute if score felora map matches 1.. run worldborder set 150 2s
+execute if score paleora map matches 1.. run worldborder set 151 2s
+execute if score tartarus map matches 1.. run worldborder set 205 2s
+execute if score hyperia map matches 1.. run worldborder set 370 2s
+execute if score hailstone map matches 1.. run worldborder set 300 2s
+execute if score meridian map matches 1.. run worldborder set 300 2s
+execute if score twinPass map matches 1.. run worldborder set 230 2s
+execute if score kawaiinIslands map matches 1.. run worldborder set 540 2s
+execute if score diamondHeights map matches 1.. run worldborder set 250 2s
+execute if score nazgard map matches 1.. in the_nether run worldborder set 250 2s
+execute if score end map matches 1.. in the_end run worldborder set 360 2s
+execute if score oakendale map matches 1.. run worldborder set 400 2s
+execute if score etherea map matches 1.. run worldborder set 200 2s
+execute if score incatasia map matches 1.. run worldborder set 275 2s
+execute if score amaria map matches 1.. run worldborder set 440 2s
+execute if score tempus map matches 1.. run worldborder set 150 2s
+execute if score biggerton map matches 1.. run worldborder set 200 2s
+execute if score queenMary2 map matches 1 run worldborder set 725 2s
+execute if score redstoneAcademy map matches 1.. run worldborder set 150 2s
+execute if score poseidon map matches 1.. run worldborder set 725 2s
+execute if score acclamator map matches 1.. in hideseek:acclamator run worldborder set 725 2s
+execute if score markar map matches 1.. run worldborder set 200 2s
+execute if score kaelos map matches 1.. run worldborder set 200 2s
+execute if score darkPeak map matches 1.. run worldborder set 200 2s
+execute if score nestoria map matches 1.. run worldborder set 350 2s
+execute if score hindenburg map matches 1.. run worldborder set 550 2s
+execute if score pavlopetri map matches 1.. run worldborder set 205 2s
+execute if score antiNazgard map matches 1.. in the_end run worldborder set 249 2s
+execute if score passTwin map matches 1.. in hideseek:lobby run worldborder set 230 2s
+execute if score paleora map matches 1.. in hideseek:lobby run worldborder set 150 2s
+execute if score cathedral map matches 1.. in hideseek:cathedral run worldborder set 1150 2s
+execute if score hailstorm map matches 1.. in hideseek:hailstorm run worldborder set 300 2s
+execute if score venator map matches 1.. in hideseek:venator run worldborder set 1225 2s
+execute if score newWorld map matches 1.. in hideseek:newworld run worldborder set 200 2s
+execute if score ataraxia map matches 1.. run worldborder set 300 2s
+execute if score donut map matches 1.. in hideseek:donut run worldborder set 250 2s
+execute if score castle map matches 1.. in hideseek:castle run worldborder set 100 2s
+execute if score imperator map matches 1.. in hideseek:imperator run worldborder set 350 2s
+execute if score atlantide map matches 1.. in hideseek:atlantide run worldborder set 850 2s
 
 # Kill Mobs
 kill @e[type=silverfish]
@@ -184,13 +184,13 @@ kill @e[type=armor_stand,tag=dummy]
 kill @e[type=marker]
 
 # Reset Time
-execute unless score paleora Paleora matches 1 run time set 7000
+execute unless score paleora map matches 1 run time set 7000
 
 # Back to Lobby
 tp @a @e[tag=lobby, limit=1]
 
 # Clear the Weather except on Heart of Ardonia
-execute unless score hoa HOA matches 1 run weather clear
+execute unless score HOA map matches 1 run weather clear
 
 # Bossbar Reset
 bossbar set timer value 0
@@ -199,9 +199,9 @@ bossbar set timer visible false
 bossbar set hidingtimer visible false
 
 # OST
-execute if score nazgard Nazgard matches 1 run stopsound @a * hideseek:nether
-execute if score end End matches 1 run stopsound @a * hideseek:theend
-execute if score hailstone Hailstone matches 1 run stopsound @a * hideseek:hailstone
+execute if score nazgard map matches 1 run stopsound @a * hideseek:nether
+execute if score end map matches 1 run stopsound @a * hideseek:theend
+execute if score hailstone map matches 1 run stopsound @a * hideseek:hailstone
 stopsound @a * hideseek:jokers
 
 # SFX

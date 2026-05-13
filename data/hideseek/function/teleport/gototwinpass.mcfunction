@@ -9,7 +9,7 @@ execute in overworld run worldborder center -1087 -969
 execute in overworld run worldborder set 230
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set twinpass TwinPass 1
+scoreboard players set twinPass map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Twin Pass","color":"dark_green"},{"text":" selected","color":"green"}]

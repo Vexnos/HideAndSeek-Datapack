@@ -9,7 +9,7 @@ execute in overworld run worldborder center -4606 365
 execute in overworld run worldborder set 540
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set kawaiinislands KawaiinIslands 1
+scoreboard players set kawaiinIslands map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Kawaiin Islands","color":"green"},{"text":" selected","color":"green"}]

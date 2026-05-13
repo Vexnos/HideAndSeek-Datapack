@@ -9,7 +9,7 @@ execute in overworld run worldborder center -3429 1239
 execute in overworld run worldborder set 150
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set tempus Tempus 1
+scoreboard players set tempus map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Mt Tempus","color":"green"},{"text":" selected","color":"green"}]

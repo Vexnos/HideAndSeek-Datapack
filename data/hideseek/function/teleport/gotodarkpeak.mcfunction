@@ -9,7 +9,7 @@ execute in overworld run worldborder center 1 878
 execute in overworld run worldborder set 200
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set darkpeak DarkPeak 1
+scoreboard players set darkPeak map 1
 
 # Selection Message
 title @a title ["",{"text":"Dark Peak","color":"aqua"},{"text":" selected","color":"dark_aqua"}]

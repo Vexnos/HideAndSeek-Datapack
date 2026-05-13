@@ -9,7 +9,7 @@ execute in overworld run worldborder center 1610 -3249
 execute in overworld run worldborder set 350
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set nestoria Nestoria 1
+scoreboard players set nestoria map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Nestoria","color":"gold"},{"text":" selected","color":"green"}]

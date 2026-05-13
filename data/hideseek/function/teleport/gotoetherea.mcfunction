@@ -9,7 +9,7 @@ execute in overworld run worldborder center -1988 -899
 execute in overworld run worldborder set 200
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set etherea Etherea 1
+scoreboard players set etherea map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Etherea","color":"blue"},{"text":" selected","color":"green"}]

@@ -9,7 +9,7 @@ execute in overworld run worldborder center -734 -4042
 execute in overworld run worldborder set 300
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set hailstone Hailstone 1
+scoreboard players set hailstone map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Hailstone","color":"aqua"},{"text":" selected","color":"green"}]

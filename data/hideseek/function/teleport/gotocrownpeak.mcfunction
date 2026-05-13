@@ -9,7 +9,7 @@ execute in overworld run worldborder center -704 579
 execute in overworld run worldborder set 200
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set crownpeak CrownPeak 1
+scoreboard players set crownPeak map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Crown Peak","color":"dark_purple"},{"text":" selected","color":"green"}]

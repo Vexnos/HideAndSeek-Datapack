@@ -9,7 +9,7 @@ execute in hideseek:acclamator run worldborder center -32 14
 execute in hideseek:acclamator run worldborder set 725
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set acclamator Acclamator 1
+scoreboard players set acclamator map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Acclamator","color":"dark_red"},{"text":" selected","color":"green"}]

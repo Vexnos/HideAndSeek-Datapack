@@ -9,7 +9,7 @@ execute in overworld run worldborder center 1656 361
 execute in overworld run worldborder set 205
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set pavlopetri Pavlopetri 1
+scoreboard players set pavlopetri map 1
 
 # Selection Message
 title @a title ["",{"text":"Atlantis","color":"aqua"},{"text":" selected","color":"dark_aqua"}]

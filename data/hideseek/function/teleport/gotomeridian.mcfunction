@@ -9,7 +9,7 @@ execute in overworld run worldborder center 61 4606
 execute in overworld run worldborder set 300
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set meridian Meridian 1
+scoreboard players set meridian map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Meridian","color":"gold"},{"text":" selected","color":"green"}]

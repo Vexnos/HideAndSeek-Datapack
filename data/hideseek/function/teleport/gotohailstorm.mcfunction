@@ -9,7 +9,7 @@ execute in hideseek:hailstorm run worldborder center -741 -4033
 execute in hideseek:hailstorm run worldborder set 300
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set hailstorm Hailstorm 1
+scoreboard players set hailstorm map 1
 
 # Selection Message
 title @a title ["",{"text":"Hailstorm","color":"aqua"},{"text":" selected","color":"dark_aqua"}]

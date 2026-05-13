@@ -9,7 +9,7 @@ execute in hideseek:castle run worldborder center 141 -80
 execute in hideseek:castle run worldborder set 100
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set castle Castle 1
+scoreboard players set castle map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Mysterious Castle","color":"dark_purple"},{"text":" selected","color":"green"}]

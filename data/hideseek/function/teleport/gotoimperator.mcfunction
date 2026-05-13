@@ -9,7 +9,7 @@ execute in hideseek:imperator run worldborder center -1393 8
 execute in hideseek:imperator run worldborder set 350
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set imperator Imperator 1
+scoreboard players set imperator map 1
 
 # Selection Message
 title @a title ["",{"text":"Star Destroyer","color":"red"},{"text":" selected","color":"green"}]

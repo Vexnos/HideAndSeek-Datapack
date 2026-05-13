@@ -9,7 +9,7 @@ execute in overworld run worldborder center 158 -691
 execute in overworld run worldborder set 300
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set ataraxia Ataraxia 1
+scoreboard players set ataraxia map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Ataraxia","color":"blue"},{"text":" selected","color":"green"}]

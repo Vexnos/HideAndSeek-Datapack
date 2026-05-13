@@ -3,38 +3,38 @@ item replace entity @a[team=2] hotbar.0 with stick[enchantment_glint_override=tr
 # execute as @a[team=1] run give @a[team=2] ender_pearl[enchantment_glint_override=true,unbreakable={},lore=['{"text":"Go get \'em","italic":false,"color":"dark_purple"}'],item_name='{"text":"Ender Pearl","color":"light_purple"}'] 1
 # give @a[team=2] skeleton_skull[item_name='{"color":"green","italic":false,"text":"Minions Power Up"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true] 3
 item replace entity @a[team=2] hotbar.1 with bow[enchantments={punch:2},unbreakable={}]
-execute unless score acclamator Acclamator matches 1 unless score darkpeak DarkPeak matches 1 unless score venator Venator matches 1 unless score cathedral Cathedral matches 1 run item replace entity @a[team=2] inventory.1 with bell[item_name={"color":"dark_red","italic":false,"text":"Force Taunt"},consumable={consume_seconds:0.05},enchantment_glint_override=true] 3
-execute if score acclamator Acclamator matches 1 run item replace entity @a[team=2] inventory.1 with bell[item_name={"color":"dark_red","italic":false,"text":"Force Taunt"},consumable={consume_seconds:0.05},enchantment_glint_override=true] 15
-execute if score venator Venator matches 1 run item replace entity @a[team=2] inventory.1 with bell[item_name={"color":"dark_red","italic":false,"text":"Force Taunt"},consumable={consume_seconds:0.05},enchantment_glint_override=true] 15
-execute if score cathedral Cathedral matches 1 run item replace entity @a[team=2] inventory.1 with bell[item_name={"color":"dark_red","italic":false,"text":"Force Taunt"},consumable={consume_seconds:0.05},enchantment_glint_override=true] 15
+execute unless score acclamator map matches 1 unless score darkPeak map matches 1 unless score venator map matches 1 unless score cathedral map matches 1 run item replace entity @a[team=2] inventory.1 with bell[item_name={"color":"dark_red","italic":false,"text":"Force Taunt"},consumable={consume_seconds:0.05},enchantment_glint_override=true] 3
+execute if score acclamator map matches 1 run item replace entity @a[team=2] inventory.1 with bell[item_name={"color":"dark_red","italic":false,"text":"Force Taunt"},consumable={consume_seconds:0.05},enchantment_glint_override=true] 15
+execute if score venator map matches 1 run item replace entity @a[team=2] inventory.1 with bell[item_name={"color":"dark_red","italic":false,"text":"Force Taunt"},consumable={consume_seconds:0.05},enchantment_glint_override=true] 15
+execute if score cathedral map matches 1 run item replace entity @a[team=2] inventory.1 with bell[item_name={"color":"dark_red","italic":false,"text":"Force Taunt"},consumable={consume_seconds:0.05},enchantment_glint_override=true] 15
 # give @a[team=2] chain[item_name='{"color":"blue","italic":false,"text":"Grapple"}',food={nutrition:0,saturation:0,can_always_eat:true,eat_seconds:0.1},enchantment_glint_override=true] 3
-execute unless score acclamator Acclamator matches 1 unless score venator Venator matches 1 run item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 15
-execute if score acclamator Acclamator matches 1 run item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 45
-execute if score venator Venator matches 1 run item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 45
+execute unless score acclamator map matches 1 unless score venator map matches 1 run item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 15
+execute if score acclamator map matches 1 run item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 45
+execute if score venator map matches 1 run item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 45
 execute if score #radarEnabled radarEnabled matches 1 run item replace entity @a[team=2] hotbar.3 with nether_star[consumable={consume_seconds:0.05},custom_name={"text":"Radar","color":"green","italic":false},max_stack_size=2,use_cooldown={seconds:5,cooldown_group:"radar"}]
-execute unless score acclamator Acclamator matches 1 unless score darkpeak DarkPeak matches 1 unless score venator Venator matches 1 unless score hindenburg Hindenburg matches 1 if score minionsEnabled minionsEnabled matches 1.. run item replace entity @a[team=2] hotbar.2 with experience_bottle[custom_name={"text":"Minions","color":"green","italic":false}] 3
-execute if score acclamator Acclamator matches 1 if score minionsEnabled minionsEnabled matches 1.. run item replace entity @a[team=2] hotbar.2 with experience_bottle[custom_name={"text":"Minions","color":"green","italic":false}] 10
-execute if score venator Venator matches 1 if score minionsEnabled minionsEnabled matches 1.. run item replace entity @a[team=2] hotbar.2 with experience_bottle[custom_name={"text":"Minions","color":"green","italic":false}] 10
+execute unless score acclamator map matches 1 unless score darkPeak map matches 1 unless score venator map matches 1 unless score hindenburg map matches 1 if score minionsEnabled minionsEnabled matches 1.. run item replace entity @a[team=2] hotbar.2 with experience_bottle[custom_name={"text":"Minions","color":"green","italic":false}] 3
+execute if score acclamator map matches 1 if score minionsEnabled minionsEnabled matches 1.. run item replace entity @a[team=2] hotbar.2 with experience_bottle[custom_name={"text":"Minions","color":"green","italic":false}] 10
+execute if score venator map matches 1 if score minionsEnabled minionsEnabled matches 1.. run item replace entity @a[team=2] hotbar.2 with experience_bottle[custom_name={"text":"Minions","color":"green","italic":false}] 10
 item replace entity @a[team=2] inventory.18 with mace[enchantments={breach:10,density:10,wind_burst:10},unbreakable={}] 1
-# execute unless score end End matches 1.. run execute as @a[team=1] run give @a[team=2] egg[item_name='{"text":"Budget Ender Pearl","italic":false,"color":"blue"}'] 10
+# execute unless score end map matches 1.. run execute as @a[team=1] run give @a[team=2] egg[item_name='{"text":"Budget Ender Pearl","italic":false,"color":"blue"}'] 10
 item replace entity @a[team=2] hotbar.5 with heavy_core[custom_name={"text":"Back to Spawn","color":"red","italic":false},consumable={consume_seconds:0.05},max_stack_size=2,enchantment_glint_override=true,use_cooldown={seconds:1,cooldown_group:"heavy_core"}]
-execute if score ataraxia Ataraxia matches 1.. run item replace entity @a[team=2] inventory.24 with crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
-execute if score ataraxia Ataraxia matches 1.. run item replace entity @a[team=2] inventory.26 with firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]},max_stack_size=96] 96
-execute if score hoa HOA matches 1.. run item replace entity @a[team=2] hotbar.4 with firework_rocket[enchantment_glint_override=true,lore=[{"text":"Take them out","color":"yellow","italic":false,"bold":true}],max_stack_size=96] 96
-execute if score hoa HOA matches 1.. run item replace entity @a[team=2] inventory.25 with trident[enchantments={riptide:4},unbreakable={}]
-execute if score end End matches 1.. run item replace entity @a[team=2] inventory.24 with crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
-execute if score end End matches 1.. run item replace entity @a[team=2] inventory.26 with firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]},max_stack_size=96] 96
-execute if score antinazgard Antinazgard matches 1.. run item replace entity @a[team=2] inventory.24 with crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
-execute if score antinazgard Antinazgard matches 1.. run item replace entity @a[team=2] inventory.26 with firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]},max_stack_size=96] 96
-execute if score passtwin Passtwin matches 1.. run item replace entity @a[team=2] inventory.24 with crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
-execute if score passtwin Passtwin matches 1.. run item replace entity @a[team=2] inventory.26 with firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]},max_stack_size=96] 96
-execute if score pavlopetri Pavlopetri matches 1 run item replace entity @a[team=2] inventory.25 with trident[unbreakable={},enchantments={riptide:3,impaling:1},custom_name={"text":"Booster","italic":false}]
-execute if score hindenburg Hindenburg matches 1.. run item replace entity @a[team=2] inventory.23 with fishing_rod[enchantment_glint_override=true,unbreakable={},custom_name={"text":"Grappling Hook","italic":false}]
-execute if score venator Venator matches 1.. run item replace entity @a[team=2] inventory.24 with crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
-execute if score venator Venator matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]}] 96
-execute if score cathedral Cathedral matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]}] 96
-execute if score cathedral Cathedral matches 1.. run item replace entity @a[team=2] inventory.24 with crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
-execute unless score pavlopetri Pavlopetri matches 1 unless score hindenburg Hindenburg matches 1 run item replace entity @a[team=2] hotbar.8 with chorus_fruit[max_stack_size=99,consumable={consume_seconds:0.05,on_consume_effects:[{type:teleport_randomly}]},use_cooldown={seconds:0.05,cooldown_group:"chorus_fruit"}] 99
+execute if score ataraxia map matches 1.. run item replace entity @a[team=2] inventory.24 with crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
+execute if score ataraxia map matches 1.. run item replace entity @a[team=2] inventory.26 with firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]},max_stack_size=96] 96
+execute if score HOA map matches 1.. run item replace entity @a[team=2] hotbar.4 with firework_rocket[enchantment_glint_override=true,lore=[{"text":"Take them out","color":"yellow","italic":false,"bold":true}],max_stack_size=96] 96
+execute if score HOA map matches 1.. run item replace entity @a[team=2] inventory.25 with trident[enchantments={riptide:4},unbreakable={}]
+execute if score end map matches 1.. run item replace entity @a[team=2] inventory.24 with crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
+execute if score end map matches 1.. run item replace entity @a[team=2] inventory.26 with firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]},max_stack_size=96] 96
+execute if score antiNazgard map matches 1.. run item replace entity @a[team=2] inventory.24 with crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
+execute if score antiNazgard map matches 1.. run item replace entity @a[team=2] inventory.26 with firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]},max_stack_size=96] 96
+execute if score passTwin map matches 1.. run item replace entity @a[team=2] inventory.24 with crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
+execute if score passTwin map matches 1.. run item replace entity @a[team=2] inventory.26 with firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]},max_stack_size=96] 96
+execute if score pavlopetri map matches 1 run item replace entity @a[team=2] inventory.25 with trident[unbreakable={},enchantments={riptide:3,impaling:1},custom_name={"text":"Booster","italic":false}]
+execute if score hindenburg map matches 1.. run item replace entity @a[team=2] inventory.23 with fishing_rod[enchantment_glint_override=true,unbreakable={},custom_name={"text":"Grappling Hook","italic":false}]
+execute if score venator map matches 1.. run item replace entity @a[team=2] inventory.24 with crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
+execute if score venator map matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]}] 96
+execute if score cathedral map matches 1.. run execute as @a[team=1] run give @a[team=2] firework_rocket[fireworks={flight_duration:3,explosions:[{shape:"large_ball",colors:[16761600]},{shape:"large_ball",colors:[16747528]},{shape:"burst",colors:[16770688]},{shape:"large_ball",colors:[16766251]},{shape:"burst",colors:[16768786]},{shape:"small_ball",colors:[16749622]},{shape:"small_ball",colors:[16763968]},{shape:"star",colors:[16764723]},{shape:"large_ball",colors:[16755717]}]}] 96
+execute if score cathedral map matches 1.. run item replace entity @a[team=2] inventory.24 with crossbow[unbreakable={},enchantments={piercing:5,multishot:1,quick_charge:5},item_name={"text":"SPANKR","color":"red","bold":true,"italic":false}]
+execute unless score pavlopetri map matches 1 unless score hindenburg map matches 1 run item replace entity @a[team=2] hotbar.8 with chorus_fruit[max_stack_size=99,consumable={consume_seconds:0.05,on_consume_effects:[{type:teleport_randomly}]},use_cooldown={seconds:0.05,cooldown_group:"chorus_fruit"}] 99
 
 # Tags
 tag @a[team=2] remove seekerWait
@@ -61,38 +61,38 @@ execute as @a at @s run playsound minecraft:entity.evoker.prepare_attack master 
 schedule function hideseek:timer 1s
 
 # Give an Egg to Hiders except on certain Maps
-execute unless score end End matches 1.. unless score antinazgard Antinazgard matches 1.. unless score passtwin Passtwin matches 1.. run give @a[team=1] egg[item_name={"text":"Make the Seeker go away","color":"blue","italic":false}] 1
+execute unless score end map matches 1.. unless score antiNazgard map matches 1.. unless score passTwin map matches 1.. run give @a[team=1] egg[item_name={"text":"Make the Seeker go away","color":"blue","italic":false}] 1
 
 # OST
-# execute if score nazgard Nazgard matches 1 as @a at @s run playsound hideseek:nether record @s
-# execute if score end End matches 1 as @a at @s run playsound hideseek:theend record @s
-# execute if score hailstone Hailstone matches 1 as @a at @s run playsound hideseek:hailstone record @s
+# execute if score nazgard map matches 1 as @a at @s run playsound hideseek:nether record @s
+# execute if score end map matches 1 as @a at @s run playsound hideseek:theend record @s
+# execute if score hailstone map matches 1 as @a at @s run playsound hideseek:hailstone record @s
 # stopsound @a * hideseek:jokers
 
 # Reset
-execute unless score hoa HOA matches 1.. unless score newworld NewWorld matches 1 unless score cathedral Cathedral matches 1 unless score atlantide Atlantide matches 1 run schedule function hideseek:reset 600s
-execute if score hoa HOA matches 1.. run schedule function hideseek:reset 450s
-execute if score newworld NewWorld matches 1 run schedule function hideseek:reset 300s
-execute if score cathedral Cathedral matches 1 run schedule function hideseek:reset 1200s
-execute if score atlantide Atlantide matches 1 run schedule function hideseek:reset 1200s
+execute unless score HOA map matches 1.. unless score newWorld map matches 1 unless score cathedral map matches 1 unless score atlantide map matches 1 run schedule function hideseek:reset 600s
+execute if score HOA map matches 1.. run schedule function hideseek:reset 450s
+execute if score newWorld map matches 1 run schedule function hideseek:reset 300s
+execute if score cathedral map matches 1 run schedule function hideseek:reset 1200s
+execute if score atlantide map matches 1 run schedule function hideseek:reset 1200s
 
 # Events
-execute unless score #eventsEnabled eventsEnabled matches 0 unless score hoa HOA matches 1 run schedule function hideseek:events/initmevent 150s
-execute unless score #eventsEnabled eventsEnabled matches 0 unless score hoa HOA matches 1 run schedule function hideseek:events/initevent 60s
-execute if score mobsEnabled mobsEnabled matches 1.. run execute unless score hoa HOA matches 1.. unless score cathedral Cathedral matches 1 unless score atlantide Atlantide matches 1 run schedule function hideseek:finalminute 540s
+execute unless score #eventsEnabled eventsEnabled matches 0 unless score HOA map matches 1 run schedule function hideseek:events/initmevent 150s
+execute unless score #eventsEnabled eventsEnabled matches 0 unless score HOA map matches 1 run schedule function hideseek:events/initevent 60s
+execute if score mobsEnabled mobsEnabled matches 1.. run execute unless score HOA map matches 1.. unless score cathedral map matches 1 unless score atlantide map matches 1 run schedule function hideseek:finalminute 540s
 
-execute if score mobsEnabled mobsEnabled matches 1 if score cathedral Cathedral matches 1 run schedule function hideseek:finalminute 1140s
-execute if score mobsEnabled mobsEnabled matches 1 if score atlantide Atlantide matches 1 run schedule function hideseek:finalminute 1140s
+execute if score mobsEnabled mobsEnabled matches 1 if score cathedral map matches 1 run schedule function hideseek:finalminute 1140s
+execute if score mobsEnabled mobsEnabled matches 1 if score atlantide map matches 1 run schedule function hideseek:finalminute 1140s
 
 # Worldborder
-execute unless score kaelos Kaelos matches 1.. run execute unless score castle Castle matches 1 run execute unless score imperator Imperator matches 1 run execute unless score tempus Tempus matches 1.. run execute unless score hoa HOA matches 1.. run execute unless score redstoneAcademy redstoneAcademy matches 1 run execute unless score markar Markar matches 1 unless score hindenburg Hindenburg matches 1 unless score passtwin Passtwin matches 1 unless score venator Venator matches 1 unless score newworld NewWorld matches 1 unless score cathedral Cathedral matches 1 unless score atlantide Atlantide matches 1 run schedule function hideseek:border1 300s
+execute unless score kaelos map matches 1.. run execute unless score castle map matches 1 run execute unless score imperator map matches 1 run execute unless score tempus map matches 1.. run execute unless score HOA map matches 1.. run execute unless score redstoneAcademy map matches 1 run execute unless score markar map matches 1 unless score hindenburg map matches 1 unless score passTwin map matches 1 unless score venator map matches 1 unless score newWorld map matches 1 unless score cathedral map matches 1 unless score atlantide map matches 1 run schedule function hideseek:border1 300s
 
-execute if score cathedral Cathedral matches 1 run schedule function hideseek:border1 600s
-execute if score atlantide Atlantide matches 1 run schedule function hideseek:border1 600s
+execute if score cathedral map matches 1 run schedule function hideseek:border1 600s
+execute if score atlantide map matches 1 run schedule function hideseek:border1 600s
 
 # Ping
-execute unless score darkpeak DarkPeak matches 1 run function hideseek:ping
-execute if score darkpeak DarkPeak matches 1 run function hideseek:darkping
+execute unless score darkPeak map matches 1 run function hideseek:ping
+execute if score darkPeak map matches 1 run function hideseek:darkping
 
 # Clear Hider Effects
 effect clear @a[team=2] blindness

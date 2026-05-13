@@ -9,7 +9,7 @@ execute in overworld run worldborder center 1588 1228
 execute in overworld run worldborder set 440
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set amaria Amaria 1
+scoreboard players set amaria map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Amaria","color":"dark_aqua"},{"text":" selected","color":"green"}]

@@ -9,7 +9,7 @@ execute in the_nether run worldborder center -204 -1065
 execute in the_nether run worldborder set 250
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set nazgard Nazgard 1
+scoreboard players set nazgard map 1
 
 # Selection Message
 title @a title ["",{"text":"Nazgard","color":"dark_red"},{"text":" selected","color":"red"}]

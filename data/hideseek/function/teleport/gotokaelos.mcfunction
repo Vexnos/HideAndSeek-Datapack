@@ -9,7 +9,7 @@ execute in overworld run worldborder center 217 2812
 execute in overworld run worldborder set 200
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set kaelos Kaelos 1
+scoreboard players set kaelos map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Mt Kaelos","color":"red"},{"text":" selected","color":"green"}]

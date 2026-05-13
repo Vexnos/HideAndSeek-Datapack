@@ -9,7 +9,7 @@ execute in overworld run worldborder center -1289 -1367
 execute in overworld run worldborder set 400
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set oakendale Oakendale 1
+scoreboard players set oakendale map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Oakendale","color":"dark_green"},{"text":" selected","color":"green"}]

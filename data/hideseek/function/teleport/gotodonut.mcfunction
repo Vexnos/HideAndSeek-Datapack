@@ -9,7 +9,7 @@ execute in hideseek:donut run worldborder center 372 369
 execute in hideseek:donut run worldborder set 250
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set donut Donut 1
+scoreboard players set donut map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Donut","color":"gold"},{"text":" selected","color":"green"}]

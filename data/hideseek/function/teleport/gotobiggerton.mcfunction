@@ -9,7 +9,7 @@ execute in overworld run worldborder center -396 -1342
 execute in overworld run worldborder set 200
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set biggerton Biggerton 1
+scoreboard players set biggerton map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Biggerton","color":"dark_green"},{"text":" selected","color":"green"}]

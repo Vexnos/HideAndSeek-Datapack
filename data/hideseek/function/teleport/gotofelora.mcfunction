@@ -9,7 +9,7 @@ execute in overworld run worldborder center -3806 -64
 execute in overworld run worldborder set 150
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set felora Felora 1
+scoreboard players set felora map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Felora","color":"green"},{"text":" selected","color":"green"}]

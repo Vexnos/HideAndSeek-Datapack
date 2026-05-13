@@ -9,7 +9,7 @@ execute in the_nether run worldborder center 0 0
 execute in the_nether run worldborder set 59999968
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set antiend Antiend 1
+scoreboard players set antiEnd map 1
 
 # Selection Message
 title @a title ["",{"text":"The Anti-End","color":"dark_red"},{"text":" selected","color":"red"}]

@@ -9,7 +9,7 @@ execute in the_end run worldborder center 129 628
 execute in the_end run worldborder set 249
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set antinazgard Antinazgard 1
+scoreboard players set antiNazgard map 1
 
 # Selection Message
 title @a title ["",{"text":"Anti-Nazgard","color":"dark_purple"},{"text":" selected","color":"light_purple"}]

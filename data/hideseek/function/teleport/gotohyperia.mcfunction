@@ -9,7 +9,7 @@ execute in overworld run worldborder center 1755 -344
 execute in overworld run worldborder set 370
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set hyperia Hyperia 1
+scoreboard players set hyperia map 1
 
 # Selection Map
 title @a actionbar ["",{"text":"Hyperia","color":"dark_aqua"},{"text":" selected","color":"green"}]

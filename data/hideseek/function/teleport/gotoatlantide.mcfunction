@@ -9,7 +9,7 @@ execute in hideseek:atlantide run worldborder center 1066 -1698
 execute in hideseek:atlantide run worldborder set 850
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set atlantide Atlantide 1
+scoreboard players set atlantide map 1
 
 # Selection Message
 title @a title ["",{"text":"Atlantide","color":"dark_aqua"},{"text":" selected","color":"green"}]

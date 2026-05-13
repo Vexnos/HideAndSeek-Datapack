@@ -9,7 +9,7 @@ execute in overworld run worldborder center -916 1325
 execute in overworld run worldborder set 275
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set incatasia Incatasia 1
+scoreboard players set incatasia map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Incatasia","color":"blue"},{"text":" selected","color":"green"}]

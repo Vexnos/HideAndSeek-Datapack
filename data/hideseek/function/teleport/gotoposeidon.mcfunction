@@ -9,7 +9,7 @@ execute in overworld run worldborder center -2079 2292
 execute in overworld run worldborder set 725
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set poseidon Poseidon 1
+scoreboard players set poseidon map 1
 
 # Selection Message
 title @a actionbar ["",{"text":"Poseidon","color":"blue"},{"text":" selected","color":"green"}]

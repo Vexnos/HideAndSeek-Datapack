@@ -9,7 +9,7 @@ execute in hideseek:lobby run worldborder center 5121 98
 execute in hideseek:lobby run worldborder set 230
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set passtwin Passtwin 1
+scoreboard players set passTwin map 1
 
 # Selection Message
 title @a title ["",{"text":"ssɐd uıʍʇ","color":"dark_green"},{"text":" selected","color":"green"}]

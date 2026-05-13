@@ -9,7 +9,7 @@ execute in hideseek:lobby run worldborder center -5053 170
 execute in hideseek:lobby run worldborder set 151
 
 # Map Scoreboard (Defines which map is active)
-scoreboard players set paleora Paleora 1
+scoreboard players set paleora map 1
 
 # Selection Message
 title @a title ["",{"text":"Pale Gardens","color":"#ec4706"},{"text":" selected","color":"green"}]
