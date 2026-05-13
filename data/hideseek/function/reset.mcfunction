@@ -12,7 +12,7 @@ execute at @e[tag=lobby,limit=1] run spawnpoint @a ~ ~ ~
 effect clear @a
 
 # Previous Seeker tag
-tag @a[team=2] add last_seeker
+tag @a[team=2,limit=1] add last_seeker
 
 # Teams
 team leave @a

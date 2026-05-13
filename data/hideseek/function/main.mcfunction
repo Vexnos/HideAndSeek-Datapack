@@ -1,4 +1,8 @@
-execute as @a[team=1,scores={deaths=1..},tag=!out] run function hideseek:hiderdeaths
+# Run separate functions depending if tag mode is enabled
+execute unless score tag settings matches 1 as @a[team=1,scores={deaths=1..},tag=!out] run function hideseek:hiderdeaths
+execute if score tag settings matches 1 as @a[team=1,scores={deaths=1..},tag=!out] run function hideseek:tagdeath
+
+# To be sorted
 execute as @a[team=2,scores={deaths=1..}] run function hideseek:seekerdeath
 execute if score mounts settings matches 1 run function hideseek:mounts
 function hideseek:lobby/teleport
