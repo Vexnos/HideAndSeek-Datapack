@@ -80,11 +80,11 @@ bossbar set timer visible false
 bossbar set hidingtimer value 64
 
 # Enable Glowing on Hindenburg
-execute if score hindenburg map matches 1 run scoreboard players set glowingEnabled glowingEnabled 1
-execute unless score hindenburg map matches 1 run scoreboard players set glowingEnabled glowingEnabled 0
+execute if score hindenburg map matches 1 run scoreboard players set glowing settings 1
+execute unless score hindenburg map matches 1 run scoreboard players set glowing settings 0
 
 # Spread Players
-execute if score #spread spreadPlayers matches 1 as @a[team=1] at @e[tag=start,limit=1] run spreadplayers ~ ~ 75 100 true @s
+execute if score spreadPlayers settings matches 1 as @a[team=1] at @e[tag=start,limit=1] run spreadplayers ~ ~ 75 100 true @s
 
 # Get UUIDS
 execute as @a store result score @s uuid0 run data get entity @s UUID[0]
@@ -93,8 +93,8 @@ execute as @a store result score @s uuid2 run data get entity @s UUID[2]
 execute as @a store result score @s uuid3 run data get entity @s UUID[3]
 
 # Set the game as running
-scoreboard players set #game gameRunning 1
-scoreboard players set #trackStats trackStats 0
+scoreboard players set gameRunning settings 1
+scoreboard players set trackStats settings 0
 function hideseek:hidingtimer
 schedule function hideseek:seek 64s
 

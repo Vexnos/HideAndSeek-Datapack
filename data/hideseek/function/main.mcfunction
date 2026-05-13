@@ -1,11 +1,11 @@
 execute as @a[team=1,scores={deaths=1..},tag=!out] run function hideseek:hiderdeaths
 execute as @a[team=2,scores={deaths=1..}] run function hideseek:seekerdeath
-execute if score #mountsEnabled mountsEnabled matches 1 run function hideseek:mounts
+execute if score mounts settings matches 1 run function hideseek:mounts
 function hideseek:lobby/teleport
 function hideseek:glowing
 function hideseek:balancing
 function hideseek:minions
-execute if score #raycastEnabled raycastEnabled matches 1 run function hideseek:raycast
+execute if score raycast settings matches 1 run function hideseek:raycast
 execute as @a[team=1,tag=!notswap,scores={deaths=1..}] run function hideseek:events/calculateswap
 
 # Kill volumes on unique maps
@@ -17,10 +17,10 @@ execute in the_end if score end map matches 1.. run execute as @a[team=1,x=-1228
 kill @e[gamemode=!spectator,gamemode=!creative,x=199,y=70,z=2129,dx=550,dy=106,dz=550]
 
 # Imperial Star Destroyer Kill Barrier
-execute if score imperator map matches 1 if score #game gameRunning matches 1 in hideseek:imperator as @a[tag=!out,gamemode=adventure,team=1,x=-1427,y=715,z=-148,dx=300,dy=-100,dz=300] run damage @s 1.5 outside_border
+execute if score imperator map matches 1 if score gameRunning settings matches 1 in hideseek:imperator as @a[tag=!out,gamemode=adventure,team=1,x=-1427,y=715,z=-148,dx=300,dy=-100,dz=300] run damage @s 1.5 outside_border
 
 # Castle Kill Barrier
-execute if score castle map matches 1 if score #game gameRunning matches 1 in hideseek:castle as @a[tag=!out,gamemode=adventure,team=1,x=91,y=102,z=-130,dx=110,dy=-200,dz=110] run damage @s 10 outside_border
+execute if score castle map matches 1 if score gameRunning settings matches 1 in hideseek:castle as @a[tag=!out,gamemode=adventure,team=1,x=91,y=102,z=-130,dx=110,dy=-200,dz=110] run damage @s 10 outside_border
 
 # Mannequins Moving
 # execute if entity @e[type=mannequin,tag=!NoKill] run function hideseek:mannequin
@@ -65,14 +65,14 @@ execute as @a[tag=admin,scores={phantoms=1..}] run function hideseek:triggers
 execute as @a[tag=admin,scores={wither=1..}] run function hideseek:triggers
 
 # Lobby teleports
-execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/west
-execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/north
-execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/south
-execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/east
-execute unless score #game gameRunning matches 1 in hideseek:lobby run function hideseek:lobby/dark
+execute unless score gameRunning settings matches 1 in hideseek:lobby run function hideseek:lobby/west
+execute unless score gameRunning settings matches 1 in hideseek:lobby run function hideseek:lobby/north
+execute unless score gameRunning settings matches 1 in hideseek:lobby run function hideseek:lobby/south
+execute unless score gameRunning settings matches 1 in hideseek:lobby run function hideseek:lobby/east
+execute unless score gameRunning settings matches 1 in hideseek:lobby run function hideseek:lobby/dark
 
 # Holy Hand Grenade
-execute if score #game gameRunning matches 1 run function hideseek:holy_hand_grenade
+execute if score gameRunning settings matches 1 run function hideseek:holy_hand_grenade
 
 # Check if the value of dead players matches the value of hiders, if they match, all Hiders are out and the game needs to reset
 execute if score out out >= hiders hiding run function hideseek:reset

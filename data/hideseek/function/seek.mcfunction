@@ -11,10 +11,10 @@ execute if score cathedral map matches 1 run item replace entity @a[team=2] inve
 execute unless score acclamator map matches 1 unless score venator map matches 1 run item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 15
 execute if score acclamator map matches 1 run item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 45
 execute if score venator map matches 1 run item replace entity @a[team=2] inventory.0 with tipped_arrow[potion_contents={potion:"minecraft:slowness"}] 45
-execute if score #radarEnabled radarEnabled matches 1 run item replace entity @a[team=2] hotbar.3 with nether_star[consumable={consume_seconds:0.05},custom_name={"text":"Radar","color":"green","italic":false},max_stack_size=2,use_cooldown={seconds:5,cooldown_group:"radar"}]
-execute unless score acclamator map matches 1 unless score darkPeak map matches 1 unless score venator map matches 1 unless score hindenburg map matches 1 if score minionsEnabled minionsEnabled matches 1.. run item replace entity @a[team=2] hotbar.2 with experience_bottle[custom_name={"text":"Minions","color":"green","italic":false}] 3
-execute if score acclamator map matches 1 if score minionsEnabled minionsEnabled matches 1.. run item replace entity @a[team=2] hotbar.2 with experience_bottle[custom_name={"text":"Minions","color":"green","italic":false}] 10
-execute if score venator map matches 1 if score minionsEnabled minionsEnabled matches 1.. run item replace entity @a[team=2] hotbar.2 with experience_bottle[custom_name={"text":"Minions","color":"green","italic":false}] 10
+execute if score radar settings matches 1 run item replace entity @a[team=2] hotbar.3 with nether_star[consumable={consume_seconds:0.05},custom_name={"text":"Radar","color":"green","italic":false},max_stack_size=2,use_cooldown={seconds:5,cooldown_group:"radar"}]
+execute unless score acclamator map matches 1 unless score darkPeak map matches 1 unless score venator map matches 1 unless score hindenburg map matches 1 if score minions settings matches 1.. run item replace entity @a[team=2] hotbar.2 with experience_bottle[custom_name={"text":"Minions","color":"green","italic":false}] 3
+execute if score acclamator map matches 1 if score minions settings matches 1.. run item replace entity @a[team=2] hotbar.2 with experience_bottle[custom_name={"text":"Minions","color":"green","italic":false}] 10
+execute if score venator map matches 1 if score minions settings matches 1.. run item replace entity @a[team=2] hotbar.2 with experience_bottle[custom_name={"text":"Minions","color":"green","italic":false}] 10
 item replace entity @a[team=2] inventory.18 with mace[enchantments={breach:10,density:10,wind_burst:10},unbreakable={}] 1
 # execute unless score end map matches 1.. run execute as @a[team=1] run give @a[team=2] egg[item_name='{"text":"Budget Ender Pearl","italic":false,"color":"blue"}'] 10
 item replace entity @a[team=2] hotbar.5 with heavy_core[custom_name={"text":"Back to Spawn","color":"red","italic":false},consumable={consume_seconds:0.05},max_stack_size=2,enchantment_glint_override=true,use_cooldown={seconds:1,cooldown_group:"heavy_core"}]
@@ -79,10 +79,10 @@ execute if score atlantide map matches 1 run schedule function hideseek:reset 12
 # Events
 execute unless score #eventsEnabled eventsEnabled matches 0 unless score HOA map matches 1 run schedule function hideseek:events/initmevent 150s
 execute unless score #eventsEnabled eventsEnabled matches 0 unless score HOA map matches 1 run schedule function hideseek:events/initevent 60s
-execute if score mobsEnabled mobsEnabled matches 1.. run execute unless score HOA map matches 1.. unless score cathedral map matches 1 unless score atlantide map matches 1 run schedule function hideseek:finalminute 540s
+execute if score mobs settings matches 1.. run execute unless score HOA map matches 1.. unless score cathedral map matches 1 unless score atlantide map matches 1 run schedule function hideseek:finalminute 540s
 
-execute if score mobsEnabled mobsEnabled matches 1 if score cathedral map matches 1 run schedule function hideseek:finalminute 1140s
-execute if score mobsEnabled mobsEnabled matches 1 if score atlantide map matches 1 run schedule function hideseek:finalminute 1140s
+execute if score mobs settings matches 1 if score cathedral map matches 1 run schedule function hideseek:finalminute 1140s
+execute if score mobs settings matches 1 if score atlantide map matches 1 run schedule function hideseek:finalminute 1140s
 
 # Worldborder
 execute unless score kaelos map matches 1.. run execute unless score castle map matches 1 run execute unless score imperator map matches 1 run execute unless score tempus map matches 1.. run execute unless score HOA map matches 1.. run execute unless score redstoneAcademy map matches 1 run execute unless score markar map matches 1 unless score hindenburg map matches 1 unless score passTwin map matches 1 unless score venator map matches 1 unless score newWorld map matches 1 unless score cathedral map matches 1 unless score atlantide map matches 1 run schedule function hideseek:border1 300s
@@ -102,7 +102,7 @@ effect clear @a[team=1] invisibility
 schedule clear hideseek:seek
 
 # Track Stats
-scoreboard players set #trackStats trackStats 1
+scoreboard players set trackStats settings 1
 
 # Bossbar
 bossbar set timer players @a

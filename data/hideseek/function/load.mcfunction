@@ -29,26 +29,14 @@ scoreboard objectives add minutes dummy
 # scoreboard objectives setdisplay sidebar time
 scoreboard objectives add spectator killedByTeam.blue "spectator"
 scoreboard objectives add deaths deathCount
-scoreboard objectives add seekerAmount dummy
-scoreboard objectives add pingEnabled dummy
-scoreboard objectives add glowingEnabled dummy
-scoreboard objectives add mobsEnabled dummy
-scoreboard objectives add minionsEnabled dummy
-scoreboard objectives add raycastEnabled dummy
-scoreboard objectives add radarEnabled dummy
+scoreboard objectives add settings dummy
 scoreboard objectives add velocity dummy
-scoreboard objectives add gameRunning dummy
-scoreboard objectives add trackStats dummy
-scoreboard objectives add spreadPlayers dummy
-scoreboard objectives add radarEnabled dummy
 scoreboard objectives add hidingTime dummy
 scoreboard players set out out 0
 scoreboard objectives add nearbyTeleports dummy
 scoreboard objectives add range dummy
 scoreboard objectives add radar dummy
-scoreboard objectives add mountsEnabled dummy
 scoreboard objectives add shardsUsed minecraft.used:minecraft.amethyst_shard
-scoreboard objectives add tagMode dummy
 
 # Map Scoreboards
 scoreboard objectives add map dummy
