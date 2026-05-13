@@ -11,5 +11,5 @@ execute at @e[tag=start,limit=1] run summon parched ~ ~ ~ {equipment:{head:{id:"
 execute as @a at @s run playsound minecraft:entity.evoker.prepare_summon master @s
 
 # Timer logic
-scoreboard players remove #doomTimer doomTimer 1
-execute unless score #doomTimer doomTimer matches 0 run schedule function hideseek:events/absdoom/summon 1s
+scoreboard players remove doom time 1
+execute unless score doom time matches 0 run schedule function hideseek:events/absdoom/summon 1s

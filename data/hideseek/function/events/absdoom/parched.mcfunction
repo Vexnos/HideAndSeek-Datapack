@@ -10,5 +10,5 @@ time set 18000
 weather thunder
 
 # Set the timer to 20 seconds
-scoreboard players set #doomTimer doomTimer 20
+scoreboard players set doom time 20
 function hideseek:events/absdoom/summon

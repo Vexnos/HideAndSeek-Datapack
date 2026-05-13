@@ -31,7 +31,6 @@ scoreboard objectives add spectator killedByTeam.blue "spectator"
 scoreboard objectives add deaths deathCount
 scoreboard objectives add settings dummy
 scoreboard objectives add velocity dummy
-scoreboard objectives add hidingTime dummy
 scoreboard players set out out 0
 scoreboard objectives add nearbyTeleports dummy
 scoreboard objectives add range dummy
@@ -61,13 +60,6 @@ scoreboard objectives add wither trigger
 
 # Event Scoreboards
 scoreboard objectives add swap dummy
-scoreboard objectives add zombieTimer dummy
-scoreboard objectives add breezeTimer dummy
-scoreboard objectives add guardianTimer dummy
-scoreboard objectives add wardenTimer dummy
-scoreboard objectives add phantomTimer dummy
-scoreboard objectives add bunnyTimer dummy
-scoreboard objectives add doomTimer dummy
 scoreboard objectives add randInt dummy
 scoreboard objectives add majorEvent dummy
 scoreboard objectives add minorEvent dummy

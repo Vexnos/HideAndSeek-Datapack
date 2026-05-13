@@ -8,7 +8,7 @@ execute if score pavlopetri map matches 1 at @a[gamemode=!spectator] run summon 
 execute as @a at @s run playsound minecraft:entity.evoker.prepare_summon master @s
 
 # Remove 1 from the Guardian Timer
-scoreboard players remove #guardianTimer guardianTimer 1
+scoreboard players remove guardians time 1
 
 # Run the function until the timer expires
-execute unless score #guardianTimer guardianTimer matches 0 run schedule function hideseek:events/guardian/summon 1s
+execute unless score guardians time matches 0 run schedule function hideseek:events/guardian/summon 1s

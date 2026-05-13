@@ -5,5 +5,5 @@ execute in overworld at @e[tag=start,limit=1] run summon warden
 execute as @a at @s run playsound minecraft:entity.evoker.prepare_summon master @s
 
 # Timer logic
-scoreboard players remove #wardenTimer wardenTimer 1
-execute unless score #wardenTimer wardenTimer matches 0 run schedule function hideseek:events/wardenflurry/summon 1s
+scoreboard players remove wardens time 1
+execute unless score wardens time matches 0 run schedule function hideseek:events/wardenflurry/summon 1s

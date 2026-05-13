@@ -9,7 +9,7 @@ execute if score nazgard map matches 1 as @a at @s run playsound minecraft:entit
 execute if score antiEnd map matches 1 as @a at @s run playsound minecraft:entity.blaze.burn master @s
 
 # Set the Breeze Timer to 3 Seconds
-scoreboard players set #breezeTimer breezeTimer 3
+scoreboard players set breezes time 3
 
 # Summon the Breezes/Blazes
 function hideseek:events/breeze/summon

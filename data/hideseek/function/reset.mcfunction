@@ -62,19 +62,19 @@ schedule clear hideseek:events/timelord/teleport
 # Scoreboards
 scoreboard players reset @a spectator
 scoreboard players set Timer time 0
-scoreboard players set #hidingTime hidingTime 64
+scoreboard players set hiding time 64
 scoreboard players set Minutes minutes 0
 scoreboard players reset @a deaths
 scoreboard players set out out 0
 scoreboard players reset hiders hiding
 scoreboard players set #majorEvent majorEvent 0
 scoreboard players set #minorEvent minorEvent 0
-scoreboard players set #zombieTimer zombieTimer 0
-scoreboard players set #breezeTimer breezeTimer 0
-scoreboard players set #guardianTimer guardianTimer 0
-scoreboard players set #wardenTimer wardenTimer 0
-scoreboard players set #phantomTimer phantomTimer 0
-scoreboard players set #bunnyTimer bunnyTimer 0
+scoreboard players set zombies time 0
+scoreboard players set breezes time 0
+scoreboard players set guardians time 0
+scoreboard players set wardens time 0
+scoreboard players set phantoms time 0
+scoreboard players set bunnies time 0
 scoreboard players set mounts settings 1
 scoreboard players set swap swap 0
 scoreboard players reset @a radar

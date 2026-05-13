@@ -13,5 +13,5 @@ execute unless score tartarus map matches 1 at @e[tag=start,limit=1] run playsou
 execute if score tartarus map matches 1 positioned -55 23 2524 run playsound minecraft:entity.evoker.prepare_attack master @a
 
 # Timer Logic
-scoreboard players remove #zombieTimer zombieTimer 1
-execute unless score #zombieTimer zombieTimer matches 0 run schedule function hideseek:events/zombies 1s
+scoreboard players remove zombies time 1
+execute unless score zombies time matches 0 run schedule function hideseek:events/zombies 1s

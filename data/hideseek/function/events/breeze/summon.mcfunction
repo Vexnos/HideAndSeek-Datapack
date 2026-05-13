@@ -9,7 +9,7 @@ execute if score antiEnd map matches 1 at @a[team=1,tag=!out] run summon blaze ~
 execute as @a at @s run playsound minecraft:entity.evoker.prepare_summon master @s
 
 # Remove 1 from the Timer
-scoreboard players remove #breezeTimer breezeTimer 1
+scoreboard players remove breezes time 1
 
 # Run the function until the timer expires
-execute unless score #breezeTimer breezeTimer matches 0 run schedule function hideseek:events/breeze/summon 1s
+execute unless score breezes time matches 0 run schedule function hideseek:events/breeze/summon 1s

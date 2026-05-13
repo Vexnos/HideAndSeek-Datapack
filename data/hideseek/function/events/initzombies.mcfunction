@@ -1,5 +1,5 @@
 # Set the Zombie count to 10
-scoreboard players set #zombieTimer zombieTimer 10
+scoreboard players set zombies time 10
 
 # Titles
 execute unless score pavlopetri map matches 1 run title @a title {"text":"Zombies!","color":"green"}
