@@ -73,7 +73,6 @@ scoreboard objectives add majorEvent dummy
 scoreboard objectives add minorEvent dummy
 scoreboard objectives add countdown dummy
 scoreboard objectives add mcountdown dummy
-scoreboard objectives add eventsEnabled dummy
 
 # Stats Scoreboards
 scoreboard objectives add winsAsHider dummy {text:"Wins as Hider",color:"red"}

@@ -77,8 +77,8 @@ execute if score cathedral map matches 1 run schedule function hideseek:reset 12
 execute if score atlantide map matches 1 run schedule function hideseek:reset 1200s
 
 # Events
-execute unless score #eventsEnabled eventsEnabled matches 0 unless score HOA map matches 1 run schedule function hideseek:events/initmevent 150s
-execute unless score #eventsEnabled eventsEnabled matches 0 unless score HOA map matches 1 run schedule function hideseek:events/initevent 60s
+execute unless score events settings matches 0 unless score HOA map matches 1 run schedule function hideseek:events/initmevent 150s
+execute unless score events settings matches 0 unless score HOA map matches 1 run schedule function hideseek:events/initevent 60s
 execute if score mobs settings matches 1.. run execute unless score HOA map matches 1.. unless score cathedral map matches 1 unless score atlantide map matches 1 run schedule function hideseek:finalminute 540s
 
 execute if score mobs settings matches 1 if score cathedral map matches 1 run schedule function hideseek:finalminute 1140s
