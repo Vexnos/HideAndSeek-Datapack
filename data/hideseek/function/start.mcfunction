@@ -1,4 +1,5 @@
 # Teams and Game Start
+scoreboard players reset @a deaths
 team leave @a
 clear @a
 gamemode adventure @a
