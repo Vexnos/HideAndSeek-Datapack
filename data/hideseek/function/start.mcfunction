@@ -4,7 +4,7 @@ team leave @a
 clear @a
 gamemode adventure @a
 scoreboard players set swap swap 0
-function hideseek:seekers
+function hideseek:seeker/seekers
 team join 1 @a[sort=random,team=!2]
 execute as @a[team=1] run scoreboard players add hiders hiding 1
 execute as @a[team=1] run scoreboard players add swap swap 1

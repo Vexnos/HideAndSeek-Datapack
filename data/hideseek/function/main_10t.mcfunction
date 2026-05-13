@@ -5,7 +5,7 @@ effect give @e[type=guardian,tag=event] regeneration infinite 10 true
 execute as @a[scores={shardsUsed=3..},tag=!itemsGiven] run function hideseek:shadowclones/shards
 
 # Give the Seeker Effects on respawn
-function hideseek:seekereffects
+function hideseek:seeker/seekereffects
 
 # Run the function every 10 ticks
 schedule function hideseek:main_10t 10t

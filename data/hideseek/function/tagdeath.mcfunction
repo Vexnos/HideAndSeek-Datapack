@@ -3,8 +3,8 @@ team join 2 @s
 
 # Give seeker items
 clear @s
-execute as @s run function hideseek:seekeritems
-execute as @s run function hideseek:seekereffects
+execute as @s run function hideseek:seeker/seekeritems
+execute as @s run function hideseek:seeker/seekereffects
 
 # Increase a global scoreboard of out players
 execute as @s run scoreboard players add out out 1

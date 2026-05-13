@@ -1,5 +1,5 @@
 # Items for Seekers (This is an eyesore)
-execute as @a[team=2] run function hideseek:seekeritems
+execute as @a[team=2] run function hideseek:seeker/seekeritems
 
 # Tags
 tag @a[team=2] remove seekerWait
