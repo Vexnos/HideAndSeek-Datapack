@@ -40,6 +40,8 @@ scoreboard objectives add shardsUsed minecraft.used:minecraft.amethyst_shard
 
 # Map Scoreboards
 scoreboard objectives add map dummy
+
+# Trigger Scoreboards
 scoreboard objectives add start trigger
 scoreboard objectives add seek trigger
 scoreboard objectives add reset trigger
