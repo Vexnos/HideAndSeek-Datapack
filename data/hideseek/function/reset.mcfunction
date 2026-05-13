@@ -6,13 +6,15 @@ execute if score hiders hiding <= out out as @a at @s run playsound minecraft:ui
 
 # Points for Stats
 execute unless score #test playTesting matches 1 if score trackStats settings matches 1 run execute as @a[team=1] if score hiders hiding > out out if entity @s[tag=!out] run scoreboard players add @s winsAsHider 1
-execute unless score #test playTesting matches 1 if score trackStats settings matches 1 run execute as @a[team=2] if score hiders hiding <= out out run scoreboard players add @s winsAsSeeker 1
+execute unless score #test playTesting matches 1 if score trackStats settings matches 1 unless score tag settings matches 1 run execute as @a[team=2] if score hiders hiding <= out out run scoreboard players add @s winsAsSeeker 1
+
+execute unless score #test playTesting matches 1 if score trackStats settings matches 1 if score tag settings matches 1 run execute as @a[team=2,tag=og_seeker] if score hiders hiding <= out out run scoreboard players add @s winsAsSeeker 1
 
 execute at @e[tag=lobby,limit=1] run spawnpoint @a ~ ~ ~
 effect clear @a
 
 # Previous Seeker tag
-tag @a[team=2,limit=1] add last_seeker
+tag @a[team=2,tag=og_seeker] add last_seeker
 
 # Teams
 team leave @a
@@ -90,6 +92,7 @@ scoreboard players reset @e uuid3
 tag @a remove out
 tag @a remove notswap
 tag @a remove seekerWait
+tag @a remove og_seeker
 tag @a remove itemsGiven
 tag @a remove tp1
 tag @a remove tp2
