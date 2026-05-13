@@ -21,4 +21,8 @@ execute as @a at @s run playsound minecraft:entity.allay.death master @s ~ ~ ~ 1
 effect give @a blindness 1 0 true
 effect clear @a speed
 
+# Bossbar
+bossbar set timer style notched_20
+bossbar set timer max 1200
+
 clear @a

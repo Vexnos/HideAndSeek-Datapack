@@ -70,18 +70,25 @@ execute unless score end End matches 1.. unless score antinazgard Antinazgard ma
 # stopsound @a * hideseek:jokers
 
 # Reset
-execute unless score ataraxia Ataraxia matches 1.. run execute unless score hoa HOA matches 1.. unless score newworld NewWorld matches 1 run schedule function hideseek:reset 600s
-execute if score ataraxia Ataraxia matches 1.. run schedule function hideseek:reset 600s
+execute unless score hoa HOA matches 1.. unless score newworld NewWorld matches 1 unless score cathedral Cathedral matches 1 unless score atlantide Atlantide matches 1 run schedule function hideseek:reset 600s
 execute if score hoa HOA matches 1.. run schedule function hideseek:reset 450s
 execute if score newworld NewWorld matches 1 run schedule function hideseek:reset 300s
+execute if score cathedral Cathedral matches 1 run schedule function hideseek:reset 1200s
+execute if score atlantide Atlantide matches 1 run schedule function hideseek:reset 1200s
 
 # Events
 execute unless score #eventsEnabled eventsEnabled matches 0 unless score hoa HOA matches 1 run schedule function hideseek:events/initmevent 150s
 execute unless score #eventsEnabled eventsEnabled matches 0 unless score hoa HOA matches 1 run schedule function hideseek:events/initevent 60s
-execute if score mobsEnabled mobsEnabled matches 1.. run execute unless score hoa HOA matches 1.. run schedule function hideseek:finalminute 540s
+execute if score mobsEnabled mobsEnabled matches 1.. run execute unless score hoa HOA matches 1.. unless score cathedral Cathedral matches 1 unless score atlantide Atlantide matches 1 run schedule function hideseek:finalminute 540s
+
+execute if score mobsEnabled mobsEnabled matches 1 if score cathedral Cathedral matches 1 run schedule function hideseek:finalminute 1140s
+execute if score mobsEnabled mobsEnabled matches 1 if score atlantide Atlantide matches 1 run schedule function hideseek:finalminute 1140s
 
 # Worldborder
-execute unless score kaelos Kaelos matches 1.. run execute unless score castle Castle matches 1 run execute unless score imperator Imperator matches 1 run execute unless score tempus Tempus matches 1.. run execute unless score hoa HOA matches 1.. run execute unless score redstoneAcademy redstoneAcademy matches 1 run execute unless score markar Markar matches 1 unless score hindenburg Hindenburg matches 1 unless score passtwin Passtwin matches 1 unless score venator Venator matches 1 unless score newworld NewWorld matches 1 run schedule function hideseek:border1 300s
+execute unless score kaelos Kaelos matches 1.. run execute unless score castle Castle matches 1 run execute unless score imperator Imperator matches 1 run execute unless score tempus Tempus matches 1.. run execute unless score hoa HOA matches 1.. run execute unless score redstoneAcademy redstoneAcademy matches 1 run execute unless score markar Markar matches 1 unless score hindenburg Hindenburg matches 1 unless score passtwin Passtwin matches 1 unless score venator Venator matches 1 unless score newworld NewWorld matches 1 unless score cathedral Cathedral matches 1 unless score atlantide Atlantide matches 1 run schedule function hideseek:border1 300s
+
+execute if score cathedral Cathedral matches 1 run schedule function hideseek:border1 600s
+execute if score atlantide Atlantide matches 1 run schedule function hideseek:border1 600s
 
 # Ping
 execute unless score darkpeak DarkPeak matches 1 run function hideseek:ping

@@ -37,4 +37,6 @@ execute as @a at @a run playsound minecraft:entity.ender_dragon.growl ambient @s
 execute as @r at @s run playsound minecraft:entity.wither.spawn ambient @a ~ ~ ~ 100 1
 
 # Don't shrink the border twice for Etherea
-execute unless score etherea Etherea matches 1.. run schedule function hideseek:border2 150s
+execute unless score etherea Etherea matches 1.. unless score cathedral Cathedral matches 1 unless score atlantide Atlantide matches 1 run schedule function hideseek:border2 150s
+execute if score cathedral Cathedral matches 1 run schedule function hideseek:border2 450s
+execute if score atlantide Atlantide matches 1 run schedule function hideseek:border2 450s

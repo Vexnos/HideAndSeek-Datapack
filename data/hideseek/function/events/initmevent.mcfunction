@@ -14,7 +14,8 @@ schedule function hideseek:events/countdown 1s
 scoreboard players add #majorEvent majorEvent 1
 
 # Set the amount of times a Major Event can roll for each map
-execute unless score ataraxia Ataraxia matches 1 unless score hoa HOA matches 1 unless score newworld NewWorld matches 1 unless score #majorEvent majorEvent matches 3.. run schedule function hideseek:events/initmevent 150s
-execute if score ataraxia Ataraxia matches 1 unless score #majorEvent majorEvent matches 2.. run schedule function hideseek:events/initmevent 150s
+execute unless score hoa HOA matches 1 unless score newworld NewWorld matches 1 unless score cathedral Cathedral matches 1 unless score atlantide Atlantide matches 1 unless score #majorEvent majorEvent matches 3.. run schedule function hideseek:events/initmevent 150s
+execute if score cathedral Cathedral matches 1 unless score #majorEvent majorEvent matches 7.. run schedule function hideseek:events/initmevent 150s
+execute if score atlantide Atlantide matches 1 unless score #majorEvent majorEvent matches 7.. run schedule function hideseek:events/initmevent 150s
 execute if score hoa HOA matches 1 unless score #majorEvent majorEvent matches 2.. run schedule function hideseek:events/initmevent 150s
 execute if score newworld NewWorld matches 1 unless score #majorEvent majorEvent matches 2.. run schedule function hideseek:events/initmevent 150s
