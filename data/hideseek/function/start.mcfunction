@@ -33,8 +33,8 @@ execute if score pavlopetri map matches 1 run effect give @a[team=2] dolphins_gr
 
 # Items for Hiders
 execute as @a[team=1] run function hideseek:hider/hideritems
-# execute if score cathedral map matches 1 as @a[team=1] run function hideseek:hider/hideritems
-# execute if score atlantide map matches 1 as @a[team=1] run function hideseek:hider/hideritems
+execute if score cathedral map matches 1 as @a[team=1] run function hideseek:hider/doubleitems
+execute if score atlantide map matches 1 as @a[team=1] run function hideseek:hider/doubleitems
 
 # Universal Items
 execute if score ataraxia map matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
