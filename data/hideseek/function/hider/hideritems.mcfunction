@@ -1,0 +1,27 @@
+execute unless score pavlopetri map matches 1 unless score cathedral map matches 1 run give @s ender_pearl[enchantment_glint_override=true,unbreakable={},lore=[{"text":"Your get out of jail free card","italic":false,"color":"dark_purple"}],item_name={"text":"Ender Pearl","color":"light_purple"}] 1
+execute if score cathedral map matches 1 run give @s ender_pearl[enchantment_glint_override=true,unbreakable={},lore=[{"text":"Your get out of jail free card","italic":false,"color":"dark_purple"}],item_name={"text":"Ender Pearl","color":"light_purple"}] 2
+execute unless score end map matches 1.. unless score pavlopetri map matches 1 unless score antiNazgard map matches 1 unless score passTwin map matches 1 unless score hindenburg map matches 1 run give @s snowball[custom_model_data={floats:[1]},item_name={"text":"Budget Ender Pearl","italic":false,"color":"red"}] 6
+execute unless score pavlopetri map matches 1 unless score hindenburg map matches 1 run give @s chorus_fruit[enchantment_glint_override=true,unbreakable={},item_name={"text":"Zoom zoom escape","italic":false,"color":"light_purple"}] 2
+# give @s potion[custom_name='{"italic":false,"text":"Potion of Fire Resistance"}',potion_contents={custom_color:16746496,custom_effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:400,show_particles:1b,show_icon:1b}]}] 1
+execute unless score pavlopetri map matches 1 run give @s magma_cream[item_name={"color":"gold","italic":false,"text":"Fire Resistance Power Up"},consumable={consume_seconds:0.05,on_consume_effects:[{type:apply_effects,effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:400,show_particles:0b,show_icon:1b}],probability:1}]},enchantment_glint_override=true] 1
+execute unless score pavlopetri map matches 1 run give @s slime_ball[item_name={"color":"green","italic":false,"text":"Super Jump Power Up"},consumable={consume_seconds:0.05,on_consume_effects:[{type:apply_effects,effects:[{id:"minecraft:levitation",amplifier:100,duration:5,show_particles:0b,show_icon:1b}],probability:1}]},enchantment_glint_override=true] 1
+# give @s potion[potion_contents={custom_color:16775126,custom_effects:[{id:"minecraft:invisibility",amplifier:0,duration:400,show_particles:0b,show_icon:1b}]},item_name='{"text":"Potion of Invisibility","italic":false}'] 1
+execute unless score pavlopetri map matches 1 run give @s feather[item_name={"color":"yellow","italic":false,"text":"Invisibility Power Up"},consumable={consume_seconds:0.05,on_consume_effects:[{type:apply_effects,effects:[{id:"minecraft:invisibility",amplifier:0,duration:300,show_particles:0b,show_icon:1b}],probability:1}]},enchantment_glint_override=true] 1
+# execute unless score end map matches 1 unless score ataraxia map matches 1 unless score pavlopetri map matches 1 unless score antiNazgard map matches 1 unless score passTwin map matches 1 run give @s wind_charge 1
+item replace entity @a inventory.9 with wind_charge 32
+execute unless score pavlopetri map matches 1 unless score hindenburg map matches 1 run give @s crossbow[max_damage=1,custom_name={"color":"gold","italic":false,"text":"Legolas' Shot"},damage=1,enchantments={"minecraft:quick_charge":5},charged_projectiles=[{id:"minecraft:spectral_arrow",count:1,components:{"minecraft:intangible_projectile":{}}}]] 1
+execute if score ataraxia map matches 1.. run give @s firework_rocket[enchantment_glint_override=true,lore=[{"text":"Use these wisely","color":"yellow","italic":false,"bold":true}]] 2
+execute if score HOA map matches 1.. run give @s firework_rocket[enchantment_glint_override=true,lore=[{"text":"Use these wisely","color":"yellow","italic":false,"bold":true}]] 3
+execute if score HOA map matches 1.. run give @s trident[damage=248,enchantments={unbreaking:4,riptide:4}]
+execute if score end map matches 1.. run give @s firework_rocket[enchantment_glint_override=true] 20
+execute if score venator map matches 1.. run give @s firework_rocket[enchantment_glint_override=true] 20
+execute if score passTwin map matches 1.. run give @s firework_rocket[enchantment_glint_override=true] 20
+execute if score cathedral map matches 1.. run give @s firework_rocket[enchantment_glint_override=true] 10
+execute if score antiNazgard map matches 1.. run give @s firework_rocket[enchantment_glint_override=true] 20
+execute if score hindenburg map matches 1.. run give @s fishing_rod[max_damage=3,enchantment_glint_override=true,custom_name={"text":"Grappling Hook","italic":false}]
+give @s amethyst_shard[custom_name={text:"Shadowclone",italic:false,color:"yellow"},enchantment_glint_override=true,consumable={animation:crossbow,consume_seconds:0.05,has_consume_particles:false}] 3
+
+# Pavlopetri Specific Items
+execute if score pavlopetri map matches 1 run give @s ink_sac[consumable={consume_seconds:0.05},enchantment_glint_override=true,custom_name={"text":"Ink Bomb","italic":false,"color":"black"}] 3
+execute if score pavlopetri map matches 1 run give @s trident[max_damage=8,enchantments={riptide:3},custom_name={"text":"Booster","italic":false}]
+execute if score pavlopetri map matches 1 run give @s heart_of_the_sea[item_name={"color":"aqua","italic":false,"text":"Night Vision"},consumable={consume_seconds:0.05,on_consume_effects:[{type:apply_effects,effects:[{id:"minecraft:night_vision",amplifier:0,duration:200,show_particles:0b,show_icon:1b}],probability:1}]},enchantment_glint_override=true] 3
