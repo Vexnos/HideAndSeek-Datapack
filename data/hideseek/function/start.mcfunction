@@ -12,6 +12,12 @@ tag @a[team=2] add seekerWait
 tag @a remove notswap
 tag @a remove last_seeker
 
+# If tag mode
+execute if score tag settings matches 1 run team modify 1 seeFriendlyInvisibles false
+execute if score tag settings matches 1 run team modify 1 nametagVisibility never
+execute unless score tag settings matches 1 run team modify 1 seeFriendlyInvisibles true
+execute unless score tag settings matches 1 run team modify 1 nametagVisibility hideForOtherTeams
+
 # Teleportation
 tp @a[team=1] @e[tag=start,limit=1]
 
@@ -27,8 +33,8 @@ execute if score pavlopetri map matches 1 run effect give @a[team=2] dolphins_gr
 
 # Items for Hiders
 execute as @a[team=1] run function hideseek:hider/hideritems
-execute if score cathedral map matches 1 as @a[team=1] run function hideseek:hider/hideritems
-execute if score atlantide map matches 1 as @a[team=1] run function hideseek:hider/hideritems
+# execute if score cathedral map matches 1 as @a[team=1] run function hideseek:hider/hideritems
+# execute if score atlantide map matches 1 as @a[team=1] run function hideseek:hider/hideritems
 
 # Universal Items
 execute if score ataraxia map matches 1.. run item replace entity @a armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
