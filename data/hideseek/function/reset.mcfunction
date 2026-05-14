@@ -70,8 +70,8 @@ scoreboard players set Minutes minutes 0
 scoreboard players reset @a deaths
 scoreboard players set out out 0
 scoreboard players reset hiders hiding
-scoreboard players set #majorEvent majorEvent 0
-scoreboard players set #minorEvent minorEvent 0
+scoreboard players set majorEvent events 0
+scoreboard players set minorEvent events 0
 scoreboard players set zombies time 0
 scoreboard players set breezes time 0
 scoreboard players set guardians time 0
