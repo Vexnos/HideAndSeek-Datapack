@@ -22,8 +22,7 @@ team modify 4 color green
 gamerule mob_griefing false
 
 # Game Scoreboards
-scoreboard objectives add out dummy "out"
-scoreboard objectives add hiding dummy "hiding"
+scoreboard objectives add players dummy
 scoreboard objectives add time dummy {"text":"Time","color":"yellow"}
 scoreboard objectives add minutes dummy
 # scoreboard objectives setdisplay sidebar time
@@ -31,7 +30,7 @@ scoreboard objectives add spectator killedByTeam.blue "spectator"
 scoreboard objectives add deaths deathCount
 scoreboard objectives add settings dummy
 scoreboard objectives add velocity dummy
-scoreboard players set out out 0
+# scoreboard players set out players 0
 scoreboard objectives add nearbyTeleports dummy
 scoreboard objectives add range dummy
 scoreboard objectives add radar dummy

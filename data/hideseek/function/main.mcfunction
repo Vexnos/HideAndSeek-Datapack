@@ -68,7 +68,7 @@ execute unless score gameRunning settings matches 1 in hideseek:lobby run functi
 execute if score gameRunning settings matches 1 run function hideseek:holy_hand_grenade
 
 # Check if the value of dead players matches the value of hiders, if they match, all Hiders are out and the game needs to reset
-execute if score out out >= hiders hiding run function hideseek:reset
+execute if score out players >= hiding players run function hideseek:reset
 
 # Replace hotbar slots in players' inventories
 # execute unless score ataraxia map matches 1.. run execute unless score HOA map matches 1.. run execute unless score end map matches 1.. run item replace entity @a[team=1] hotbar.8 with firework_rocket{CanPlaceOn:["minecraft:stone","minecraft:grass_block","minecraft:dirt","minecraft:cobblestone","minecraft:stone_bricks","minecraft:coarse_dirt","minecraft:jungle_leaves","minecraft:birch_leaves","minecraft:oak_leaves"]} 1

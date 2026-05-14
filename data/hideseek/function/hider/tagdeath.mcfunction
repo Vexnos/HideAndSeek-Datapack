@@ -7,10 +7,10 @@ execute as @s run function hideseek:seeker/seekeritems
 execute as @s run function hideseek:seeker/seekereffects
 
 # Increase a global scoreboard of out players
-execute as @s run scoreboard players add out out 1
+execute as @s run scoreboard players add out players 1
 
 # Check the last hider and give them a tag
-execute if score out out >= hiders hiding run tag @s add winning_hider
+execute if score out players >= hiding players run tag @s add winning_hider
 
 # Teleport player to start
 tp @s @e[tag=start,limit=1]

@@ -1,15 +1,15 @@
 # Game Over title
-execute if score hiders hiding > out out run title @a title [{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/nether_star"},{"text":" Hiders Win! ","color":"red"},{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/nether_star"}]
-execute if score hiders hiding > out out as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
-execute if score hiders hiding <= out out run title @a title [{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/nether_star"},{"text":" Seekers Win! ","color":"blue"},{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/nether_star"}]
-execute if score hiders hiding <= out out as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
+execute if score hiding players > out players run title @a title [{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/nether_star"},{"text":" Hiders Win! ","color":"red"},{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/nether_star"}]
+execute if score hiding players > out players as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
+execute if score hiding players <= out players run title @a title [{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/nether_star"},{"text":" Seekers Win! ","color":"blue"},{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/nether_star"}]
+execute if score hiding players <= out players as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
 
 # Points for Stats
-execute unless score #test playTesting matches 1 if score trackStats settings matches 1 run execute as @a[team=1] if score hiders hiding > out out if entity @s[tag=!out] run scoreboard players add @s winsAsHider 1
-execute unless score #test playTesting matches 1 if score trackStats settings matches 1 unless score tag settings matches 1 run execute as @a[team=2] if score hiders hiding <= out out run scoreboard players add @s winsAsSeeker 1
+execute unless score #test playTesting matches 1 if score trackStats settings matches 1 run execute as @a[team=1] if score hiding players > out players if entity @s[tag=!out] run scoreboard players add @s winsAsHider 1
+execute unless score #test playTesting matches 1 if score trackStats settings matches 1 unless score tag settings matches 1 run execute as @a[team=2] if score hiding players <= out players run scoreboard players add @s winsAsSeeker 1
 
 execute unless score #test playTesting matches 1 if score trackStats settings matches 1 if score tag settings matches 1 run execute as @a[tag=winning_hider] run scoreboard players add @s winsAsHider 1
-execute unless score #test playTesting matches 1 if score trackStats settings matches 1 if score tag settings matches 1 run execute as @a[team=2,tag=og_seeker] if score hiders hiding <= out out run scoreboard players add @s winsAsSeeker 1
+execute unless score #test playTesting matches 1 if score trackStats settings matches 1 if score tag settings matches 1 run execute as @a[team=2,tag=og_seeker] if score hiding players <= out players run scoreboard players add @s winsAsSeeker 1
 
 execute at @e[tag=lobby,limit=1] run spawnpoint @a ~ ~ ~
 effect clear @a
@@ -68,8 +68,8 @@ scoreboard players set Timer time 0
 scoreboard players set hiding time 64
 scoreboard players set Minutes minutes 0
 scoreboard players reset @a deaths
-scoreboard players set out out 0
-scoreboard players reset hiders hiding
+scoreboard players set out players 0
+scoreboard players reset hiding players
 scoreboard players set majorEvent events 0
 scoreboard players set minorEvent events 0
 scoreboard players set zombies time 0
