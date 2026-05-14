@@ -62,8 +62,8 @@ bossbar set timer visible false
 bossbar set hidingtimer value 64
 
 # Enable Glowing on Hindenburg
-execute if score hindenburg map matches 1 run scoreboard players set glowing settings 1
-execute unless score hindenburg map matches 1 run scoreboard players set glowing settings 0
+# execute if score hindenburg map matches 1 run scoreboard players set glowing settings 1
+# execute unless score hindenburg map matches 1 run scoreboard players set glowing settings 0
 
 # Spread Players
 execute if score spreadPlayers settings matches 1 as @a[team=1] at @e[tag=start,limit=1] run spreadplayers ~ ~ 75 100 true @s
