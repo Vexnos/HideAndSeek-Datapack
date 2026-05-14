@@ -1,5 +1,5 @@
 # Disable Teleports
-scoreboard players set mounts settings 0
+scoreboard players set mounts events 0
 
 # Titles
 title @a title {"text":"Teleports Disabled!","color":"dark_purple"}

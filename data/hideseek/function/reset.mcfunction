@@ -78,7 +78,7 @@ scoreboard players set guardians time 0
 scoreboard players set wardens time 0
 scoreboard players set phantoms time 0
 scoreboard players set bunnies time 0
-scoreboard players set mounts settings 1
+scoreboard players set mounts events 1
 scoreboard players set swap swap 0
 scoreboard players reset @a radar
 scoreboard players set gameRunning settings 0

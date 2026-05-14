@@ -4,7 +4,7 @@ execute if score tag settings matches 1 as @a[team=1,scores={deaths=1..},tag=!ou
 
 # To be sorted
 execute as @a[team=2,scores={deaths=1..}] run function hideseek:seeker/seekerdeath
-execute if score mounts settings matches 1 run function hideseek:mounts
+execute if score mounts settings matches 1 if score mounts events matches 1 run function hideseek:mounts
 function hideseek:lobby/teleport
 function hideseek:glowing
 function hideseek:balancing
