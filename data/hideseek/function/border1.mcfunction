@@ -38,5 +38,5 @@ execute as @r at @s run playsound minecraft:entity.wither.spawn ambient @a ~ ~ ~
 
 # Don't shrink the border twice for Etherea
 execute unless score etherea map matches 1.. unless score cathedral map matches 1 unless score atlantide map matches 1 run schedule function hideseek:border2 150s
-execute if score cathedral map matches 1 run schedule function hideseek:border2 450s
-execute if score atlantide map matches 1 run schedule function hideseek:border2 450s
+execute if score cathedral map matches 1 run schedule function hideseek:border2 210s
+execute if score atlantide map matches 1 run schedule function hideseek:border2 210s

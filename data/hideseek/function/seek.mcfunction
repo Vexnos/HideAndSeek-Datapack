@@ -38,22 +38,22 @@ execute unless score end map matches 1.. unless score antiNazgard map matches 1.
 execute unless score HOA map matches 1.. unless score newWorld map matches 1 unless score cathedral map matches 1 unless score atlantide map matches 1 run schedule function hideseek:reset 600s
 execute if score HOA map matches 1.. run schedule function hideseek:reset 450s
 execute if score newWorld map matches 1 run schedule function hideseek:reset 300s
-execute if score cathedral map matches 1 run schedule function hideseek:reset 1200s
-execute if score atlantide map matches 1 run schedule function hideseek:reset 1200s
+execute if score cathedral map matches 1 run schedule function hideseek:reset 720s
+execute if score atlantide map matches 1 run schedule function hideseek:reset 720s
 
 # Events
 execute unless score events settings matches 0 unless score HOA map matches 1 run schedule function hideseek:events/initmevent 150s
 execute unless score events settings matches 0 unless score HOA map matches 1 run schedule function hideseek:events/initevent 60s
 execute if score mobs settings matches 1.. run execute unless score HOA map matches 1.. unless score cathedral map matches 1 unless score atlantide map matches 1 run schedule function hideseek:finalminute 540s
 
-execute if score mobs settings matches 1 if score cathedral map matches 1 run schedule function hideseek:finalminute 1140s
-execute if score mobs settings matches 1 if score atlantide map matches 1 run schedule function hideseek:finalminute 1140s
+execute if score mobs settings matches 1 if score cathedral map matches 1 run schedule function hideseek:finalminute 660s
+execute if score mobs settings matches 1 if score atlantide map matches 1 run schedule function hideseek:finalminute 660s
 
 # Worldborder
 execute unless score kaelos map matches 1.. run execute unless score castle map matches 1 run execute unless score imperator map matches 1 run execute unless score tempus map matches 1.. run execute unless score HOA map matches 1.. run execute unless score redstoneAcademy map matches 1 run execute unless score markar map matches 1 unless score hindenburg map matches 1 unless score passTwin map matches 1 unless score venator map matches 1 unless score newWorld map matches 1 unless score cathedral map matches 1 unless score atlantide map matches 1 run schedule function hideseek:border1 300s
 
-execute if score cathedral map matches 1 run schedule function hideseek:border1 600s
-execute if score atlantide map matches 1 run schedule function hideseek:border1 600s
+execute if score cathedral map matches 1 run schedule function hideseek:border1 360s
+execute if score atlantide map matches 1 run schedule function hideseek:border1 360s
 
 # Ping
 execute unless score darkPeak map matches 1 run function hideseek:ping
