@@ -27,6 +27,7 @@ scoreboard players enable @a[tag=admin] seek
 scoreboard players enable @a[tag=admin] reset
 scoreboard players enable @a[tag=admin] border1
 scoreboard players enable @a[tag=admin] border2
+scoreboard players enable @a[tag=admin] finalminute
 scoreboard players enable @a[tag=admin] creepers
 scoreboard players enable @a[tag=admin] killerbunnies
 scoreboard players enable @a[tag=admin] initguardians
@@ -45,6 +46,7 @@ execute as @a[tag=admin,scores={seek=1..}] run function hideseek:triggers
 execute as @a[tag=admin,scores={reset=1..}] run function hideseek:triggers
 execute as @a[tag=admin,scores={border1=1..}] run function hideseek:triggers
 execute as @a[tag=admin,scores={border2=1..}] run function hideseek:triggers
+execute as @a[tag=admin,scores={finalminute=1..}] run function hideseek:triggers
 execute as @a[tag=admin,scores={creepers=1..}] run function hideseek:triggers
 execute as @a[tag=admin,scores={killerbunnies=1..}] run function hideseek:triggers
 execute as @a[tag=admin,scores={initguardians=1..}] run function hideseek:triggers

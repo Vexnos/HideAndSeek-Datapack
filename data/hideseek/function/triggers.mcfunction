@@ -15,6 +15,10 @@ execute if entity @s[scores={border2=1..}] as @s run schedule clear hideseek:bor
 execute if entity @s[scores={border2=1..}] as @s run function hideseek:border2
 execute if entity @s[scores={border2=1..}] as @s run scoreboard players set @s border2 0
 
+execute if entity @s[scores={finalminute=1..}] as @s run schedule clear hideseek:finalminute
+execute if entity @s[scores={finalminute=1..}] as @s run function hideseek:finalminute
+execute if entity @s[scores={finalminute=1..}] as @s run scoreboard players set @s finalminute 0
+
 execute if entity @s[scores={creepers=1..}] as @s run function hideseek:events/surprisebang
 execute if entity @s[scores={creepers=1..}] as @s run scoreboard players set @s creepers 0
 

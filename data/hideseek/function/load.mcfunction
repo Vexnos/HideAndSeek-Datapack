@@ -45,6 +45,7 @@ scoreboard objectives add seek trigger
 scoreboard objectives add reset trigger
 scoreboard objectives add border1 trigger
 scoreboard objectives add border2 trigger
+scoreboard objectives add finalminute trigger
 scoreboard objectives add creepers trigger
 scoreboard objectives add killerbunnies trigger
 scoreboard objectives add initguardians trigger
