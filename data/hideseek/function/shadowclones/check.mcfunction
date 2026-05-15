@@ -20,5 +20,6 @@ execute as @e[type=mannequin,tag=tp_to_me,limit=1] run return run function hides
 # If no valid shadowclone is found
 title @s actionbar {text:"You have no clones to teleport to!",color:"red"}
 execute as @s at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 100 0
+clear @s clock
 
 tag @e remove shadowclone_teleport
