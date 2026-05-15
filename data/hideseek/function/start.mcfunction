@@ -1,9 +1,12 @@
-# Teams and Game Start
+# Scoreboards
 scoreboard players reset @a deaths
+scoreboard players set swap swap 0
+scoreboard players set out players 0
+
+# Teams and Game Start
 team leave @a
 clear @a
 gamemode adventure @a
-scoreboard players set swap swap 0
 function hideseek:seeker/seekers
 team join 1 @a[sort=random,team=!2]
 execute as @a[team=1] run scoreboard players add hiding players 1
