@@ -13,4 +13,4 @@ execute unless entity @a[tag=seeker] if score seekers settings matches 12 run te
 execute if entity @a[tag=seeker] as @a[tag=seeker] run team join 2 @s
 execute if entity @a[tag=seeker] run tag @a remove seeker
 
-execute if score tag settings matches 1 run tag @a[team=2] add og_seeker
+tag @a[team=2] add og_seeker
