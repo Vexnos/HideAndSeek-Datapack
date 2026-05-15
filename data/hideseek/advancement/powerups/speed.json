@@ -1,0 +1,35 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:sugar",
+                    "components": {
+                        "minecraft:consumable": {
+                            "consume_seconds": 0.05,
+                            "animation": "eat",
+                            "on_consume_effects": [
+                                {
+                                    "type": "apply_effects",
+                                    "effects": [
+                                        {
+                                            "id": "minecraft:speed",
+                                            "amplifier": 7,
+                                            "duration": 400,
+                                            "show_particles": true
+                                        }
+                                    ],
+                                    "probability": 1
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "hideseek:powerups/speed"
+    }
+}
