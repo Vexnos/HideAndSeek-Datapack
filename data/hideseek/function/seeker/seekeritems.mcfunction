@@ -36,3 +36,12 @@ execute if score cathedral map matches 1.. run item replace entity @s inventory.
 execute unless score pavlopetri map matches 1 unless score hindenburg map matches 1 run item replace entity @s hotbar.8 with chorus_fruit[max_stack_size=99,consumable={consume_seconds:0.05,on_consume_effects:[{type:teleport_randomly}]},use_cooldown={seconds:0.05,cooldown_group:"chorus_fruit"}] 99
 
 execute if score tag settings matches 1 run item replace entity @a[tag=og_seeker] armor.head with golden_helmet[unbreakable={},enchantment_glint_override=true,trim={material:"minecraft:lapis",pattern:"minecraft:silence"},custom_name=[{text:"a",obfuscated:true,color:"gold",italic:false,bold:true},{text:"Helm of the Seeker",color:"blue",obfuscated:false},{text:"a"}],attribute_modifiers=[{id:"max_health",amount:10,operation:add_value,type:"minecraft:max_health",slot:head}],tooltip_display={hidden_components:["minecraft:attribute_modifiers","minecraft:trim"]},lore=[{text:"Let all those who hide, fear you..",color:"dark_aqua",italic:false}]]
+
+# Elytra
+execute if score ataraxia map matches 1.. run item replace entity @s armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score cathedral map matches 1.. run item replace entity @s armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score venator map matches 1.. run item replace entity @s armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score passTwin map matches 1.. run item replace entity @s armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score HOA map matches 1.. run item replace entity @s armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score end map matches 1.. run item replace entity @s armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
+execute if score antiNazgard map matches 1.. run item replace entity @s armor.chest with elytra[enchantment_glint_override=true,unbreakable={}]
