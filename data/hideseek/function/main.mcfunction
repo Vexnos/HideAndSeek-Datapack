@@ -10,7 +10,7 @@ function hideseek:glowing
 function hideseek:balancing
 function hideseek:minions
 execute if score raycast settings matches 1 run function hideseek:raycast
-execute as @a[team=1,tag=!notswap,scores={deaths=1..}] run function hideseek:events/calculateswap
+execute as @a[tag=!notswap,tag=out] run function hideseek:events/calculateswap
 
 # Kill volumes on unique maps
 execute if score gameRunning settings matches 1 run function hideseek:killvolumes
