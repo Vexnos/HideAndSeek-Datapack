@@ -95,6 +95,7 @@ tag @a remove notswap
 tag @a remove winning_hider
 tag @a remove seekerWait
 tag @a remove og_seeker
+tag @a remove resistanceRequired
 tag @a remove itemsGiven
 tag @a remove tp1
 tag @a remove tp2
