@@ -24,7 +24,8 @@ execute if entity @a[tag=seekerWait] run tag @s add seekerWait
 execute if entity @a[tag=seekerWait] run effect give @s blindness infinite 0 true
 
 # Resistance
-effect give @s resistance infinite 255 true
+execute unless score darkPeak map matches 1 unless score pavlopetri map matches 1 unless score passTwin map matches 1 unless score antiEnd map matches 1 unless score hailstorm map matches 1 unless score antiNazgard map matches 1 unless score paleora map matches 1 run tag @s add resistanceRequired
+schedule function hideseek:seeker/resistance 10t
 
 # Give dead hiders the 'Out' Tag
 tag @s add out
