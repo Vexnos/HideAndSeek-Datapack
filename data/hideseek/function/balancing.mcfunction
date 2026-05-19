@@ -7,6 +7,8 @@ execute if score gameRunning settings matches 1 as @e[type=item] at @s on origin
 # Kill chickens so they don't drop eggs
 kill @e[type=item,nbt={Item:{id:"minecraft:egg"}}]
 
+execute as @a[team=2,nbt={SelectedItem:{id:"minecraft:clock"}}] run clear @s clock
+
 # Set XP to 0 so players can't break Anvils
 xp set @a 0 levels
 xp set @a 0 points
