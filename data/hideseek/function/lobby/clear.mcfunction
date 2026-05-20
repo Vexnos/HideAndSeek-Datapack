@@ -10,6 +10,15 @@ execute in hideseek:lobby run kill @e[type=arrow,x=-3,y=170,z=10,dx=6,dy=8,dz=2]
 execute in hideseek:lobby run kill @e[type=arrow,x=-2,y=170,z=-1,dx=4,dy=4,dz=4]
 execute in hideseek:lobby run kill @e[type=arrow,x=-3,y=170,z=62,dx=6,dy=9,dz=2]
 
+execute in hideseek:lobby run kill @e[type=shulker_bullet,x=-3,y=170,z=62,dx=6,dy=9,dz=2]
+
+execute in hideseek:lobby run effect clear @a[x=-3,y=170,z=62,dx=6,dy=9,dz=0]
+execute in hideseek:lobby run effect give @a[x=-3,y=170,z=64,dx=6,dy=9,dz=0] trial_omen infinite 5 false
+
+execute in hideseek:lobby run tag @a[x=-3,y=170,z=62,dx=6,dy=9,dz=0] remove title_card
+execute in hideseek:lobby run title @a[x=-3,y=170,z=62,dx=6,dy=9,dz=0] subtitle ""
+execute in hideseek:lobby as @a[x=-3,y=170,z=64,dx=6,dy=9,dz=0,tag=!title_card] run function hideseek:lobby/title_card
+
 execute in hideseek:lobby as @a[x=-2,y=170,z=-1,dx=4,dy=4,dz=7] run effect give @s speed infinite 5 true
 execute in hideseek:lobby as @a[x=-2,y=130,z=-40,dx=4,dy=4,dz=4] run effect give @s speed infinite 5 true
 execute in hideseek:lobby as @a[x=-3,y=170,z=10,dx=6,dy=8,dz=2] run effect clear @s
