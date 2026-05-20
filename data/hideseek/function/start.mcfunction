@@ -7,6 +7,7 @@
 scoreboard players reset @a deaths
 scoreboard players set swap swap 0
 scoreboard players set out players 0
+scoreboard players reset @a bellsRung
 
 # Teams and Game Start
 team leave @a
