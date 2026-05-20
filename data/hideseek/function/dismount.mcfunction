@@ -1,3 +1,8 @@
+#
+# Description: Dismount the trident
+# Called by: Player
+# Entity @s: Seekers
+#
 # Sounds
 execute at @s run playsound minecraft:item.trident.return ambient @a ~ ~ ~ 100 1
 execute at @s run playsound minecraft:entity.allay.ambient_without_item ambient @a ~ ~ ~ 1 2

@@ -1,3 +1,8 @@
+#
+# Description: Radars for Seekers
+# Called by: hideseek:powerups/radar
+# Entity @s: Player
+#
 # Check Distance
 execute at @a at @s at @a[team=1,distance=101..,limit=1,sort=nearest,gamemode=adventure] run scoreboard players set @s radar 1
 execute at @a at @s at @a[team=1,distance=81..100,limit=1,sort=nearest,gamemode=adventure] run scoreboard players set @s radar 2

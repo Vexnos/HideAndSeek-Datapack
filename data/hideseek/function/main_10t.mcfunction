@@ -1,3 +1,8 @@
+#
+# Description: Main 10 Ticks
+# Called by: hideseek:load, THIS
+# Entity @s: None
+#
 # Give event guardians regeneration
 effect give @e[type=guardian,tag=event] regeneration infinite 10 true
 

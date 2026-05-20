@@ -1,2 +1,7 @@
+#
+# Description: The Holy Hand Grenade
+# Called by: hideseek:main
+# Entity @s: Area Effect Cloud
+#
 execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_effects:[{id:"minecraft:unluck"}]}}] at @s run playsound hideseek:scream master @a ~ ~ ~ 100 1
 execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_effects:[{id:"minecraft:unluck"}]}}] at @s run kill @e[type=#hideseek:holy_hand_grenade,distance=..10]

@@ -1,3 +1,8 @@
+#
+# Description: Game timer
+# Called by: hideseek:seek, THIS
+# Entity @s:
+#
 # Increase the Timer
 scoreboard players add Timer time 1
 # execute if score Timer time matches 60.. run scoreboard players add Minutes minutes 1

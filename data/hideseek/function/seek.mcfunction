@@ -1,3 +1,8 @@
+#
+# Description: Release the seeker
+# Called by: hideseek:start, hideseek:triggers
+# Entity @s: None
+#
 # Items for Seekers (This is an eyesore)
 execute as @a[team=2] run function hideseek:seeker/seekeritems
 

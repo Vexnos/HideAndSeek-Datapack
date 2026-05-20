@@ -1,3 +1,8 @@
+#
+# Description: Initialize datapack
+# Called by: minecraft:load
+# Entity @s: None
+#
 # Teams
 team add 1 "Hider"
 team modify 1 collisionRule never
@@ -71,13 +76,13 @@ scoreboard objectives add uuid2 dummy
 scoreboard objectives add uuid3 dummy
 
 # Timer Bossbar
-# bossbar add timer {"text":"Time","color":"yellow"}
+bossbar add timer {"text":"Time","color":"yellow"}
 # bossbar set timer color yellow
 # bossbar set timer max 600
 # bossbar set timer value 0
 # bossbar set timer players @a
 # bossbar set timer style notched_10
-# bossbar add hidingtimer {"text":"Time to Hide","color":"red"}
+bossbar add hidingtimer {"text":"Time to Hide","color":"red"}
 # bossbar set hidingtimer color red
 # bossbar set hidingtimer max 64
 # bossbar set hidingtimer value 64
@@ -90,5 +95,4 @@ execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master 
 # Start scheduled functions
 function hideseek:saturation
 function hideseek:jungleleaves
-function hideseek:ping
 function hideseek:main_10t

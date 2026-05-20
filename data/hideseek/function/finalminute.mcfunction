@@ -1,3 +1,8 @@
+#
+# Description: Final Minute Shenanigans
+# Called by: hideseek:seek, hideseek:triggers
+# Entity @s: None
+#
 # Generic
 execute unless score nazgard map matches 1.. unless score tartarus map matches 1.. unless score end map matches 1 run execute at @a[team=2] run summon minecraft:ravager ~ ~ ~ {active_effects:[{id:speed,amplifier:3,duration:999999,show_particles:false},{id:fire_resistance,amplifier:1,duration:999999}],Passengers:[{id:pillager,equipment:{mainhand:{count:1,id:crossbow,components:{unbreakable:{},enchantments:{quick_charge:5}}}},Team:"2"}],Team:"2"}
 execute unless score nazgard map matches 1.. unless score tartarus map matches 1.. unless score end map matches 1 run execute at @a[team=2] run summon minecraft:ravager ~ ~ ~ {active_effects:[{id:speed,amplifier:3,duration:999999,show_particles:false},{id:fire_resistance,amplifier:1,duration:999999}],Passengers:[{id:pillager,equipment:{mainhand:{count:1,id:crossbow,components:{unbreakable:{},enchantments:{quick_charge:5}}}},Team:"2"}],Team:"2"}

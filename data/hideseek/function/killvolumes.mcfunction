@@ -1,3 +1,8 @@
+#
+# Description: Kill barriers on maps
+# Called by: hideseek:main
+# Entity @s: None
+#
 execute if score tartarus map matches 1.. run execute as @a[team=1,x=-143,y=77,z=2432,dx=175,dy=90,dz=175] run damage @s 10 minecraft:outside_border
 execute if score ataraxia map matches 1.. run execute as @a[team=1,x=44,y=245,z=-805,dx=300,dy=90,dz=300] run damage @s 999 minecraft:outside_border
 execute if score ataraxia map matches 1.. run execute as @a[team=1,x=44,y=0,z=-805,dx=300,dy=70,dz=300] run damage @s 999 minecraft:outside_border

@@ -1,3 +1,8 @@
+#
+# Description: Reset the game
+# Called by: hidseek:seek, hideseek:main, hideseek:triggers
+# Entity @s:
+#
 # Game Over title
 execute if score hiding players > out players run title @a title [{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/nether_star"},{"text":" Hiders Win! ","color":"red"},{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/nether_star"}]
 execute if score hiding players > out players as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s

@@ -1,3 +1,8 @@
+#
+# Description: Hiding timer display
+# Called by: THIS, hideseek:start
+# Entity @s:
+#
 # Decrease timer
 scoreboard players remove hiding time 1
 

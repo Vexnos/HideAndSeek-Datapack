@@ -1,3 +1,8 @@
+#
+# Description: Mounts
+# Called by: hideseek:main
+# Entity @s: hideseek:tags/teleports
+#
 # Hider Mounts
 execute as @e[type=snowball] at @s run ride @p[team=1,gamemode=adventure,tag=Rider] mount @s
 execute as @e[type=snowball] at @s run ride @p[team=1,gamemode=adventure,distance=..3] mount @s

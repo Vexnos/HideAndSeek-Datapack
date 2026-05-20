@@ -1,3 +1,8 @@
+#
+# Description: Automatic radar ping on Dark Peak
+# Called by: THIS, hideseek:seek
+# Entity @s: Player
+#
 # Always on distance based radar
 execute if score ping settings matches 1.. at @a[team=1,tag=!out] run playsound minecraft:entity.allay.hurt master @a[team=2,distance=..20] ~ ~ ~ 100 2
 execute if score ping settings matches 1.. at @a[team=1,tag=!out] run playsound minecraft:entity.allay.hurt master @a[team=2,distance=21..40] ~ ~ ~ 100 1

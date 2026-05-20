@@ -1,3 +1,8 @@
+#
+# Description: Summon armour stands required to start the game
+# Called by: Player
+# Entity @s: None
+#
 # Summon Armor Stands
 execute at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["start"],DisabledSlots:4144959}
 execute at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["lobby"],DisabledSlots:4144959}

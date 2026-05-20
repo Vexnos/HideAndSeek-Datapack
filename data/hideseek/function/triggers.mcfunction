@@ -1,3 +1,8 @@
+#
+# Description: Admin triggers
+# Called by: hideseek:main
+# Entity @s: Player
+#
 execute if entity @s[scores={start=1..}] as @s run function hideseek:start
 execute if entity @s[scores={start=1..}] as @s run scoreboard players set @s start 0
 

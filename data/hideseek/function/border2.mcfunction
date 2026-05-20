@@ -1,3 +1,8 @@
+#
+# Description: Second border close
+# Called by: hideseek:border1, hideseek:triggers
+# Entity @s: None
+#
 # Check Map
 execute if score crownPeak map matches 1.. run worldborder set 75 30s
 execute if score darkPeak map matches 1.. run worldborder set 75 30s

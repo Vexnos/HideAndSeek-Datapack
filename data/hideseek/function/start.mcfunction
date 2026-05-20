@@ -1,3 +1,8 @@
+#
+# Description: Start the game
+# Called by: Player, hideseek:triggers
+# Entity @s: None
+#
 # Scoreboards
 scoreboard players reset @a deaths
 scoreboard players set swap swap 0
