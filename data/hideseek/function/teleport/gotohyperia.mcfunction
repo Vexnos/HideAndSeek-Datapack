@@ -1,3 +1,8 @@
+#
+# Description: TP players to Hyperia
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] 1843 202 -289
 execute in overworld run tp @e[tag=start,limit=1] 1844 109 -289

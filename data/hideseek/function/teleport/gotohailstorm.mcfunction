@@ -1,3 +1,8 @@
+#
+# Description: TP players to Hailstorm
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in hideseek:hailstorm run tp @e[tag=lobby,limit=1] -707 277 -3942
 execute in hideseek:hailstorm run tp @e[tag=start,limit=1] -741 241 -4033

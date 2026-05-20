@@ -1,3 +1,8 @@
+#
+# Description: TP players to Acclamator
+# Called by: Player
+# Entity @s: None
+#
 # Teleporting
 execute in hideseek:acclamator run tp @e[tag=lobby,limit=1] -32 221 14
 execute in hideseek:acclamator run tp @e[tag=start,limit=1] -32 94 14

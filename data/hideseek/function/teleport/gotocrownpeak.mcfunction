@@ -1,3 +1,8 @@
+#
+# Description: TP players to Crown Peak
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] -702 195 579
 execute in overworld run tp @e[tag=start,limit=1] -703 99 579

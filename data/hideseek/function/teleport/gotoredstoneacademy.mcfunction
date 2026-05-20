@@ -1,3 +1,8 @@
+#
+# Description: TP players to Redstone Academy
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] -1376 183 -136
 execute in overworld run tp @e[tag=start,limit=1] -1376 111 -136

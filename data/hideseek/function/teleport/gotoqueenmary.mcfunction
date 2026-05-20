@@ -1,3 +1,8 @@
+#
+# Description: TP players to the Queen Mary 2
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] -1739 225 3339
 execute in overworld run tp @e[tag=start,limit=1] -1739 120 3339

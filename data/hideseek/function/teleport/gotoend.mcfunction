@@ -1,3 +1,8 @@
+#
+# Description: TP players to The End
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in the_end run tp @e[tag=lobby,limit=1] -1047 252 -607
 execute in the_end run tp @e[tag=start,limit=1] -1081 80 -633

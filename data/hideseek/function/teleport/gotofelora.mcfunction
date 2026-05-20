@@ -1,3 +1,8 @@
+#
+# Description: TP players to Felora
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] -3806 206 -64
 execute in overworld run tp @e[tag=start,limit=1] -3805 102 -64

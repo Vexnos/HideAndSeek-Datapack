@@ -1,3 +1,8 @@
+#
+# Description: TP players to Diamond Heights
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] 1331 177 -104
 execute in overworld run tp @e[tag=start,limit=1] 1324 94 -112

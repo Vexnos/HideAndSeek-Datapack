@@ -1,3 +1,8 @@
+#
+# Description: TP players to Meridian
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] 61 137 4606
 execute in overworld run tp @e[tag=start,limit=1] 61 85 4607

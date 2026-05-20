@@ -1,3 +1,8 @@
+#
+# Description: TP players to Amaria
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] 1639 238 1307
 execute in overworld run tp @e[tag=start,limit=1] 1639 164 1307

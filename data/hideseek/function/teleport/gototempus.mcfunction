@@ -1,3 +1,8 @@
+#
+# Description: TP players to Mount Tempus
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] -3429 180 1244
 execute in overworld run tp @e[tag=start,limit=1] -3429 40 1244

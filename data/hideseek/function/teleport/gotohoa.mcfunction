@@ -1,3 +1,8 @@
+#
+# Description: TP players to Heart of Ardonia
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] 0 278 0
 execute in overworld run tp @e[tag=start,limit=1] 0 72 0

@@ -1,3 +1,8 @@
+#
+# Description: TP players to Kawaiin Islands
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] -4606 174 365
 execute in overworld run tp @e[tag=start,limit=1] -4606 77 365

@@ -1,3 +1,8 @@
+#
+# Description: TP players to Nestoria
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] 1610 161 -3249
 execute in overworld run tp @e[tag=start,limit=1] 1608 78 -3249

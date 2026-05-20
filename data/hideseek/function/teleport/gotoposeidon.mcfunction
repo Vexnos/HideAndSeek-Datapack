@@ -1,3 +1,8 @@
+#
+# Description: TP players to Poseidon
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] -2079 246 2292
 execute in overworld run tp @e[tag=start,limit=1] -2079 157 2292

@@ -1,3 +1,8 @@
+#
+# Description: TP players to Imperator II Star Destroyer
+# Called by: Player
+# Entity @s: None
+#
 # Teleporting
 execute in hideseek:imperator run tp @e[tag=lobby,limit=1] -1239 746 8
 execute in hideseek:imperator run tp @e[tag=start,limit=1] -1393 741 8

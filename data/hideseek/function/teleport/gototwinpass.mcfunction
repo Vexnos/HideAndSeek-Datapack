@@ -1,3 +1,8 @@
+#
+# Description: TP players to Twin Pass
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] -1087 230 -969
 execute in overworld run tp @e[tag=start,limit=1] -1085 86 -969

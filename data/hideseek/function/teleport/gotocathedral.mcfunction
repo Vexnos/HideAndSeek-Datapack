@@ -1,3 +1,8 @@
+#
+# Description: TP players to Cologne Cathedral
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in hideseek:cathedral run tp @e[tag=lobby,limit=1] -114 56 0
 execute in hideseek:cathedral run tp @e[tag=start,limit=1] -114 -24 0

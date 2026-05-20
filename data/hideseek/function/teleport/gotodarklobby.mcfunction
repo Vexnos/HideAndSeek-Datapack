@@ -1,3 +1,8 @@
+#
+# Description: TP players to Dark Lobby
+# Called by: Player
+# Entity @s: None
+#
 # Set all Maps to be unselected
 function hideseek:teleport/mapresets
 

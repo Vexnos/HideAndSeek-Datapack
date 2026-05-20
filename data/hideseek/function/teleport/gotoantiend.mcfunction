@@ -1,3 +1,8 @@
+#
+# Description: TP players to Anti-End
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in the_nether run tp @e[tag=lobby,limit=1] 488 234 488
 execute in the_nether run tp @e[tag=start,limit=1] 488 90 488

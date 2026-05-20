@@ -1,3 +1,8 @@
+#
+# Description: TP players to Pavlopetri (Dark Tartarus)
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] 1656 -4 285
 execute in overworld run tp @e[tag=start,limit=1] 1656 -17 286

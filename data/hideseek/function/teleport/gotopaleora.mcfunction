@@ -1,3 +1,8 @@
+#
+# Description: TP players to Paleora
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in hideseek:lobby run tp @e[tag=lobby,limit=1] -5053 265 170
 execute in hideseek:lobby run tp @e[tag=start,limit=1] -5053 162 170

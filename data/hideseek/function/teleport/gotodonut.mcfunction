@@ -1,3 +1,8 @@
+#
+# Description: TP players to Donut SMP Spawn
+# Called by: Player
+# Entity @s: None
+#
 # Teleporting
 execute in hideseek:donut run tp @e[tag=lobby,limit=1] 372 241 369
 execute in hideseek:donut run tp @e[tag=start,limit=1] 372 118 369

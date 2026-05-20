@@ -1,3 +1,8 @@
+#
+# Description: TP players to Nazgard
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in the_nether run tp @e[tag=lobby,limit=1] -248 93 -1089
 execute in the_nether run tp @e[tag=start,limit=1] -204 75 -1109

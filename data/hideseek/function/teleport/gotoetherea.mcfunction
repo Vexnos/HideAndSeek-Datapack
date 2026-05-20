@@ -1,3 +1,8 @@
+#
+# Description: TP players to Etherea
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] -1988 215 -899
 execute in overworld run tp @e[tag=start,limit=1] -1988 92 -899

@@ -1,3 +1,8 @@
+#
+# Description: TP players to Biggerton
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in overworld run tp @e[tag=lobby,limit=1] -396 221 -1342
 execute in overworld run tp @e[tag=start,limit=1] -396 79 -1328

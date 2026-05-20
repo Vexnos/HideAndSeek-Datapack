@@ -1,3 +1,8 @@
+#
+# Description: TP players to New World
+# Called by: Player
+# Entity @s: None
+#
 # Teleporting
 execute in hideseek:newworld run tp @e[tag=lobby,limit=1] 9 149 -22
 execute in hideseek:newworld run tp @e[tag=start,limit=1] -55 64 -6

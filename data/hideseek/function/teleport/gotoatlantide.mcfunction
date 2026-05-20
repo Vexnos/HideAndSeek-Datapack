@@ -1,3 +1,8 @@
+#
+# Description: TP players to Atlantide
+# Called by: Player
+# Entity @s: None
+#
 # Teleporting
 execute in hideseek:atlantide run tp @e[tag=lobby,limit=1] 984 204 -1698
 execute in hideseek:atlantide run tp @e[tag=start,limit=1] 984 94 -1698

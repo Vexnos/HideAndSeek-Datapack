@@ -1,3 +1,8 @@
+#
+# Description: TP players to Venator Star Destroyer
+# Called by: Player
+# Entity @s: None
+#
 # Teleporting
 execute in hideseek:venator run tp @e[tag=lobby,limit=1] -522 148 0
 execute in hideseek:venator run tp @e[tag=start,limit=1] -522 -4 0

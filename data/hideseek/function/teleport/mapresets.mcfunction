@@ -1,3 +1,8 @@
+#
+# Description: Reset map scoreboard
+# Called by: hideseek:teleports/gotolobby, hideseek:teleports/gotodarklobby
+# Entity @s: None
+#
 # Set all Maps to be unselected
 scoreboard players set crownPeak map 0
 scoreboard players set felora map 0

@@ -1,3 +1,8 @@
+#
+# Description: TP players to Pass Twin
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in hideseek:lobby run tp @e[tag=lobby,limit=1] 5125 130 98
 execute in hideseek:lobby run tp @e[tag=start,limit=1] 5125 28 98

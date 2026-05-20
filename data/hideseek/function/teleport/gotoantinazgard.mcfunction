@@ -1,3 +1,8 @@
+#
+# Description: TP players to Anti-Nazgard
+# Called by: Player
+# Entity @s: None
+#
 # Teleports
 execute in the_end run tp @e[tag=lobby,limit=1] 85 118 604
 execute in the_end run tp @e[tag=start,limit=1] 129 100 583

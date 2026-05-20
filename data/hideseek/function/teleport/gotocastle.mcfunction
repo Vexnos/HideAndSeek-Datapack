@@ -1,3 +1,8 @@
+#
+# Description: TP players to Mysterious Castle
+# Called by: Player
+# Entity @s: None
+#
 # Teleporting
 execute in hideseek:castle run tp @e[tag=lobby,limit=1] 182 270 -80
 execute in hideseek:castle run tp @e[tag=start,limit=1] 172 128 -80
