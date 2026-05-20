@@ -92,3 +92,6 @@ execute at @a[nbt={active_effects:[{id:"minecraft:levitation"}]}] run particle m
 
 # Teleport players going under Biggerton back to the spawn point
 execute if score biggerton map matches 1.. as @a[tag=!out,x=-496,y=63,z=-1442,dx=210,dy=-100,dz=210] run tp @s @e[tag=start,limit=1]
+
+# Parkour Reward
+execute in hideseek:lobby if score gameRunning settings matches 0 as @a[scores={bellsRung=1..}] run function hideseek:lobby/parkour_reward
