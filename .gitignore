@@ -5,3 +5,10 @@ data/hideseek/function/trollbook.mcfunction
 data/superjump/
 data/particles/
 HideAndSeekDatapack.zip
+data/hideseek/advancement/fire_stick.json
+data/hideseek/function/fire_stick.mcfunction
+data/hideseek/function/lightning_stick.mcfunction
+data/hideseek/enchantment/fire_stick.json
+data/hideseek/function/trash.mcfunction
+data/players/
+data/hideseek/function/hider/secret.mcfunction
