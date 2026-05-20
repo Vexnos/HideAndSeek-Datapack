@@ -88,6 +88,7 @@ scoreboard players reset @e uuid0
 scoreboard players reset @e uuid1
 scoreboard players reset @e uuid2
 scoreboard players reset @e uuid3
+scoreboard players reset @a bellsRung
 
 # Tags
 tag @a remove out
