@@ -40,6 +40,7 @@ scoreboard objectives add nearbyTeleports dummy
 scoreboard objectives add range dummy
 scoreboard objectives add radar dummy
 scoreboard objectives add shardsUsed minecraft.used:minecraft.amethyst_shard
+scoreboard objectives add bellsRung minecraft.custom:minecraft.bell_ring
 
 # Map Scoreboards
 scoreboard objectives add map dummy
@@ -96,3 +97,4 @@ execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master 
 function hideseek:saturation
 function hideseek:jungleleaves
 function hideseek:main_10t
+function hideseek:main_3t
