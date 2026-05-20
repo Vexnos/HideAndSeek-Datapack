@@ -25,4 +25,10 @@ execute in hideseek:lobby run tp @e[tag=Trayaurus,x=-2,y=163,z=41,dx=4,dy=2,dz=4
 execute in hideseek:lobby run tp @e[tag=Grace,x=-2,y=163,z=41,dx=4,dy=2,dz=4] 0 167 25
 execute in hideseek:lobby run tp @e[tag=Fox,x=-2,y=163,z=41,dx=4,dy=2,dz=4] 0 167 25
 
+execute in hideseek:lobby run tp @e[tag=Gareth,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 167 25
+execute in hideseek:lobby run tp @e[tag=Grace,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 167 25
+execute in hideseek:lobby run tp @e[tag=Trayaurus,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 167 25
+execute in hideseek:lobby run tp @e[tag=Fox,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 167 25
+execute in hideseek:lobby run tp @e[tag=John,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 163 43
+
 execute in hideseek:lobby run kill @e[type=item,x=-2,y=163,z=41,dx=4,dy=2,dz=4]
