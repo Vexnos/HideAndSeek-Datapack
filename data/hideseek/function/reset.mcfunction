@@ -4,14 +4,10 @@ execute if score hiding players > out players as @a at @s run playsound minecraf
 execute if score hiding players <= out players run title @a title [{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/nether_star"},{"text":" Seekers Win! ","color":"blue"},{type:"object",object:"atlas",atlas:"minecraft:items",sprite:"item/nether_star"}]
 execute if score hiding players <= out players as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
 
-# Points for Stats
-execute unless score #test playTesting matches 1 if score trackStats settings matches 1 run execute as @a[team=1] if score hiding players > out players if entity @s[tag=!out] run scoreboard players add @s winsAsHider 1
-execute unless score #test playTesting matches 1 if score trackStats settings matches 1 unless score tag settings matches 1 run execute as @a[team=2] if score hiding players <= out players run scoreboard players add @s winsAsSeeker 1
-
-execute unless score #test playTesting matches 1 if score trackStats settings matches 1 if score tag settings matches 1 run execute as @a[tag=winning_hider] run scoreboard players add @s winsAsHider 1
-execute unless score #test playTesting matches 1 if score trackStats settings matches 1 if score tag settings matches 1 run execute as @a[team=2,tag=og_seeker] if score hiding players <= out players run scoreboard players add @s winsAsSeeker 1
-
+# Spawnpoint
 execute at @e[tag=lobby,limit=1] run spawnpoint @a ~ ~ ~
+
+# Clear Effects
 effect clear @a
 
 # Previous Seeker tag
@@ -82,7 +78,6 @@ scoreboard players set mounts events 1
 scoreboard players set swap swap 0
 scoreboard players reset @a radar
 scoreboard players set gameRunning settings 0
-scoreboard players set trackStats settings 0
 scoreboard players reset @a shardsUsed
 scoreboard players reset @e uuid0
 scoreboard players reset @e uuid1

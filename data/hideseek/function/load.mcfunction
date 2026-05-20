@@ -64,14 +64,6 @@ scoreboard objectives add randInt dummy
 scoreboard objectives add events dummy
 scoreboard objectives add countdown dummy
 
-# Stats Scoreboards
-scoreboard objectives add winsAsHider dummy {text:"Wins as Hider",color:"red"}
-scoreboard objectives add winsAsSeeker dummy {text:"Wins as Seeker",color:"blue"}
-function hideseek:display_scores
-
-scoreboard players set #max winsAsHider -2147483648
-scoreboard players set #max winsAsSeeker -2147483648
-
 # UUIDs
 scoreboard objectives add uuid0 dummy
 scoreboard objectives add uuid1 dummy

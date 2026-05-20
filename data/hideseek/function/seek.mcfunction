@@ -66,9 +66,6 @@ effect clear @a[team=1] invisibility
 # Clear this function from a schedule in case the game needs to reset early
 schedule clear hideseek:seek
 
-# Track Stats
-scoreboard players set trackStats settings 1
-
 # Bossbar
 execute unless score tag settings matches 1 run bossbar set timer players @a
 bossbar set hidingtimer visible false

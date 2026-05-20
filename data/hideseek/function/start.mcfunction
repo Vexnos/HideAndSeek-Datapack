@@ -79,7 +79,6 @@ execute as @a store result score @s uuid3 run data get entity @s UUID[3]
 
 # Set the game as running
 scoreboard players set gameRunning settings 1
-scoreboard players set trackStats settings 0
 function hideseek:hidingtimer
 schedule function hideseek:seek 64s
 
