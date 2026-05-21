@@ -14,6 +14,8 @@ execute in hideseek:lobby run kill @e[type=shulker_bullet,x=-3,y=170,z=62,dx=6,d
 
 execute in hideseek:lobby run effect clear @a[x=-3,y=170,z=62,dx=6,dy=9,dz=0]
 execute in hideseek:lobby run effect give @a[x=-3,y=170,z=64,dx=6,dy=9,dz=0] trial_omen infinite 5 false
+execute in hideseek:lobby run team join 3 @a[x=-3,y=170,z=62,dx=6,dy=9,dz=0]
+execute in hideseek:lobby run team leave @a[x=-3,y=170,z=64,dx=6,dy=9,dz=0]
 
 execute in hideseek:lobby run tag @a[x=-3,y=170,z=62,dx=6,dy=9,dz=0] remove title_card
 execute in hideseek:lobby run title @a[x=-3,y=170,z=62,dx=6,dy=9,dz=0] subtitle ""
