@@ -1,5 +1,5 @@
 execute as @a[tag=admin,limit=1] in hideseek:lobby positioned -14 165 73 run place template hideseek:arena_floor_copper_3
-schedule function hideseek:lobby/arena_floor/copper/4 5t
+schedule function hideseek:lobby/arena_floor/copper/4 3t
 
 # Particles
 execute in hideseek:lobby run particle poof -14 167 81 0.1 0.1 0.1 0.5 25 force
