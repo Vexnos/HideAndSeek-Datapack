@@ -1,0 +1,12 @@
+clear @s[tag=!admin]
+item replace entity @s armor.head with leather_helmet
+item replace entity @s armor.chest with leather_chestplate
+item replace entity @s armor.legs with leather_leggings
+item replace entity @s armor.feet with leather_boots
+give @s stone_sword
+give @s stone_axe
+give @s bow
+item replace entity @s inventory.0 with spectral_arrow 64
+item replace entity @s inventory.1 with spectral_arrow 64
+give @s wind_charge 64
+item replace entity @s weapon.offhand with shield
