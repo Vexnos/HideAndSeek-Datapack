@@ -18,7 +18,7 @@ execute in hideseek:lobby run team join 3 @a[x=-3,y=170,z=62,dx=6,dy=9,dz=0]
 execute in hideseek:lobby run team leave @a[x=-3,y=170,z=64,dx=6,dy=9,dz=0]
 
 execute in hideseek:lobby run tag @a[x=-3,y=170,z=62,dx=6,dy=9,dz=0] remove title_card
-execute in hideseek:lobby run title @a[x=-3,y=170,z=62,dx=6,dy=9,dz=0] subtitle ""
+# execute in hideseek:lobby run title @a[x=-3,y=170,z=62,dx=6,dy=9,dz=0] subtitle ""
 execute in hideseek:lobby as @a[x=-3,y=170,z=64,dx=6,dy=9,dz=0,tag=!title_card] run function hideseek:lobby/title_card
 
 execute in hideseek:lobby as @a[x=-2,y=170,z=-1,dx=4,dy=4,dz=7] run effect give @s speed infinite 5 true
