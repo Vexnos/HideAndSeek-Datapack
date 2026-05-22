@@ -12,4 +12,4 @@ give @s diamond_spear[enchantments={sharpness:5,lunge:3,unbreaking:3,knockback:2
 give @s wind_charge 64
 item replace entity @s weapon.offhand with shield[enchantments={unbreaking:3,mending:1}]
 
-tp @a[x=-60,y=120,z=64,dx=120,dy=70,dz=-185] 0 170 69
+# tp @a[x=-60,y=120,z=64,dx=120,dy=70,dz=-185] 0 170 69

@@ -13,4 +13,4 @@ give @s wind_charge 64
 give @s mace[enchantments={breach:4,unbreaking:3,fire_aspect:2,wind_burst:1}]
 item replace entity @s weapon.offhand with shield[enchantments={unbreaking:3,mending:1}]
 
-tp @a[x=-60,y=120,z=64,dx=120,dy=70,dz=-185] 0 170 69
+# tp @a[x=-60,y=120,z=64,dx=120,dy=70,dz=-185] 0 170 69
