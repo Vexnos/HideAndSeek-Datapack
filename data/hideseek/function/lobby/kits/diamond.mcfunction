@@ -1,4 +1,4 @@
-clear @s[tag=!admin]
+clear @s
 item replace entity @s armor.head with diamond_helmet[enchantments={protection:4,unbreaking:3,respiration:3,aqua_affinity:1}]
 item replace entity @s armor.chest with diamond_chestplate[enchantments={protection:4,unbreaking:3}]
 item replace entity @s armor.legs with diamond_leggings[enchantments={protection:4,unbreaking:3,swift_sneak:3}]
@@ -11,3 +11,5 @@ item replace entity @s inventory.1 with spectral_arrow 64
 give @s diamond_spear[enchantments={sharpness:5,lunge:3,unbreaking:3,knockback:2,fire_aspect:2,mending:1}]
 give @s wind_charge 64
 item replace entity @s weapon.offhand with shield[enchantments={unbreaking:3,mending:1}]
+
+tp @a[x=-60,y=120,z=64,dx=120,dy=70,dz=-185] 0 170 69
