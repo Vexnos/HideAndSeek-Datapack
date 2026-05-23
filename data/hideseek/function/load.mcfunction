@@ -94,7 +94,6 @@ title @a actionbar {"text":"The game is ready to go!","color":"green"}
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
 # Start scheduled functions
-function hideseek:saturation
 function hideseek:jungleleaves
 function hideseek:main_10t
 function hideseek:main_3t
