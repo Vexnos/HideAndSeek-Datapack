@@ -12,5 +12,10 @@ give @s netherite_spear[enchantments={sharpness:5,lunge:3,unbreaking:3,knockback
 give @s wind_charge 64
 give @s mace[enchantments={breach:4,unbreaking:3,fire_aspect:2,wind_burst:1}]
 item replace entity @s weapon.offhand with shield[enchantments={unbreaking:3,mending:1}]
+give @s golden_carrot 64
+give @s golden_apple 3
+give @s splash_potion[max_stack_size=16,potion_contents={potion:"minecraft:strong_healing"}] 16
+give @s splash_potion[max_stack_size=16,potion_contents={potion:"minecraft:strong_harming"}] 16
+give @s potion[max_stack_size=16,potion_contents={potion:"minecraft:strong_strength"}] 3
 
 # tp @a[x=-60,y=120,z=64,dx=120,dy=70,dz=-185] 0 170 69

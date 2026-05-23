@@ -11,5 +11,10 @@ item replace entity @s inventory.1 with spectral_arrow 64
 give @s diamond_spear[enchantments={sharpness:5,lunge:3,unbreaking:3,knockback:2,fire_aspect:2,mending:1}]
 give @s wind_charge 64
 item replace entity @s weapon.offhand with shield[enchantments={unbreaking:3,mending:1}]
+give @s golden_carrot 64
+give @s golden_apple 3
+give @s splash_potion[max_stack_size=16,potion_contents={potion:"minecraft:strong_healing"}] 16
+give @s splash_potion[max_stack_size=16,potion_contents={potion:"minecraft:strong_harming"}] 16
+give @s potion[max_stack_size=16,potion_contents={potion:"minecraft:strong_strength"}] 3
 
 # tp @a[x=-60,y=120,z=64,dx=120,dy=70,dz=-185] 0 170 69
