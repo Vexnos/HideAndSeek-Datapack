@@ -24,7 +24,7 @@ execute if score gameRunning settings matches 1 run function hideseek:killvolume
 # execute if entity @e[type=mannequin,tag=!NoKill] run function hideseek:mannequin
 
 # Generic Lobby Functions
-execute unless score gameRunning settings matches 1 run function hideseek:lobby/generic
+execute unless score gameRunning settings matches 1 in hideseek:lobby run function hideseek:lobby/generic
 
 # Enable Triggers
 scoreboard players enable @a[tag=admin] start
