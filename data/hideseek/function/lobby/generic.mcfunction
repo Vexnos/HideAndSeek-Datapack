@@ -33,6 +33,11 @@ execute in hideseek:lobby run kill @e[type=item,x=-3,y=170,z=10,dx=6,dy=8,dz=2]
 
 execute in hideseek:lobby run clear @a[x=-2,y=130,z=-40,dx=4,dy=4,dz=4,gamemode=adventure]
 
+# Saturation
+execute in hideseek:lobby run effect give @a[x=-2,y=170,z=-1,dx=4,dy=4,dz=4,gamemode=adventure] saturation infinite 0 true
+execute in hideseek:lobby run effect clear @a[x=-3,y=170,z=64,dx=6,dy=9,dz=0] saturation
+execute in hideseek:lobby run team join 3 @a[x=-2,y=170,z=-1,dx=4,dy=4,dz=4,gamemode=adventure]
+
 # Mob Teleports out of the pit
 execute in hideseek:lobby run tp @e[tag=Gareth,x=-2,y=163,z=41,dx=4,dy=2,dz=4] 0 167 25
 execute in hideseek:lobby run tp @e[tag=Trayaurus,x=-2,y=163,z=41,dx=4,dy=2,dz=4] 0 167 25
