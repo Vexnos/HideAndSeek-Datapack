@@ -11,6 +11,9 @@ kill @e[type=arrow,x=-2,y=170,z=-1,dx=4,dy=4,dz=4]
 kill @e[type=arrow,x=-3,y=170,z=62,dx=6,dy=9,dz=2]
 
 kill @e[type=shulker_bullet,x=-3,y=170,z=62,dx=6,dy=9,dz=2]
+kill @e[type=wind_charge,x=-3,y=170,z=62,dx=6,dy=9,dz=2]
+kill @e[type=spectral_arrow,x=-3,y=170,z=62,dx=6,dy=9,dz=2]
+kill @e[type=splash_potion,x=-3,y=170,z=62,dx=6,dy=9,dz=2]
 
 effect clear @a[x=-3,y=170,z=62,dx=6,dy=9,dz=0]
 effect give @a[x=-3,y=170,z=64,dx=6,dy=9,dz=0] trial_omen infinite 0 false
@@ -59,3 +62,6 @@ tp @e[tag=Fox,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 167 25
 tp @e[tag=John,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 163 43
 
 kill @e[type=item,x=-2,y=163,z=41,dx=4,dy=2,dz=4]
+
+# Control Room
+kill @e[tag=!admin,tag=!NoKill,x=-3,y=183,z=112,dx=6,dy=4,dz=6]
