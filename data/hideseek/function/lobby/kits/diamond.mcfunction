@@ -17,5 +17,6 @@ give @s golden_apple 3
 give @s splash_potion[max_stack_size=16,potion_contents={potion:"minecraft:strong_healing"}] 16
 give @s splash_potion[max_stack_size=16,potion_contents={potion:"minecraft:strong_harming"}] 16
 give @s potion[max_stack_size=16,potion_contents={potion:"minecraft:strong_strength"}] 3
+give @s ender_pearl 16
 
 # tp @a[x=-60,y=120,z=64,dx=120,dy=70,dz=-185] 0 170 69
