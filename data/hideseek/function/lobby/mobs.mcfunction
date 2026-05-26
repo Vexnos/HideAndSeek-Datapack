@@ -15,3 +15,6 @@ summon villager ~ ~ ~ {CustomName:{text:"Dr Trayaurus"},VillagerData:{profession
 
 # Gwen the Guardian
 summon guardian ~ ~ ~ {CustomName:{text:"Gwen the Guardian"},Invulnerable:1b,Team:"3",PersistenceRequired:1b,Tags:["Gwen","NoKill"]}
+
+# John Magma
+summon magma_cube ~ ~ ~ {CustomName:{text:"John Magma"},Invulnerable:1b,Team:"3",PersistenceRequired:1b,Tags:["Magma","NoKill"],Size:1}
