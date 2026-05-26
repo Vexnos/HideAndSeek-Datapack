@@ -1,0 +1,2 @@
+execute in hideseek:lobby positioned 0 167 89 run playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 100 0
+execute in hideseek:lobby positioned 0 167 89 run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 100 0

@@ -2,7 +2,7 @@
 advancement revoke @s only hideseek:powerups/radar
 
 # Run the Radar Function
-execute if score radar settings matches 1 if score gameRunning settings matches 1 as @a[team=2] run function hideseek:radar
+execute if score radar settings matches 1 if score gameRunning settings matches 1 as @s run function hideseek:radar
 
 # Marco Polo (Who's the closest Hider)
 tellraw @a [{"text":"<","color":"white"},{"selector":"@s"},{"text":"> Marco!"}]
