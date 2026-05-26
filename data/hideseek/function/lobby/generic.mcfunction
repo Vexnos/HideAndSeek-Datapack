@@ -34,9 +34,9 @@ execute in hideseek:lobby as @a[x=-3,y=170,z=10,dx=6,dy=8,dz=2] run effect clear
 
 kill @e[type=item,x=-3,y=170,z=10,dx=6,dy=8,dz=2]
 
-# kill @a[x=-40,y=140,z=-42,dx=100,dy=6,dz=7,gamemode=adventure]
-# kill @e[x=-40,y=140,z=-42,dx=100,dy=6,dz=7,type=ender_pearl]
-# kill @e[x=-40,y=140,z=-42,dx=100,dy=6,dz=7,type=arrow]
+kill @a[x=-40,y=140,z=-42,dx=100,dy=6,dz=7,gamemode=adventure]
+kill @e[x=-40,y=140,z=-42,dx=100,dy=6,dz=7,type=ender_pearl]
+kill @e[x=-40,y=140,z=-42,dx=100,dy=6,dz=7,type=arrow]
 
 clear @a[x=-2,y=130,z=-40,dx=4,dy=4,dz=4,gamemode=adventure]
 
@@ -55,12 +55,14 @@ tp @e[tag=Gareth,x=-2,y=163,z=41,dx=4,dy=2,dz=4] 0 167 25
 tp @e[tag=Trayaurus,x=-2,y=163,z=41,dx=4,dy=2,dz=4] 0 167 25
 tp @e[tag=Grace,x=-2,y=163,z=41,dx=4,dy=2,dz=4] 0 167 25
 tp @e[tag=Fox,x=-2,y=163,z=41,dx=4,dy=2,dz=4] 0 167 25
+tp @e[tag=Magma,x=-2,y=163,z=41,dx=4,dy=2,dz=4] 0 167 25
 
 tp @e[tag=Gareth,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 167 25
 tp @e[tag=Grace,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 167 25
 tp @e[tag=Trayaurus,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 167 25
 tp @e[tag=Fox,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 167 25
 tp @e[tag=John,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 163 43
+tp @e[tag=Magma,x=-3,y=170,z=62,dx=6,dy=9,dz=2] 0 163 43
 
 kill @e[type=item,x=-2,y=163,z=41,dx=4,dy=2,dz=4]
 
