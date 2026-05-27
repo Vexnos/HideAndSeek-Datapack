@@ -38,7 +38,6 @@ scoreboard objectives add velocity dummy
 # scoreboard players set out players 0
 scoreboard objectives add nearbyTeleports dummy
 scoreboard objectives add range dummy
-scoreboard objectives add radar dummy
 scoreboard objectives add shardsUsed minecraft.used:minecraft.amethyst_shard
 scoreboard objectives add bellsRung minecraft.custom:minecraft.bell_ring
 
