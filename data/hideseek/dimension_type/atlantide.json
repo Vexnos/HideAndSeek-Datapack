@@ -7,7 +7,8 @@
         "minecraft:gameplay/bed_rule": {
             "can_sleep": "never",
             "can_set_spawn": "never",
-            "explodes": false
+            "destroy_on_use": false,
+            "destroy_on_leave": false
         },
         "minecraft:gameplay/can_start_raid": false,
         "minecraft:gameplay/nether_portal_spawns_piglin": false,
@@ -30,5 +31,7 @@
         "min_inclusive": 0,
         "max_inclusive": 7
     },
-    "monster_spawn_block_light_limit": 0
+    "monster_spawn_block_light_limit": 0,
+    "default_clock": "minecraft:overworld",
+    "has_ender_dragon_fight": false
 }
